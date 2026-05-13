@@ -23,19 +23,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Configure HTTPS auth for SourceHut
+      - name: Configure SSH for SourceHut
         env:
-          SOURCEHUT_TOKEN: ${{ secrets.SOURCEHUT_TOKEN }}
+          SOURCEHUT_SSH_PRIVATE_KEY: ${{ secrets.SOURCEHUT_SSH_PRIVATE_KEY }}
         run: |
           set -euo pipefail
 
-          cat > ~/.netrc <<EOF
-          machine git.sr.ht
-          login igareck
-          password ${SOURCEHUT_TOKEN}
-          EOF
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
 
-          chmod 600 ~/.netrc
+          printf '%s\n' "$SOURCEHUT_SSH_PRIVATE_KEY" > ~/.ssh/sourcehut_mirror_ed25519
+          chmod 600 ~/.ssh/sourcehut_mirror_ed25519
+
+          ssh-keyscan git.sr.ht >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
 
       - name: Push main branch to SourceHut
         run: |
@@ -45,6 +46,7 @@ jobs:
           git config user.email "github-actions@github.com"
 
           git remote remove sourcehut 2>/dev/null || true
-          git remote add sourcehut "https://git.sr.ht/~igareck/vpn-configs-for-russia"
+          git remote add sourcehut "git@git.sr.ht:~igareck/vpn-configs-for-russia"
 
-          git push sourcehut HEAD:main --force
+          GIT_SSH_COMMAND="ssh -i ~/.ssh/sourcehut_mirror_ed25519 -o IdentitiesOnly=yes" \
+            git push sourcehut HEAD:main --force
