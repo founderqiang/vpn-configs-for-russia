@@ -23,14 +23,38 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Configure Git identity
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+      - name: Adapt repository for Bitbucket mirror
+        run: |
+          set -euo pipefail
+
+          # Replace main README only in the temporary GitHub Actions checkout.
+          curl -fsSL \
+            "https://raw.githubusercontent.com/igareck/GoldCaviar/main/Files/README-BITBUCKET.md" \
+            -o README.md
+
+          test -s README.md
+
+          # Remove README variants that render poorly in Bitbucket.
+          git rm -f README-EN-US.md README-FA-IR.md README-ZH-CN.md 2>/dev/null || true
+
+          git add README.md
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Adapt README files for Bitbucket mirror"
+          else
+            echo "No Bitbucket README adaptation changes"
+          fi
+
       - name: Push main branch to Bitbucket
         env:
           BITBUCKET_TOKEN: ${{ secrets.BITBUCKET_MIRROR_TOKEN }}
         run: |
           set -euo pipefail
-
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
 
           git remote remove bitbucket 2>/dev/null || true
           git remote add bitbucket "https://x-token-auth:${BITBUCKET_TOKEN}@bitbucket.org/igareck/vpn-configs-for-russia.git"
