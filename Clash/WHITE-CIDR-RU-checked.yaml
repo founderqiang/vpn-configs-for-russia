@@ -1,11 +1,40 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # profile-update-interval: 1
-# Date/Time: 2026-06-19 / 20:05 (Moscow)
-# Количество: 0
+# Date/Time: 2026-06-19 / 22:29 (Moscow)
+# Количество: 2
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: warning
-proxies: []
+proxies:
+- name: 🇩🇪 Germany [*CIDR] VK
+  type: vless
+  server: "\x33\x37\x2e\x31\x33\x39\x2e\x33\x34\x2e\x31\x32\x34"
+  port: 443
+  uuid: "\x61\x65\x30\x39\x35\x39\x66\x31\x2d\x66\x32\x35\x61\x2d\x34\x33\x64\x30\x2d\x39\x63\x38\x38\x2d\x62\x65\x31\x36\x37\x32\x36\x34\x31\x66\x63\x33"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x61\x64\x73\x2e\x78\x35\x2e\x72\x75"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: FOVEr4SzLDQGUn1yY8-Y_C5mIV6WBJL2sTZKQvK83z4
+  flow: xtls-rprx-vision
+- name: 🇳🇱 The Netherlands | 🌐 [*CIDR] YA
+  type: vless
+  server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x32\x33\x39\x2e\x31\x35\x31"
+  port: 443
+  uuid: "\x64\x37\x64\x34\x61\x30\x32\x38\x2d\x64\x35\x63\x64\x2d\x34\x65\x31\x64\x2d\x61\x62\x30\x61\x2d\x36\x37\x31\x32\x61\x63\x31\x35\x38\x30\x64\x63"
+  udp: true
+  encryption: none
+  tls: true
+  servername: "\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: f3FMThwEbSnGM8h31NH50e-X_zuALPittQv3MAWCkkA
+    short-id: c93a6c16b8ef5c0f
+  network: xhttp
+  xhttp-opts:
+    path: "\x2f\x63\x64\x6e\x2d\x73\x74\x72\x65\x61\x6d\x2d\x63\x39\x33\x61"
