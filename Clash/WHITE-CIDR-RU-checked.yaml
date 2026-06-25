@@ -1,7 +1,7 @@
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # profile-update-interval: 1
-# Date/Time: 2026-06-25 / 05:15 (Moscow)
-# Количество: 9
+# Date/Time: 2026-06-25 / 07:41 (Moscow)
+# Количество: 5
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
 
 mixed-port: 7890
@@ -9,19 +9,6 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
-- name: 🇩🇪 Germany [*CIDR] VK
-  type: vless
-  server: "\x33\x37\x2e\x31\x33\x39\x2e\x33\x34\x2e\x31\x32\x34"
-  port: 443
-  uuid: "\x61\x65\x30\x39\x35\x39\x66\x31\x2d\x66\x32\x35\x61\x2d\x34\x33\x64\x30\x2d\x39\x63\x38\x38\x2d\x62\x65\x31\x36\x37\x32\x36\x34\x31\x66\x63\x33"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x64\x73\x2e\x78\x35\x2e\x72\x75"
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: FOVEr4SzLDQGUn1yY8-Y_C5mIV6WBJL2sTZKQvK83z4
-  flow: xtls-rprx-vision
 - name: 🇳🇱 The Netherlands [*CIDR] CDN
   type: vless
   server: "\x33\x37\x2e\x31\x38\x2e\x31\x35\x2e\x31\x36\x32"
@@ -54,34 +41,6 @@ proxies:
   network: xhttp
   xhttp-opts:
     path: "\x2f\x63\x68\x65\x63\x6b\x2d\x75\x70\x64\x61\x74\x65"
-- name: 🇷🇺 Russia | 🌐 [*CIDR] VK
-  type: vless
-  server: "\x38\x39\x2e\x32\x30\x38\x2e\x32\x32\x38\x2e\x32\x32\x31"
-  port: 5443
-  uuid: "\x35\x39\x39\x39\x30\x37\x64\x62\x2d\x39\x65\x39\x65\x2d\x34\x63\x35\x30\x2d\x62\x39\x66\x31\x2d\x64\x31\x62\x34\x32\x63\x64\x65\x63\x32\x31\x66"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x64\x73\x2e\x78\x35\x2e\x72\x75"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 0y72WqjYlRKbU-VzinCglBJt6ZD7GvDhNnkwDHB8l0Q
-    short-id: bad5722c72a038
-  flow: xtls-rprx-vision
-- name: '🇷🇺 Russia | 🌐 [*CIDR] VK #2'
-  type: vless
-  server: "\x38\x39\x2e\x32\x30\x38\x2e\x32\x32\x38\x2e\x32\x32\x31"
-  port: 5443
-  uuid: "\x35\x39\x39\x39\x30\x37\x64\x62\x2d\x39\x65\x39\x65\x2d\x34\x63\x35\x30\x2d\x62\x39\x66\x31\x2d\x64\x31\x62\x34\x32\x63\x64\x65\x63\x32\x31\x66"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x64\x73\x2e\x78\x35\x2e\x72\x75"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: 0y72WqjYlRKbU-VzinCglBJt6ZD7GvDhNnkwDHB8l0Q
-    short-id: bad5722c72a038
-  flow: xtls-rprx-vision
 - name: 🇷🇺 Russia [*CIDR] VK
   type: vless
   server: "\x31\x38\x35\x2e\x38\x36\x2e\x31\x34\x36\x2e\x35\x33"
@@ -91,7 +50,7 @@ proxies:
   encryption: none
   tls: true
   servername: "\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
-  client-fingerprint: chrome
+  client-fingerprint: edge
   reality-opts:
     public-key: 8gvuFoZFiWq4Bqrote2sLeQDvjWKV-FbptzTLAYbsEI
     short-id: 6148904a
@@ -122,22 +81,6 @@ proxies:
   tls: true
   servername: "\x61\x64\x73\x2e\x78\x35\x2e\x72\x75"
   client-fingerprint: firefox
-  reality-opts:
-    public-key: cSQW3a_64jadi8uInU7XKZzTDyYKBxWj7c5MgIesIws
-    short-id: bad5722c72a0
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: '🇷🇺 Russia [*CIDR] VK #4'
-  type: vless
-  server: "\x38\x39\x2e\x32\x30\x38\x2e\x32\x32\x38\x2e\x32\x32\x31"
-  port: 5445
-  uuid: "\x35\x39\x39\x39\x30\x37\x64\x62\x2d\x39\x65\x39\x65\x2d\x34\x63\x35\x30\x2d\x62\x39\x66\x31\x2d\x64\x31\x62\x34\x32\x63\x64\x65\x63\x32\x31\x66"
-  udp: true
-  encryption: none
-  tls: true
-  servername: "\x61\x64\x73\x2e\x78\x35\x2e\x72\x75"
-  client-fingerprint: qq
   reality-opts:
     public-key: cSQW3a_64jadi8uInU7XKZzTDyYKBxWj7c5MgIesIws
     short-id: bad5722c72a0
