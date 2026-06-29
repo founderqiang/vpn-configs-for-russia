@@ -1,9 +1,10 @@
 name: Mirror to Codeberg
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
-  schedule:
-    - cron: "17 * * * *"
 
 concurrency:
   group: mirror-to-codeberg
@@ -34,6 +35,17 @@ jobs:
 
           git remote remove codeberg 2>/dev/null || true
           git remote add codeberg "https://igareck:${CODEBERG_TOKEN}@codeberg.org/igareck/vpn-configs-for-russia.git"
+
+          LOCAL_SHA="$(git rev-parse HEAD)"
+          REMOTE_SHA="$(git ls-remote codeberg refs/heads/main | awk '{print $1}' || true)"
+
+          echo "Local GitHub main:   $LOCAL_SHA"
+          echo "Remote Codeberg main: ${REMOTE_SHA:-unknown}"
+
+          if [ -n "${REMOTE_SHA:-}" ] && [ "$LOCAL_SHA" = "$REMOTE_SHA" ]; then
+            echo "Codeberg is already up to date. Skipping push."
+            exit 0
+          fi
 
           for attempt in 1 2 3 4 5; do
             echo "Codeberg push attempt $attempt/5"
