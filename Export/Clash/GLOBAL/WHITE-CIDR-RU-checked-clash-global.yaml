@@ -2,8 +2,8 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-CIDR-RU-checked.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
-# Количество/Quantity: 15
-# Date/Time: 2026-09-07 / 14:03 (Moscow)
+# Количество/Quantity: 5
+# Date/Time: 2026-09-07 / 19:43 (Moscow)
 #
 # Режим / Mode:
 # - Автоматический Выбор лучшего прокси / Igareck Auto Select;
@@ -29,7 +29,7 @@ dns:
   ipv6: false
   use-hosts: true
   use-system-hosts: true
-  respect-rules: false
+  respect-rules: true
 
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
@@ -83,16 +83,18 @@ dns:
   cache-algorithm: arc
 
   default-nameserver:
-    - 8.8.8.8
-    - 8.8.4.4
-    - 9.9.9.9
-    - 94.140.14.14
-    - 76.76.2.0
-    - 76.76.10.0
-    - 1.0.0.1
-    - 1.1.1.1
-    - 208.67.220.220
-    - 208.67.222.222
+    - 77.88.8.1
+    - 77.88.8.2
+    - 77.88.8.3
+    - 77.88.8.7
+    - 77.88.8.8
+    - 77.88.8.88
+    - 89.175.167.27
+    - 94.72.28.59
+    - 95.31.212.206
+    - 82.140.107.246
+    - 83.149.26.2
+    - 188.162.79.131
 
   nameserver:
     - https://dns.google/dns-query
@@ -109,30 +111,25 @@ dns:
     - https://blank.dnsforge.de/dns-query
 
   proxy-server-nameserver:
-    - 8.8.8.8
-    - 8.8.4.4
-    - 9.9.9.9
-    - 94.140.14.14
-    - 76.76.2.0
-    - 76.76.10.0
-    - 1.0.0.1
-    - 1.1.1.1
-    - 208.67.220.220
-    - 208.67.222.222
     - system
+    - 77.88.8.1
+    - 77.88.8.2
+    - 77.88.8.3
+    - 77.88.8.7
+    - 77.88.8.8
+    - 77.88.8.88
+    - 89.175.167.27
+    - 94.72.28.59
+    - 95.31.212.206
+    - 82.140.107.246
+    - 83.149.26.2
+    - 188.162.79.131
 
   direct-nameserver:
-    - 8.8.8.8
-    - 8.8.4.4
-    - 9.9.9.9
-    - 94.140.14.14
-    - 76.76.2.0
-    - 76.76.10.0
-    - 1.0.0.1
-    - 1.1.1.1
-    - 208.67.220.220
-    - 208.67.222.222
     - system
+    - https://common.dot.dns.yandex.net/dns-query
+    - https://safe.dot.dns.yandex.net/dns-query
+    - https://family.dot.dns.yandex.net/dns-query
 
   direct-nameserver-follow-policy: false
 
@@ -154,246 +151,76 @@ sniffer:
       ports: [443, 8443]
 
 proxies:
-- name: Igareck Node 001 | .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK
+- name: Igareck Node 001 | 🇷🇺 Russia | 🌐 | [*CIDR] VK
   type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
+  server: "\x32\x31\x37\x2e\x31\x36\x2e\x33\x31\x2e\x31\x36\x32"
   port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
+  uuid: "\x61\x66\x39\x63\x32\x62\x63\x66\x2d\x66\x65\x36\x38\x2d\x34\x33\x37\x39\x2d\x39\x63\x37\x38\x2d\x36\x65\x35\x66\x31\x62\x34\x61\x66\x30\x65\x32"
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
+  servername: "\x6d\x61\x78\x2e\x72\x75"
   client-fingerprint: android
   reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-    host: vk.com
-    mode: stream-one
-- name: Igareck Node 002 | .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK
+    public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
+    short-id: "e7"
+  network: tcp
+- name: Igareck Node 002 | 🇷🇺 Russia | 🌐 | [*CIDR] VK
   type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
+  server: "\x32\x31\x37\x2e\x31\x36\x2e\x33\x31\x2e\x31\x36\x32"
   port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
+  uuid: "\x61\x66\x39\x63\x32\x62\x63\x66\x2d\x66\x65\x36\x38\x2d\x34\x33\x37\x39\x2d\x39\x63\x37\x38\x2d\x36\x65\x35\x66\x31\x62\x34\x61\x66\x30\x65\x32"
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-    host: vk.com
-    mode: stream-one
-- name: Igareck Node 003 | .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK
-  type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
-  port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
-  udp: true
-  tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
+  servername: "\x6d\x61\x78\x2e\x72\x75"
   client-fingerprint: edge
   reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-    host: vk.com
-    mode: stream-one
-- name: Igareck Node 004 | .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK
+    public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
+    short-id: "e7"
+  network: tcp
+- name: Igareck Node 003 | 🇷🇺 Russia | 🌐 | [*CIDR] VK
   type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
+  server: "\x32\x31\x37\x2e\x31\x36\x2e\x33\x31\x2e\x31\x36\x32"
   port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
+  uuid: "\x61\x66\x39\x63\x32\x62\x63\x66\x2d\x66\x65\x36\x38\x2d\x34\x33\x37\x39\x2d\x39\x63\x37\x38\x2d\x36\x65\x35\x66\x31\x62\x34\x61\x66\x30\x65\x32"
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-    host: vk.com
-    mode: stream-one
-- name: Igareck Node 005 | .𖥔 ݁ ˖ִ🛸༄˖°. | [*CIDR] VK
-  type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
-  port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
-  udp: true
-  tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-    host: vk.com
-    mode: stream-one
-- name: Igareck Node 006 | 🇷🇺 Russia | [*CIDR] VK
-  type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
-  port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
-  udp: true
-  tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
-  client-fingerprint: android
-  reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-    host: vk.com
-- name: Igareck Node 007 | 🇷🇺 Russia | [*CIDR] VK
-  type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
-  port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
-  udp: true
-  tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-    host: vk.com
-- name: Igareck Node 008 | 🇷🇺 Russia | [*CIDR] VK
-  type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
-  port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
-  udp: true
-  tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
+  servername: "\x6d\x61\x78\x2e\x72\x75"
   client-fingerprint: firefox
   reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-    host: vk.com
-- name: Igareck Node 009 | 🇷🇺 Russia | [*CIDR] VK
+    public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
+    short-id: "e7"
+  network: tcp
+- name: Igareck Node 004 | 🇷🇺 Russia | 🌐 | [*CIDR] VK
   type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
+  server: "\x32\x31\x37\x2e\x31\x36\x2e\x33\x31\x2e\x31\x36\x32"
   port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
+  uuid: "\x61\x66\x39\x63\x32\x62\x63\x66\x2d\x66\x65\x36\x38\x2d\x34\x33\x37\x39\x2d\x39\x63\x37\x38\x2d\x36\x65\x35\x66\x31\x62\x34\x61\x66\x30\x65\x32"
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
+  servername: "\x6d\x61\x78\x2e\x72\x75"
   client-fingerprint: qq
   reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-    host: vk.com
-- name: Igareck Node 010 | 🇷🇺 Russia | [*CIDR] VK
+    public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
+    short-id: "e7"
+  network: tcp
+- name: Igareck Node 005 | 🇷🇺 Russia | 🌐 | [*CIDR] VK
   type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
+  server: "\x32\x31\x37\x2e\x31\x36\x2e\x33\x31\x2e\x31\x36\x32"
   port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
+  uuid: "\x61\x66\x39\x63\x32\x62\x63\x66\x2d\x66\x65\x36\x38\x2d\x34\x33\x37\x39\x2d\x39\x63\x37\x38\x2d\x36\x65\x35\x66\x31\x62\x34\x61\x66\x30\x65\x32"
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
+  servername: "\x6d\x61\x78\x2e\x72\x75"
   client-fingerprint: safari
   reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-    host: vk.com
-- name: Igareck Node 011 | 🇷🇺 Russia | [*CIDR] VK
-  type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
-  port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
-  udp: true
-  tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
-  client-fingerprint: android
-  reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-- name: Igareck Node 012 | 🇷🇺 Russia | [*CIDR] VK
-  type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
-  port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
-  udp: true
-  tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-- name: Igareck Node 013 | 🇷🇺 Russia | [*CIDR] VK
-  type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
-  port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
-  udp: true
-  tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
-  client-fingerprint: safari
-  reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-- name: Igareck Node 014 | 🇷🇺 Russia [*CIDR] VK
-  type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
-  port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
-  udp: true
-  tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
-  client-fingerprint: edge
-  reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
-- name: Igareck Node 015 | 🇷🇺 Russia [*CIDR] VK
-  type: vless
-  server: "\x39\x35\x2e\x31\x36\x33\x2e\x32\x31\x34\x2e\x34\x33"
-  port: 443
-  uuid: "\x38\x38\x63\x65\x31\x37\x66\x63\x2d\x37\x63\x36\x63\x2d\x34\x33\x61\x37\x2d\x39\x38\x61\x34\x2d\x33\x33\x66\x62\x35\x39\x36\x39\x37\x62\x31\x37"
-  udp: true
-  tls: true
-  servername: "\x6f\x6b\x2e\x72\x75"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s
-    short-id: "864fbb122f15b43d"
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/e0163615
+    public-key: SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw
+    short-id: "e7"
+  network: tcp
 
 proxy-groups:
   - name: "Igareck Auto Select (Автоподключение)"
@@ -426,6 +253,7 @@ proxy-groups:
 rules:
   - DOMAIN-SUFFIX,localhost,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN-SUFFIX,lan,DIRECT
   - "DOMAIN-REGEX,^[^.]+$,DIRECT"
 
   - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
