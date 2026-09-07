@@ -3,12 +3,12 @@
     "name": "WHITE-CIDR-RU-checked — Happ Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "3 proxies",
+      "5 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "Happ",
     "source": "WHITE-CIDR-RU-checked.txt",
-    "source_datetime": "2026-09-07 14:03 Moscow"
+    "source_datetime": "2026-09-07 20:48 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -64,87 +64,56 @@
     "servers": [
       "fakedns",
       {
-        "address": "tcp+local://8.8.8.8:53",
+        "address": "localhost",
         "domains": [
-          "full:dns.google",
-          "full:dns.quad9.net",
-          "full:dns.adguard-dns.com",
-          "full:freedns.controld.com",
-          "full:dns.mullvad.net",
-          "full:cloudflare-dns.com",
-          "full:doh.opendns.com",
-          "full:doh.libredns.gr",
-          "full:doh.dns4all.eu",
-          "full:wikimedia-dns.org",
-          "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:localhost",
+          "domain:local",
+          "domain:lan",
+          "regexp:^[^.]+$",
+          "full:asd.coteite.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
         "timeoutMs": 4000
       },
       {
-        "address": "tcp+local://8.8.4.4:53",
+        "address": "https+local://common.dot.dns.yandex.net/dns-query",
         "domains": [
-          "full:dns.google",
-          "full:dns.quad9.net",
-          "full:dns.adguard-dns.com",
-          "full:freedns.controld.com",
-          "full:dns.mullvad.net",
-          "full:cloudflare-dns.com",
-          "full:doh.opendns.com",
-          "full:doh.libredns.gr",
-          "full:doh.dns4all.eu",
-          "full:wikimedia-dns.org",
-          "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:localhost",
+          "domain:local",
+          "domain:lan",
+          "regexp:^[^.]+$"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
         "timeoutMs": 4000
       },
       {
-        "address": "tcp+local://9.9.9.9:53",
+        "address": "https+local://safe.dot.dns.yandex.net/dns-query",
         "domains": [
-          "full:dns.google",
-          "full:dns.quad9.net",
-          "full:dns.adguard-dns.com",
-          "full:freedns.controld.com",
-          "full:dns.mullvad.net",
-          "full:cloudflare-dns.com",
-          "full:doh.opendns.com",
-          "full:doh.libredns.gr",
-          "full:doh.dns4all.eu",
-          "full:wikimedia-dns.org",
-          "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:localhost",
+          "domain:local",
+          "domain:lan",
+          "regexp:^[^.]+$"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
         "timeoutMs": 4000
       },
       {
-        "address": "tcp+local://94.140.14.14:53",
+        "address": "https+local://family.dot.dns.yandex.net/dns-query",
         "domains": [
-          "full:dns.google",
-          "full:dns.quad9.net",
-          "full:dns.adguard-dns.com",
-          "full:freedns.controld.com",
-          "full:dns.mullvad.net",
-          "full:cloudflare-dns.com",
-          "full:doh.opendns.com",
-          "full:doh.libredns.gr",
-          "full:doh.dns4all.eu",
-          "full:wikimedia-dns.org",
-          "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:localhost",
+          "domain:local",
+          "domain:lan",
+          "regexp:^[^.]+$"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
         "timeoutMs": 4000
       },
       {
-        "address": "tcp+local://76.76.2.0:53",
+        "address": "tcp+local://77.88.8.1:53",
         "domains": [
           "full:dns.google",
           "full:dns.quad9.net",
@@ -157,14 +126,15 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:asd.coteite.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
         "timeoutMs": 4000
       },
       {
-        "address": "tcp+local://76.76.10.0:53",
+        "address": "tcp+local://77.88.8.2:53",
         "domains": [
           "full:dns.google",
           "full:dns.quad9.net",
@@ -177,14 +147,15 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:asd.coteite.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
         "timeoutMs": 4000
       },
       {
-        "address": "tcp+local://1.0.0.1:53",
+        "address": "tcp+local://77.88.8.3:53",
         "domains": [
           "full:dns.google",
           "full:dns.quad9.net",
@@ -197,14 +168,15 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:asd.coteite.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
         "timeoutMs": 4000
       },
       {
-        "address": "tcp+local://1.1.1.1:53",
+        "address": "tcp+local://77.88.8.7:53",
         "domains": [
           "full:dns.google",
           "full:dns.quad9.net",
@@ -217,14 +189,15 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:asd.coteite.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
         "timeoutMs": 4000
       },
       {
-        "address": "tcp+local://208.67.220.220:53",
+        "address": "tcp+local://77.88.8.8:53",
         "domains": [
           "full:dns.google",
           "full:dns.quad9.net",
@@ -237,14 +210,15 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:asd.coteite.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
         "timeoutMs": 4000
       },
       {
-        "address": "tcp+local://208.67.222.222:53",
+        "address": "tcp+local://77.88.8.88:53",
         "domains": [
           "full:dns.google",
           "full:dns.quad9.net",
@@ -257,7 +231,134 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:asd.coteite.pro"
+        ],
+        "skipFallback": true,
+        "queryStrategy": "UseIPv4",
+        "timeoutMs": 4000
+      },
+      {
+        "address": "tcp+local://89.175.167.27:53",
+        "domains": [
+          "full:dns.google",
+          "full:dns.quad9.net",
+          "full:dns.adguard-dns.com",
+          "full:freedns.controld.com",
+          "full:dns.mullvad.net",
+          "full:cloudflare-dns.com",
+          "full:doh.opendns.com",
+          "full:doh.libredns.gr",
+          "full:doh.dns4all.eu",
+          "full:wikimedia-dns.org",
+          "full:dns.hostux.net",
+          "full:blank.dnsforge.de",
+          "full:asd.coteite.pro"
+        ],
+        "skipFallback": true,
+        "queryStrategy": "UseIPv4",
+        "timeoutMs": 4000
+      },
+      {
+        "address": "tcp+local://94.72.28.59:53",
+        "domains": [
+          "full:dns.google",
+          "full:dns.quad9.net",
+          "full:dns.adguard-dns.com",
+          "full:freedns.controld.com",
+          "full:dns.mullvad.net",
+          "full:cloudflare-dns.com",
+          "full:doh.opendns.com",
+          "full:doh.libredns.gr",
+          "full:doh.dns4all.eu",
+          "full:wikimedia-dns.org",
+          "full:dns.hostux.net",
+          "full:blank.dnsforge.de",
+          "full:asd.coteite.pro"
+        ],
+        "skipFallback": true,
+        "queryStrategy": "UseIPv4",
+        "timeoutMs": 4000
+      },
+      {
+        "address": "tcp+local://95.31.212.206:53",
+        "domains": [
+          "full:dns.google",
+          "full:dns.quad9.net",
+          "full:dns.adguard-dns.com",
+          "full:freedns.controld.com",
+          "full:dns.mullvad.net",
+          "full:cloudflare-dns.com",
+          "full:doh.opendns.com",
+          "full:doh.libredns.gr",
+          "full:doh.dns4all.eu",
+          "full:wikimedia-dns.org",
+          "full:dns.hostux.net",
+          "full:blank.dnsforge.de",
+          "full:asd.coteite.pro"
+        ],
+        "skipFallback": true,
+        "queryStrategy": "UseIPv4",
+        "timeoutMs": 4000
+      },
+      {
+        "address": "tcp+local://82.140.107.246:53",
+        "domains": [
+          "full:dns.google",
+          "full:dns.quad9.net",
+          "full:dns.adguard-dns.com",
+          "full:freedns.controld.com",
+          "full:dns.mullvad.net",
+          "full:cloudflare-dns.com",
+          "full:doh.opendns.com",
+          "full:doh.libredns.gr",
+          "full:doh.dns4all.eu",
+          "full:wikimedia-dns.org",
+          "full:dns.hostux.net",
+          "full:blank.dnsforge.de",
+          "full:asd.coteite.pro"
+        ],
+        "skipFallback": true,
+        "queryStrategy": "UseIPv4",
+        "timeoutMs": 4000
+      },
+      {
+        "address": "tcp+local://83.149.26.2:53",
+        "domains": [
+          "full:dns.google",
+          "full:dns.quad9.net",
+          "full:dns.adguard-dns.com",
+          "full:freedns.controld.com",
+          "full:dns.mullvad.net",
+          "full:cloudflare-dns.com",
+          "full:doh.opendns.com",
+          "full:doh.libredns.gr",
+          "full:doh.dns4all.eu",
+          "full:wikimedia-dns.org",
+          "full:dns.hostux.net",
+          "full:blank.dnsforge.de",
+          "full:asd.coteite.pro"
+        ],
+        "skipFallback": true,
+        "queryStrategy": "UseIPv4",
+        "timeoutMs": 4000
+      },
+      {
+        "address": "tcp+local://188.162.79.131:53",
+        "domains": [
+          "full:dns.google",
+          "full:dns.quad9.net",
+          "full:dns.adguard-dns.com",
+          "full:freedns.controld.com",
+          "full:dns.mullvad.net",
+          "full:cloudflare-dns.com",
+          "full:doh.opendns.com",
+          "full:doh.libredns.gr",
+          "full:doh.dns4all.eu",
+          "full:wikimedia-dns.org",
+          "full:dns.hostux.net",
+          "full:blank.dnsforge.de",
+          "full:asd.coteite.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -345,11 +446,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
-            "port": 443,
+            "address": "asd.coteite.pro",
+            "port": 14443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
+                "id": "02f3a6a2-289e-4026-8e26-616d47e0914f",
                 "encryption": "none"
               }
             ]
@@ -357,23 +458,24 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com",
-          "mode": "stream-one"
+        "wsSettings": {
+          "path": "/tzws",
+          "headers": {
+            "Host": "asd.coteite.pro"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "asd.coteite.pro",
           "fingerprint": "android",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d",
-          "spiderX": "/"
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -383,11 +485,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
-            "port": 443,
+            "address": "asd.coteite.pro",
+            "port": 14443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
+                "id": "02f3a6a2-289e-4026-8e26-616d47e0914f",
                 "encryption": "none"
               }
             ]
@@ -395,23 +497,24 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com",
-          "mode": "stream-one"
+        "wsSettings": {
+          "path": "/tzws",
+          "headers": {
+            "Host": "asd.coteite.pro"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "asd.coteite.pro",
           "fingerprint": "chrome",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d",
-          "spiderX": "/"
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -421,11 +524,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
-            "port": 443,
+            "address": "asd.coteite.pro",
+            "port": 14443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
+                "id": "02f3a6a2-289e-4026-8e26-616d47e0914f",
                 "encryption": "none"
               }
             ]
@@ -433,23 +536,102 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com",
-          "mode": "stream-one"
+        "wsSettings": {
+          "path": "/tzws",
+          "headers": {
+            "Host": "asd.coteite.pro"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "qq",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d",
-          "spiderX": "/"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "asd.coteite.pro",
+          "fingerprint": "edge",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-004",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "asd.coteite.pro",
+            "port": 14443,
+            "users": [
+              {
+                "id": "02f3a6a2-289e-4026-8e26-616d47e0914f",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/tzws",
+          "headers": {
+            "Host": "asd.coteite.pro"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "asd.coteite.pro",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-005",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "asd.coteite.pro",
+            "port": 14443,
+            "users": [
+              {
+                "id": "02f3a6a2-289e-4026-8e26-616d47e0914f",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/tzws",
+          "headers": {
+            "Host": "asd.coteite.pro"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "asd.coteite.pro",
+          "fingerprint": "safari",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -520,6 +702,7 @@
         "domain": [
           "full:localhost",
           "domain:local",
+          "domain:lan",
           "regexp:^[^.]+$"
         ],
         "outboundTag": "direct"
