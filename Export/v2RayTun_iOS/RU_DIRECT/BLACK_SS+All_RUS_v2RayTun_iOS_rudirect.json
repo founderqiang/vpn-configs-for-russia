@@ -142,7 +142,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "108.165.236.142",
+            "address": "13.140.28.46",
             "port": 443,
             "users": [
               {
@@ -167,7 +167,9 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {}
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
       }
     },
     {
@@ -176,11 +178,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "nlp1.hupcloud.com",
-            "port": 1070,
+            "address": "95.85.233.138",
+            "port": 443,
             "users": [
               {
-                "id": "da410df7-cde1-415c-a46e-87637e9748f9",
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -189,15 +191,20 @@
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
           }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
         }
       }
     },
@@ -207,11 +214,47 @@
       "settings": {
         "vnext": [
           {
-            "address": "156.245.232.239",
-            "port": 35043,
+            "address": "64.188.97.153",
+            "port": 443,
             "users": [
               {
-                "id": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-005",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "143.14.189.125",
+            "port": 21316,
+            "users": [
+              {
+                "id": "116f6ecd-275e-4b50-921d-780e78a526cb",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -232,47 +275,16 @@
       }
     },
     {
-      "tag": "igareck-node-005",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "156.226.183.181",
-            "port": 54321,
-            "users": [
-              {
-                "id": "d3bcc1f1-6294-4f68-bcf3-c3bcb2001520",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      }
-    },
-    {
       "tag": "igareck-node-006",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "156.245.232.239",
-            "port": 35043,
+            "address": "143.14.189.125",
+            "port": 21316,
             "users": [
               {
-                "id": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+                "id": "116f6ecd-275e-4b50-921d-780e78a526cb",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -298,11 +310,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "156.245.232.239",
-            "port": 35043,
+            "address": "143.14.189.125",
+            "port": 21316,
             "users": [
               {
-                "id": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+                "id": "116f6ecd-275e-4b50-921d-780e78a526cb",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -328,11 +340,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "156.245.232.239",
-            "port": 35043,
+            "address": "143.14.189.125",
+            "port": 21316,
             "users": [
               {
-                "id": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+                "id": "116f6ecd-275e-4b50-921d-780e78a526cb",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -349,7 +361,7 @@
         "wsSettings": {
           "path": "/",
           "headers": {
-            "Host": "156.245.232.239"
+            "Host": "pull.free.video.10010.com"
           }
         }
       }
@@ -360,11 +372,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "156.245.232.239",
-            "port": 35043,
+            "address": "143.14.189.125",
+            "port": 21316,
             "users": [
               {
-                "id": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+                "id": "116f6ecd-275e-4b50-921d-780e78a526cb",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -381,7 +393,7 @@
         "wsSettings": {
           "path": "/",
           "headers": {
-            "Host": "156.245.232.239"
+            "Host": "pull.free.video.10010.com"
           }
         }
       }
@@ -392,11 +404,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "156.245.232.239",
-            "port": 35043,
+            "address": "143.14.189.125",
+            "port": 21316,
             "users": [
               {
-                "id": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+                "id": "116f6ecd-275e-4b50-921d-780e78a526cb",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -412,7 +424,9 @@
         },
         "wsSettings": {
           "path": "/",
-          "headers": {}
+          "headers": {
+            "Host": "pull.free.video.10010.com"
+          }
         }
       }
     },
@@ -422,11 +436,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "156.245.232.239",
-            "port": 35043,
+            "address": "118.193.57.167",
+            "port": 49667,
             "users": [
               {
-                "id": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+                "id": "d46bf492-45f4-4c33-82d1-ea2a1cb54eb6",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -441,10 +455,8 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/",
-          "headers": {
-            "Host": "www.pubgmobile.com"
-          }
+          "path": "/d46bf492",
+          "headers": {}
         }
       }
     },
@@ -454,11 +466,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "ex1ogt73nzpqkac2.v.3dns.vip",
-            "port": 443,
+            "address": "118.193.57.167",
+            "port": 49667,
             "users": [
               {
-                "id": "f23bb427c1f94373876c2f43e9f790f3",
+                "id": "d46bf492-45f4-4c33-82d1-ea2a1cb54eb6",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -473,14 +485,8 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/ws-vmess",
-          "headers": {
-            "Host": "EX1oGt73NzPQKAc2.v.3dns.vip"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "EX1oGt73NzPQKAc2.v.3dns.vip"
+          "path": "/d46bf492",
+          "headers": {}
         }
       }
     },
@@ -490,11 +496,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "143.14.189.125",
-            "port": 21316,
+            "address": "172.64.80.1",
+            "port": 8443,
             "users": [
               {
-                "id": "116f6ecd-275e-4b50-921d-780e78a526cb",
+                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -509,8 +515,14 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/",
-          "headers": {}
+          "path": "/lMnsZUN4/",
+          "headers": {
+            "Host": "v2ray1.dozapp.xyz"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "v2ray1.dozapp.xyz"
         }
       }
     },
@@ -520,11 +532,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "143.14.189.125",
-            "port": 21316,
+            "address": "172.64.80.1",
+            "port": 8443,
             "users": [
               {
-                "id": "116f6ecd-275e-4b50-921d-780e78a526cb",
+                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -539,9 +551,13 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/",
-          "headers": {}
-        }
+          "path": "/lMnsZUN4/",
+          "headers": {
+            "Host": "v2ray1.dozapp.xyz"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
       }
     },
     {
@@ -550,11 +566,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "143.14.189.125",
-            "port": 21316,
+            "address": "chatgpt.com",
+            "port": 8443,
             "users": [
               {
-                "id": "116f6ecd-275e-4b50-921d-780e78a526cb",
+                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -569,9 +585,13 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/",
-          "headers": {}
-        }
+          "path": "/lMnsZUN4/",
+          "headers": {
+            "Host": "v2ray1.dozapp.xyz"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
       }
     },
     {
@@ -580,11 +600,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "143.14.189.125",
-            "port": 21316,
+            "address": "chatgpt.com",
+            "port": 8443,
             "users": [
               {
-                "id": "116f6ecd-275e-4b50-921d-780e78a526cb",
+                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -599,10 +619,14 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/",
+          "path": "/lMnsZUN4/",
           "headers": {
-            "Host": "pull.free.video.10010.com"
+            "Host": "v2ray1.dozapp.xyz"
           }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "v2ray1.dozapp.xyz"
         }
       }
     },
@@ -612,11 +636,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "143.14.189.125",
-            "port": 21316,
+            "address": "172.64.80.1",
+            "port": 8443,
             "users": [
               {
-                "id": "116f6ecd-275e-4b50-921d-780e78a526cb",
+                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -631,10 +655,14 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/",
+          "path": "/lMnsZUN4/",
           "headers": {
-            "Host": "pull.free.video.10010.com"
+            "Host": "v2ray1.dozapp.xyz"
           }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "v2ray1.dozapp.xyz"
         }
       }
     },
@@ -644,11 +672,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "143.14.189.125",
-            "port": 21316,
+            "address": "172.64.80.1",
+            "port": 8443,
             "users": [
               {
-                "id": "116f6ecd-275e-4b50-921d-780e78a526cb",
+                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -663,28 +691,24 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/",
+          "path": "/lMnsZUN4/",
           "headers": {
-            "Host": "pull.free.video.10010.com"
+            "Host": "v2ray1.dozapp.xyz"
           }
-        }
+        },
+        "security": "tls",
+        "tlsSettings": {}
       }
     },
     {
       "tag": "igareck-node-019",
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "118.193.57.167",
-            "port": 49667,
-            "users": [
-              {
-                "id": "d46bf492-45f4-4c33-82d1-ea2a1cb54eb6",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
+            "address": "www.speedtest.net",
+            "port": 443,
+            "password": "c0c17d1da2c2c9299d5094c8"
           }
         ]
       },
@@ -695,26 +719,30 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/d46bf492",
-          "headers": {}
+          "path": "/eyJqdW5rIjoia1pyRFFaUlU0eSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+          "headers": {
+            "Host": "ez-3e9698.ezaccess1ec1f0c.workers.dev"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ez-3e9698.ezaccess1ec1f0c.workers.dev",
+          "fingerprint": "android",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
     {
       "tag": "igareck-node-020",
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "118.193.57.167",
-            "port": 49667,
-            "users": [
-              {
-                "id": "d46bf492-45f4-4c33-82d1-ea2a1cb54eb6",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
+            "address": "www.speedtest.net",
+            "port": 443,
+            "password": "c0c17d1da2c2c9299d5094c8"
           }
         ]
       },
@@ -725,216 +753,18 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/d46bf492",
-          "headers": {}
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-021",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.80.1",
-            "port": 8443,
-            "users": [
-              {
-                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/lMnsZUN4/",
+          "path": "/eyJqdW5rIjoia1pyRFFaUlU0eSIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
           "headers": {
-            "Host": "v2ray1.dozapp.xyz"
+            "Host": "ez-3e9698.ezaccess1ec1f0c.workers.dev"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "v2ray1.dozapp.xyz"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-022",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.80.1",
-            "port": 8443,
-            "users": [
-              {
-                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/lMnsZUN4/",
-          "headers": {
-            "Host": "v2ray1.dozapp.xyz"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-023",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "chatgpt.com",
-            "port": 8443,
-            "users": [
-              {
-                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/lMnsZUN4/",
-          "headers": {
-            "Host": "v2ray1.dozapp.xyz"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-024",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.80.1",
-            "port": 8443,
-            "users": [
-              {
-                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/lMnsZUN4/",
-          "headers": {
-            "Host": "v2ray1.dozapp.xyz"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "v2ray1.dozapp.xyz"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-025",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.80.1",
-            "port": 8443,
-            "users": [
-              {
-                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/lMnsZUN4/",
-          "headers": {
-            "Host": "v2ray1.dozapp.xyz"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-026",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "chatgpt.com",
-            "port": 8443,
-            "users": [
-              {
-                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/lMnsZUN4/",
-          "headers": {}
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "v2ray1.dozapp.xyz"
+          "serverName": "ez-3e9698.ezaccess1ec1f0c.workers.dev",
+          "fingerprint": "chrome",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
