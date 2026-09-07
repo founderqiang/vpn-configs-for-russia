@@ -2,14 +2,14 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-SNI-RU-all.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
-# Количество/Quantity: 7
-# Date/Time: 2026-09-07 / 21:53 (Moscow)
+# Количество/Quantity: 9
+# Date/Time: 2026-09-07 / 22:58 (Moscow)
 #
 # Не содержит никаких настроек, только список прокси / No settings, just proxies list;
 # ============================================================
 
 proxies:
-- name: Igareck Node 001 | 🇳🇱 The Netherlands | [SNI-RU] max.ru
+- name: Igareck Node 001 | 🇳🇱 The Netherlands [SNI-RU] max.ru
   type: vless
   server: "\x75\x6e\x6c\x69\x6d\x69\x74\x65\x64\x2e\x67\x72\x75\x7a\x74\x72\x61\x63\x6b\x2e\x6f\x6e\x6c\x69\x6e\x65"
   port: 8080
@@ -77,6 +77,21 @@ proxies:
   udp: true
   tls: true
   servername: "\x6d\x61\x78\x2e\x72\x75"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: 0iAwNpu3TAZxNlRX8gSiYPbx-S-P12fYe5h_xAxoWAQ
+    short-id: "6d6f13013d3e1d0c"
+  network: xhttp
+  xhttp-opts:
+    mode: packet-up
+- name: Igareck Node 006 | 🇳🇱 The Netherlands [SNI-RU] max.ru
+  type: vless
+  server: "\x75\x6e\x6c\x69\x6d\x69\x74\x65\x64\x2e\x67\x72\x75\x7a\x74\x72\x61\x63\x6b\x2e\x6f\x6e\x6c\x69\x6e\x65"
+  port: 8080
+  uuid: "\x36\x65\x33\x34\x61\x34\x65\x61\x2d\x66\x39\x35\x30\x2d\x34\x39\x30\x64\x2d\x39\x32\x66\x36\x2d\x35\x31\x62\x36\x34\x61\x64\x35\x63\x31\x33\x33"
+  udp: true
+  tls: true
+  servername: "\x6d\x61\x78\x2e\x72\x75"
   client-fingerprint: safari
   reality-opts:
     public-key: 0iAwNpu3TAZxNlRX8gSiYPbx-S-P12fYe5h_xAxoWAQ
@@ -84,7 +99,7 @@ proxies:
   network: xhttp
   xhttp-opts:
     mode: packet-up
-- name: Igareck Node 006 | 🇩🇪 Germany [SNI-RU] vkvideo.ru
+- name: Igareck Node 007 | 🇩🇪 Germany [SNI-RU] vkvideo.ru
   type: hysteria2
   server: "\x31\x39\x34\x2e\x38\x37\x2e\x35\x35\x2e\x39\x30"
   port: 443
@@ -94,13 +109,23 @@ proxies:
   alpn:
   - h3
   skip-cert-verify: true
-- name: Igareck Node 007 | 🇺🇸 United States [SNI-RU] vk.com
+- name: Igareck Node 008 | 🇺🇸 United States [SNI-RU] vk.com
   type: hysteria2
   server: "\x32\x30\x34\x2e\x31\x35\x32\x2e\x32\x32\x31\x2e\x31\x31\x39"
   port: 4434
   password: 28a91bb2-51fe-48e1-9865-ec8bc9e48890
   udp: true
   sni: vk.com
+  alpn:
+  - h3
+  skip-cert-verify: true
+- name: Igareck Node 009 | 🇺🇸 United States [SNI-RU] www.kinopoisk.ru
+  type: hysteria2
+  server: "\x31\x30\x38\x2e\x35\x39\x2e\x32\x34\x34\x2e\x31\x35\x38"
+  port: 443
+  password: cf5282e985104cb2f5b7ad111a580e2e
+  udp: true
+  sni: www.kinopoisk.ru
   alpn:
   - h3
   skip-cert-verify: true
