@@ -58,8 +58,7 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$",
-          "full:unlimited.gruztrack.online"
+          "regexp:^[^.]+$"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -115,8 +114,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:unlimited.gruztrack.online"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -136,8 +134,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:unlimited.gruztrack.online"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -157,8 +154,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:unlimited.gruztrack.online"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -178,8 +174,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:unlimited.gruztrack.online"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -199,8 +194,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:unlimited.gruztrack.online"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -220,8 +214,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:unlimited.gruztrack.online"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -241,8 +234,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:unlimited.gruztrack.online"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -262,8 +254,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:unlimited.gruztrack.online"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -283,8 +274,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:unlimited.gruztrack.online"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -304,8 +294,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:unlimited.gruztrack.online"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -325,8 +314,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:unlimited.gruztrack.online"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -346,8 +334,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:unlimited.gruztrack.online"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -437,33 +424,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "unlimited.gruztrack.online",
-            "port": 8080,
+            "address": "82.47.169.62",
+            "port": 443,
             "users": [
               {
-                "id": "6e34a4ea-f950-490d-92f6-51b64ad5c133",
-                "encryption": "none"
+                "id": "efc14823-8fc1-4174-8b33-e245ec58ce92",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "mode": "packet-up"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "chrome",
-          "publicKey": "0iAwNpu3TAZxNlRX8gSiYPbx-S-P12fYe5h_xAxoWAQ",
-          "shortId": "6d6f13013d3e1d0c"
+          "serverName": "www.yandex.ru",
+          "fingerprint": "android",
+          "publicKey": "ZKd5bjQ8ACciPQo_0ol7WEkUYUjGXaK9fMciQkFurF4",
+          "shortId": "b4c823"
         }
       }
     },
@@ -473,33 +462,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "unlimited.gruztrack.online",
-            "port": 8080,
+            "address": "82.47.169.62",
+            "port": 443,
             "users": [
               {
-                "id": "6e34a4ea-f950-490d-92f6-51b64ad5c133",
-                "encryption": "none"
+                "id": "efc14823-8fc1-4174-8b33-e245ec58ce92",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "mode": "packet-up"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "edge",
-          "publicKey": "0iAwNpu3TAZxNlRX8gSiYPbx-S-P12fYe5h_xAxoWAQ",
-          "shortId": "6d6f13013d3e1d0c"
+          "serverName": "www.yandex.ru",
+          "fingerprint": "chrome",
+          "publicKey": "ZKd5bjQ8ACciPQo_0ol7WEkUYUjGXaK9fMciQkFurF4",
+          "shortId": "b4c823"
         }
       }
     },
@@ -509,33 +500,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "unlimited.gruztrack.online",
-            "port": 8080,
+            "address": "82.47.169.62",
+            "port": 443,
             "users": [
               {
-                "id": "6e34a4ea-f950-490d-92f6-51b64ad5c133",
-                "encryption": "none"
+                "id": "efc14823-8fc1-4174-8b33-e245ec58ce92",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "mode": "packet-up"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "firefox",
-          "publicKey": "0iAwNpu3TAZxNlRX8gSiYPbx-S-P12fYe5h_xAxoWAQ",
-          "shortId": "6d6f13013d3e1d0c"
+          "serverName": "www.yandex.ru",
+          "fingerprint": "edge",
+          "publicKey": "ZKd5bjQ8ACciPQo_0ol7WEkUYUjGXaK9fMciQkFurF4",
+          "shortId": "b4c823"
         }
       }
     },
@@ -545,33 +538,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "unlimited.gruztrack.online",
-            "port": 8080,
+            "address": "82.47.169.62",
+            "port": 443,
             "users": [
               {
-                "id": "6e34a4ea-f950-490d-92f6-51b64ad5c133",
-                "encryption": "none"
+                "id": "efc14823-8fc1-4174-8b33-e245ec58ce92",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "mode": "packet-up"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "ios",
-          "publicKey": "0iAwNpu3TAZxNlRX8gSiYPbx-S-P12fYe5h_xAxoWAQ",
-          "shortId": "6d6f13013d3e1d0c"
+          "serverName": "www.yandex.ru",
+          "fingerprint": "firefox",
+          "publicKey": "ZKd5bjQ8ACciPQo_0ol7WEkUYUjGXaK9fMciQkFurF4",
+          "shortId": "b4c823"
         }
       }
     },
@@ -581,69 +576,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "unlimited.gruztrack.online",
-            "port": 8080,
+            "address": "82.47.169.62",
+            "port": 443,
             "users": [
               {
-                "id": "6e34a4ea-f950-490d-92f6-51b64ad5c133",
-                "encryption": "none"
+                "id": "efc14823-8fc1-4174-8b33-e245ec58ce92",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "mode": "packet-up"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
+          "serverName": "www.yandex.ru",
           "fingerprint": "qq",
-          "publicKey": "0iAwNpu3TAZxNlRX8gSiYPbx-S-P12fYe5h_xAxoWAQ",
-          "shortId": "6d6f13013d3e1d0c"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-006",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "unlimited.gruztrack.online",
-            "port": 8080,
-            "users": [
-              {
-                "id": "6e34a4ea-f950-490d-92f6-51b64ad5c133",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/",
-          "mode": "packet-up"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "safari",
-          "publicKey": "0iAwNpu3TAZxNlRX8gSiYPbx-S-P12fYe5h_xAxoWAQ",
-          "shortId": "6d6f13013d3e1d0c"
+          "publicKey": "ZKd5bjQ8ACciPQo_0ol7WEkUYUjGXaK9fMciQkFurF4",
+          "shortId": "b4c823"
         }
       }
     },
