@@ -58,7 +58,8 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$"
+          "regexp:^[^.]+$",
+          "full:cdn2.24lider.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -114,7 +115,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:cdn2.24lider.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -134,7 +136,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:cdn2.24lider.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -154,7 +157,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:cdn2.24lider.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -174,7 +178,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:cdn2.24lider.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -194,7 +199,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:cdn2.24lider.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -214,7 +220,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:cdn2.24lider.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -234,7 +241,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:cdn2.24lider.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -254,7 +262,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:cdn2.24lider.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -274,7 +283,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:cdn2.24lider.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -294,7 +304,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:cdn2.24lider.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -314,7 +325,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:cdn2.24lider.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -334,7 +346,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:cdn2.24lider.ru"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -424,33 +437,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
+            "address": "cdn2.24lider.ru",
             "port": 443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
+                "id": "d4719d52-c3fc-4651-98e1-535dbd77dbcf",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "edge",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cdn2.24lider.ru",
+          "fingerprint": "android"
         }
       }
     },
@@ -460,33 +473,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
+            "address": "cdn2.24lider.ru",
             "port": 443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
+                "id": "d4719d52-c3fc-4651-98e1-535dbd77dbcf",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "ios",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cdn2.24lider.ru",
+          "fingerprint": "edge"
         }
       }
     },
@@ -496,33 +509,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
+            "address": "cdn2.24lider.ru",
             "port": 443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
+                "id": "d4719d52-c3fc-4651-98e1-535dbd77dbcf",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "qq",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cdn2.24lider.ru",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -532,33 +545,69 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
+            "address": "cdn2.24lider.ru",
             "port": 443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
+                "id": "d4719d52-c3fc-4651-98e1-535dbd77dbcf",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "safari",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cdn2.24lider.ru",
+          "fingerprint": "ios"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-005",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "cdn2.24lider.ru",
+            "port": 443,
+            "users": [
+              {
+                "id": "d4719d52-c3fc-4651-98e1-535dbd77dbcf",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cdn2.24lider.ru",
+          "fingerprint": "qq"
         }
       }
     },
