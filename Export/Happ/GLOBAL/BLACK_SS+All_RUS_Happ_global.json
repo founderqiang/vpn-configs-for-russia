@@ -8,7 +8,7 @@
     ],
     "client": "Happ",
     "source": "BLACK_SS+All_RUS.txt",
-    "source_datetime": "2026-09-13 04:43 Moscow"
+    "source_datetime": "2026-09-13 06:18 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -372,11 +372,47 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.103.28.247",
-            "port": 54555,
+            "address": "80.240.252.241",
+            "port": 443,
             "users": [
               {
-                "id": "e57e9bb4-a442-44dd-a4bb-2aac72cfd1f2",
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-003",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "47.85.188.30",
+            "port": 12004,
+            "users": [
+              {
+                "id": "8b5552bd-4cc7-4cac-af08-81c21686fd4f",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -398,7 +434,41 @@
       }
     },
     {
-      "tag": "igareck-node-003",
+      "tag": "igareck-node-004",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "193.23.118.195",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
+      "tag": "igareck-node-005",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -434,82 +504,12 @@
       }
     },
     {
-      "tag": "igareck-node-004",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "2.27.16.177",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-005",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "212.87.220.98",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
-      }
-    },
-    {
       "tag": "igareck-node-006",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "212.95.34.195",
+            "address": "2.27.54.132",
             "port": 443,
             "users": [
               {
@@ -543,7 +543,41 @@
       "settings": {
         "vnext": [
           {
-            "address": "212.95.34.195",
+            "address": "2.27.16.177",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
+      "tag": "igareck-node-008",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "212.80.218.89",
             "port": 443,
             "users": [
               {
@@ -571,40 +605,6 @@
         "tlsSettings": {
           "serverName": "renderer-stream-2-62.mirra.now"
         }
-      }
-    },
-    {
-      "tag": "igareck-node-008",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "212.43.156.143",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
       }
     },
     {
@@ -742,7 +742,9 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {}
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
       }
     },
     {
@@ -751,7 +753,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "111.88.74.167",
+            "address": "185.137.223.71",
             "port": 443,
             "users": [
               {
@@ -777,8 +779,7 @@
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now",
-          "fingerprint": "chrome"
+          "serverName": "renderer-stream-2-62.mirra.now"
         }
       }
     },
@@ -822,7 +823,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.137.223.71",
+            "address": "185.230.190.29",
             "port": 443,
             "users": [
               {
@@ -847,9 +848,7 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
+        "tlsSettings": {}
       }
     },
     {
@@ -883,7 +882,9 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {}
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
       }
     },
     {
@@ -892,7 +893,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.230.190.29",
+            "address": "185.232.204.222",
             "port": 443,
             "users": [
               {
@@ -917,9 +918,7 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
+        "tlsSettings": {}
       }
     },
     {
@@ -953,7 +952,9 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {}
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
       }
     },
     {
@@ -962,7 +963,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.232.204.222",
+            "address": "185.233.203.113",
             "port": 443,
             "users": [
               {
@@ -998,7 +999,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.99.2.175",
+            "address": "185.92.74.108",
             "port": 443,
             "users": [
               {
@@ -1104,7 +1105,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "188.253.25.172",
+            "address": "194.164.192.16",
             "port": 443,
             "users": [
               {
@@ -1140,7 +1141,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "194.164.192.16",
+            "address": "194.87.71.141",
             "port": 443,
             "users": [
               {
@@ -1176,7 +1177,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "194.87.71.141",
+            "address": "194.226.142.120",
             "port": 443,
             "users": [
               {
@@ -1201,9 +1202,7 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
+        "tlsSettings": {}
       }
     },
     {
@@ -1212,7 +1211,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "194.226.142.120",
+            "address": "195.19.20.80",
             "port": 443,
             "users": [
               {
@@ -1248,7 +1247,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "194.226.142.120",
+            "address": "195.85.23.225",
             "port": 443,
             "users": [
               {
@@ -1307,7 +1306,9 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {}
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
       }
     },
     {
@@ -1352,7 +1353,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.180.211.155",
+            "address": "193.181.212.81",
             "port": 443,
             "users": [
               {
@@ -1456,7 +1457,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "132.243.22.80",
+            "address": "13.140.28.46",
             "port": 443,
             "users": [
               {
@@ -1526,41 +1527,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "144.225.130.23",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-036",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "168.100.9.81",
+            "address": "132.243.22.80",
             "port": 443,
             "users": [
               {
@@ -1591,7 +1558,177 @@
       }
     },
     {
+      "tag": "igareck-node-036",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "144.225.130.23",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
       "tag": "igareck-node-037",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "145.63.134.175",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
+      "tag": "igareck-node-038",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "147.45.125.231",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
+      "tag": "igareck-node-039",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "31.57.241.56",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
+      "tag": "igareck-node-040",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "31.77.223.21",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
+      "tag": "igareck-node-041",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -1627,43 +1764,7 @@
       }
     },
     {
-      "tag": "igareck-node-038",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.138.72.141",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-039",
+      "tag": "igareck-node-042",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -1699,7 +1800,7 @@
       }
     },
     {
-      "tag": "igareck-node-040",
+      "tag": "igareck-node-043",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -1735,7 +1836,7 @@
       }
     },
     {
-      "tag": "igareck-node-041",
+      "tag": "igareck-node-044",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -1769,7 +1870,7 @@
       }
     },
     {
-      "tag": "igareck-node-042",
+      "tag": "igareck-node-045",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -1805,7 +1906,7 @@
       }
     },
     {
-      "tag": "igareck-node-043",
+      "tag": "igareck-node-046",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -1841,7 +1942,7 @@
       }
     },
     {
-      "tag": "igareck-node-044",
+      "tag": "igareck-node-047",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -1875,116 +1976,12 @@
       }
     },
     {
-      "tag": "igareck-node-045",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "64.188.106.254",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-046",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "64.188.106.254",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-047",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "64.188.117.165",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
       "tag": "igareck-node-048",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "64.188.117.165",
+            "address": "64.188.106.254",
             "port": 443,
             "users": [
               {
@@ -2020,7 +2017,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "64.188.82.159",
+            "address": "64.188.106.254",
             "port": 443,
             "users": [
               {
@@ -2045,7 +2042,9 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {}
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
       }
     },
     {
@@ -2054,7 +2053,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "5.101.122.59",
+            "address": "64.188.97.153",
             "port": 443,
             "users": [
               {
@@ -2113,9 +2112,7 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
+        "tlsSettings": {}
       }
     },
     {
@@ -2253,11 +2250,81 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {}
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
       }
     },
     {
       "tag": "igareck-node-056",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "82.139.242.5",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
+      "tag": "igareck-node-057",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "89.127.218.61",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
+      "tag": "igareck-node-058",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -2293,7 +2360,7 @@
       }
     },
     {
-      "tag": "igareck-node-057",
+      "tag": "igareck-node-059",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -2327,7 +2394,7 @@
       }
     },
     {
-      "tag": "igareck-node-058",
+      "tag": "igareck-node-060",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -2361,7 +2428,43 @@
       }
     },
     {
-      "tag": "igareck-node-059",
+      "tag": "igareck-node-061",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "85.215.41.19",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-062",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -2395,116 +2498,12 @@
       }
     },
     {
-      "tag": "igareck-node-060",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "85.159.228.232",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-061",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "94.177.51.198",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-062",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "94.159.105.148",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
-      }
-    },
-    {
       "tag": "igareck-node-063",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "94.159.110.41",
+            "address": "85.159.228.232",
             "port": 443,
             "users": [
               {
@@ -2540,7 +2539,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.182.94.210",
+            "address": "85.159.228.232",
             "port": 443,
             "users": [
               {
@@ -2574,7 +2573,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.164.90.133",
+            "address": "91.217.76.237",
             "port": 443,
             "users": [
               {
@@ -2610,7 +2609,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.81.126.119",
+            "address": "94.177.51.198",
             "port": 443,
             "users": [
               {
@@ -2644,7 +2643,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.85.233.138",
+            "address": "94.177.51.198",
             "port": 443,
             "users": [
               {
@@ -2680,6 +2679,110 @@
       "settings": {
         "vnext": [
           {
+            "address": "94.159.105.148",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-069",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.182.94.210",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
+      "tag": "igareck-node-070",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.81.126.119",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
+      "tag": "igareck-node-071",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
             "address": "95.85.233.138",
             "port": 443,
             "users": [
@@ -2709,7 +2812,7 @@
       }
     },
     {
-      "tag": "igareck-node-069",
+      "tag": "igareck-node-072",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -2743,12 +2846,12 @@
       }
     },
     {
-      "tag": "igareck-node-070",
+      "tag": "igareck-node-073",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "64.188.106.254",
+            "address": "64.188.117.165",
             "port": 443,
             "users": [
               {
@@ -2768,16 +2871,16 @@
         },
         "wsSettings": {
           "path": "/api/v1/gpu-stream/socket",
-          "headers": {}
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
         },
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
+        "tlsSettings": {}
       }
     },
     {
-      "tag": "igareck-node-071",
+      "tag": "igareck-node-074",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -2813,118 +2916,12 @@
       }
     },
     {
-      "tag": "igareck-node-072",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "64.188.97.153",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-073",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "64.188.97.153",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-074",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "85.215.41.19",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
       "tag": "igareck-node-075",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "95.85.233.138",
+            "address": "64.188.97.153",
             "port": 443,
             "users": [
               {
@@ -2960,41 +2957,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.85.233.138",
-            "port": 443,
-            "users": [
-              {
-                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/api/v1/gpu-stream/socket",
-          "headers": {}
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-077",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.85.233.138",
+            "address": "80.74.25.110",
             "port": 443,
             "users": [
               {
@@ -3025,12 +2988,46 @@
       }
     },
     {
+      "tag": "igareck-node-077",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "85.215.41.19",
+            "port": 443,
+            "users": [
+              {
+                "id": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/api/v1/gpu-stream/socket",
+          "headers": {
+            "Host": "renderer-stream-2-62.mirra.now"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {}
+      }
+    },
+    {
       "tag": "igareck-node-078",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "95.182.94.210",
+            "address": "95.85.233.138",
             "port": 443,
             "users": [
               {
@@ -3066,7 +3063,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "13.140.28.46",
+            "address": "95.85.233.138",
             "port": 443,
             "users": [
               {
@@ -3086,9 +3083,7 @@
         },
         "wsSettings": {
           "path": "/api/v1/gpu-stream/socket",
-          "headers": {
-            "Host": "renderer-stream-2-62.mirra.now"
-          }
+          "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
@@ -3102,7 +3097,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "147.45.125.231",
+            "address": "95.182.94.210",
             "port": 443,
             "users": [
               {
@@ -3138,7 +3133,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "144.225.130.23",
+            "address": "111.88.74.167",
             "port": 443,
             "users": [
               {
@@ -3163,9 +3158,7 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
+        "tlsSettings": {}
       }
     },
     {
@@ -3174,7 +3167,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "145.63.134.175",
+            "address": "13.140.28.46",
             "port": 443,
             "users": [
               {
@@ -3210,7 +3203,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.248.75.57",
+            "address": "147.45.125.231",
             "port": 443,
             "users": [
               {
@@ -3246,7 +3239,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "172.98.207.58",
+            "address": "144.225.130.23",
             "port": 443,
             "users": [
               {
@@ -3282,7 +3275,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.233.203.113",
+            "address": "145.63.134.175",
             "port": 443,
             "users": [
               {
@@ -3307,7 +3300,9 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {}
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
       }
     },
     {
@@ -3316,7 +3311,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "193.23.118.195",
+            "address": "178.248.75.57",
             "port": 443,
             "users": [
               {
@@ -3341,7 +3336,9 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {}
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
       }
     },
     {
@@ -3350,7 +3347,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "2.27.16.177",
+            "address": "172.98.207.58",
             "port": 443,
             "users": [
               {
@@ -3386,7 +3383,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "212.43.156.143",
+            "address": "193.23.118.195",
             "port": 443,
             "users": [
               {
@@ -3447,9 +3444,7 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
+        "tlsSettings": {}
       }
     },
     {
@@ -3458,7 +3453,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "212.80.218.89",
+            "address": "212.43.156.143",
             "port": 443,
             "users": [
               {
@@ -3494,7 +3489,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "212.95.34.195",
+            "address": "212.43.156.143",
             "port": 443,
             "users": [
               {
@@ -3519,9 +3514,7 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "renderer-stream-2-62.mirra.now"
-        }
+        "tlsSettings": {}
       }
     },
     {
@@ -3638,7 +3631,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "vah4urdzl3jdx5r2.v.3dns.vip",
+            "address": "i2psm3knof5qjjix.v.3dns.vip",
             "port": 443,
             "users": [
               {
@@ -3658,14 +3651,10 @@
         },
         "wsSettings": {
           "path": "/ws-vmess",
-          "headers": {
-            "Host": "vah4urdzl3jdx5r2.v.3dns.vip"
-          }
+          "headers": {}
         },
         "security": "tls",
-        "tlsSettings": {
-          "serverName": "vah4urdzl3jdx5r2.v.3dns.vip"
-        }
+        "tlsSettings": {}
       }
     },
     {
@@ -3674,7 +3663,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "qtkdr8jxe3wefxjm.v.3dns.vip",
+            "address": "m01c7b2z26dtqgee.v.3dns.vip",
             "port": 443,
             "users": [
               {
@@ -3695,7 +3684,7 @@
         "wsSettings": {
           "path": "/ws-vmess",
           "headers": {
-            "Host": "qTKDR8jXE3wEFxJM.v.3dns.vip"
+            "Host": "M01c7B2z26DtQGEe.v.3dns.vip"
           }
         },
         "security": "tls",
@@ -3729,7 +3718,7 @@
         "wsSettings": {
           "path": "/ws-vmess",
           "headers": {
-            "Host": "vah4urdzl3jdx5r2.v.3dns.vip"
+            "Host": "VAH4URdZL3jDX5r2.v.3dns.vip"
           }
         },
         "security": "tls",
@@ -3742,11 +3731,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "156.245.232.239",
-            "port": 35043,
+            "address": "47.76.197.72",
+            "port": 443,
             "users": [
               {
-                "id": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+                "id": "f23bb427c1f94373876c2f43e9f790f3",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -3761,10 +3750,14 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/",
+          "path": "/ws-vmess",
           "headers": {
-            "Host": "www.pubgmobile.com"
+            "Host": "m01c7b2z26dtqgee.v.3dns.vip"
           }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "m01c7b2z26dtqgee.v.3dns.vip"
         }
       }
     },
@@ -3794,7 +3787,9 @@
         },
         "wsSettings": {
           "path": "/",
-          "headers": {}
+          "headers": {
+            "Host": "156.245.232.239"
+          }
         }
       }
     },
@@ -3804,11 +3799,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "156.245.232.239",
-            "port": 35043,
+            "address": "118.193.57.167",
+            "port": 49667,
             "users": [
               {
-                "id": "b15e481d-17e4-41a8-84c2-23d4f0514d9a",
+                "id": "d46bf492-45f4-4c33-82d1-ea2a1cb54eb6",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -3823,7 +3818,7 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/",
+          "path": "/d46bf492",
           "headers": {}
         }
       }
@@ -3834,42 +3829,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "qtkdr8jxe3wefxjm.v.3dns.vip",
-            "port": 443,
-            "users": [
-              {
-                "id": "f23bb427c1f94373876c2f43e9f790f3",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/ws-vmess",
-          "headers": {
-            "Host": "qTKDR8jXE3wEFxJM.v.3dns.vip"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "qTKDR8jXE3wEFxJM.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-102",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
             "address": "118.193.57.167",
             "port": 49667,
             "users": [
@@ -3890,6 +3849,36 @@
         },
         "wsSettings": {
           "path": "/d46bf492",
+          "headers": {}
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-102",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "78.17.71.236",
+            "port": 33736,
+            "users": [
+              {
+                "id": "b3a11068-1a7e-4643-85de-7c82cce46943",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/vmess-ws",
           "headers": {}
         }
       }
@@ -3900,11 +3889,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "118.193.57.167",
-            "port": 49667,
+            "address": "78.17.71.236",
+            "port": 33736,
             "users": [
               {
-                "id": "d46bf492-45f4-4c33-82d1-ea2a1cb54eb6",
+                "id": "b3a11068-1a7e-4643-85de-7c82cce46943",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -3919,73 +3908,15 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/d46bf492",
-          "headers": {}
+          "path": "/vmess-ws",
+          "headers": {
+            "Host": "Telegram-Leviko_v2ray"
+          }
         }
       }
     },
     {
       "tag": "igareck-node-104",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "78.17.71.236",
-            "port": 33736,
-            "users": [
-              {
-                "id": "b3a11068-1a7e-4643-85de-7c82cce46943",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/vmess-ws",
-          "headers": {}
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-105",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "78.17.71.236",
-            "port": 33736,
-            "users": [
-              {
-                "id": "b3a11068-1a7e-4643-85de-7c82cce46943",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/vmess-ws",
-          "headers": {}
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-106",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -4019,7 +3950,7 @@
       }
     },
     {
-      "tag": "igareck-node-107",
+      "tag": "igareck-node-105",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -4055,7 +3986,7 @@
       }
     },
     {
-      "tag": "igareck-node-108",
+      "tag": "igareck-node-106",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -4089,7 +4020,43 @@
       }
     },
     {
-      "tag": "igareck-node-109",
+      "tag": "igareck-node-107",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "chatgpt.com",
+            "port": 8443,
+            "users": [
+              {
+                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/lMnsZUN4/",
+          "headers": {
+            "Host": "v2ray1.dozapp.xyz"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-108",
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -4120,6 +4087,40 @@
         },
         "security": "tls",
         "tlsSettings": {}
+      }
+    },
+    {
+      "tag": "igareck-node-109",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "chatgpt.com",
+            "port": 8443,
+            "users": [
+              {
+                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/lMnsZUN4/",
+          "headers": {}
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "v2ray1.dozapp.xyz"
+        }
       }
     },
     {
