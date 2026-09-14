@@ -3,12 +3,12 @@
     "name": "WHITE-CIDR-RU-checked — Happ Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "16 proxies",
+      "10 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "Happ",
     "source": "WHITE-CIDR-RU-checked.txt",
-    "source_datetime": "2026-09-13 21:34 Moscow"
+    "source_datetime": "2026-09-14 20:44 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -69,7 +69,8 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$"
+          "regexp:^[^.]+$",
+          "full:api.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -125,7 +126,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:api.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -145,7 +147,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:api.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -165,7 +168,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:api.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -185,7 +189,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:api.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -205,7 +210,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:api.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -225,7 +231,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:api.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -245,7 +252,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:api.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -265,7 +273,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:api.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -285,7 +294,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:api.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -305,7 +315,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:api.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -325,7 +336,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:api.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -345,7 +357,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:api.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -433,11 +446,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
-            "port": 443,
+            "address": "api.heoleti.pro",
+            "port": 14443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
+                "id": "dfb2cbec-eefd-434f-965e-b7342290ce52",
                 "encryption": "none"
               }
             ]
@@ -445,21 +458,24 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "mode": "stream-one"
+        "wsSettings": {
+          "path": "/tzws",
+          "headers": {
+            "Host": "api.heoleti.pro"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "chrome",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "api.heoleti.pro",
+          "fingerprint": "android",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -469,11 +485,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
-            "port": 443,
+            "address": "api.heoleti.pro",
+            "port": 14443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
+                "id": "dfb2cbec-eefd-434f-965e-b7342290ce52",
                 "encryption": "none"
               }
             ]
@@ -481,21 +497,24 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "mode": "stream-one"
+        "wsSettings": {
+          "path": "/tzws",
+          "headers": {
+            "Host": "api.heoleti.pro"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "api.heoleti.pro",
           "fingerprint": "edge",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -505,11 +524,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
-            "port": 443,
+            "address": "api.heoleti.pro",
+            "port": 14443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
+                "id": "dfb2cbec-eefd-434f-965e-b7342290ce52",
                 "encryption": "none"
               }
             ]
@@ -517,21 +536,24 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "mode": "stream-one"
+        "wsSettings": {
+          "path": "/tzws",
+          "headers": {
+            "Host": "api.heoleti.pro"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "firefox",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "api.heoleti.pro",
+          "fingerprint": "ios",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -541,11 +563,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
-            "port": 443,
+            "address": "api.heoleti.pro",
+            "port": 14443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
+                "id": "dfb2cbec-eefd-434f-965e-b7342290ce52",
                 "encryption": "none"
               }
             ]
@@ -553,21 +575,24 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "mode": "stream-one"
+        "wsSettings": {
+          "path": "/tzws",
+          "headers": {
+            "Host": "api.heoleti.pro"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "safari",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "api.heoleti.pro",
+          "fingerprint": "qq",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -577,11 +602,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
-            "port": 443,
+            "address": "api.heoleti.pro",
+            "port": 14443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
+                "id": "dfb2cbec-eefd-434f-965e-b7342290ce52",
                 "encryption": "none"
               }
             ]
@@ -589,21 +614,24 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com"
+        "wsSettings": {
+          "path": "/tzws",
+          "headers": {
+            "Host": "api.heoleti.pro"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "android",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "api.heoleti.pro",
+          "fingerprint": "safari",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -613,33 +641,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
-            "port": 443,
+            "address": "158.160.160.56",
+            "port": 8443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
+                "id": "8ec0f959-14f5-4416-827d-5fcfaa5056d9",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "chrome",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+          "serverName": "megas.xanka.best",
+          "fingerprint": "android",
+          "publicKey": "JtG4kEXXgSm6JqY5JNC2-51FFgq3xH7KajnxrW6Uy2A",
+          "shortId": "cfc18936"
         }
       }
     },
@@ -649,33 +679,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
-            "port": 443,
+            "address": "158.160.160.56",
+            "port": 8443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
+                "id": "8ec0f959-14f5-4416-827d-5fcfaa5056d9",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "firefox",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+          "serverName": "megas.xanka.best",
+          "fingerprint": "chrome",
+          "publicKey": "JtG4kEXXgSm6JqY5JNC2-51FFgq3xH7KajnxrW6Uy2A",
+          "shortId": "cfc18936"
         }
       }
     },
@@ -685,32 +717,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
-            "port": 443,
+            "address": "158.160.160.56",
+            "port": 8443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
+                "id": "8ec0f959-14f5-4416-827d-5fcfaa5056d9",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "chrome",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+          "serverName": "megas.xanka.best",
+          "fingerprint": "edge",
+          "publicKey": "JtG4kEXXgSm6JqY5JNC2-51FFgq3xH7KajnxrW6Uy2A",
+          "shortId": "cfc18936"
         }
       }
     },
@@ -720,32 +755,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
-            "port": 443,
+            "address": "158.160.160.56",
+            "port": 8443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
+                "id": "8ec0f959-14f5-4416-827d-5fcfaa5056d9",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "ios",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+          "serverName": "megas.xanka.best",
+          "fingerprint": "firefox",
+          "publicKey": "JtG4kEXXgSm6JqY5JNC2-51FFgq3xH7KajnxrW6Uy2A",
+          "shortId": "cfc18936"
         }
       }
     },
@@ -755,255 +793,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.214.43",
-            "port": 443,
+            "address": "158.160.160.56",
+            "port": 8443,
             "users": [
               {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
+                "id": "8ec0f959-14f5-4416-827d-5fcfaa5056d9",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "qq",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-011",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.163.214.43",
-            "port": 443,
-            "users": [
-              {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
-              }
-            ]
+        "rawSettings": {
+          "header": {
+            "type": "none"
           }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com",
-          "mode": "stream-one"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "android",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-012",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.163.214.43",
-            "port": 443,
-            "users": [
-              {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com",
-          "mode": "stream-one"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "chrome",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-013",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.163.214.43",
-            "port": 443,
-            "users": [
-              {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com",
-          "mode": "stream-one"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "firefox",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-014",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.163.214.43",
-            "port": 443,
-            "users": [
-              {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com",
-          "mode": "stream-one"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "qq",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-015",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.163.214.43",
-            "port": 443,
-            "users": [
-              {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615",
-          "host": "vk.com"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "qq",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-016",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "95.163.214.43",
-            "port": 443,
-            "users": [
-              {
-                "id": "88ce17fc-7c6c-43a7-98a4-33fb59697b17",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/e0163615"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ok.ru",
-          "fingerprint": "firefox",
-          "publicKey": "VdG4ntV15FfNWV4rvSny2mvOTSXfOUVKHNC0dOyXY2s",
-          "shortId": "864fbb122f15b43d"
+          "serverName": "megas.xanka.best",
+          "fingerprint": "ios",
+          "publicKey": "JtG4kEXXgSm6JqY5JNC2-51FFgq3xH7KajnxrW6Uy2A",
+          "shortId": "cfc18936"
         }
       }
     },
