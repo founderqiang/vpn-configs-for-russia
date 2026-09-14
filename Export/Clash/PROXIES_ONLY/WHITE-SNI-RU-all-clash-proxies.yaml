@@ -2,22 +2,40 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-SNI-RU-all.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
-# Количество/Quantity: 1
-# Date/Time: 2026-09-14 / 00:03 (Moscow)
+# Количество/Quantity: 3
+# Date/Time: 2026-09-14 / 11:50 (Moscow)
 #
 # Не содержит никаких настроек, только список прокси / No settings, just proxies list;
 # ============================================================
 
 proxies:
-- name: Igareck Node 001 | 🇳🇱 The Netherlands [SNI-RU] rutube.ru
+- name: Igareck Node 001 | 🇫🇷 France | 🌐 [SNI-RU] vk.com
   type: hysteria2
-  server: "\x38\x37\x2e\x35\x38\x2e\x32\x32\x30\x2e\x37\x37"
-  port: 443
-  password: 919059458c9e6dcc000e24557f7fdfbe
+  server: "\x36\x32\x2e\x32\x31\x30\x2e\x37\x2e\x31\x33\x39"
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
   udp: true
-  sni: rutube.ru
+  sni: vk.com
   alpn:
   - h3
-  - h2
-  - http/1.1
+  skip-cert-verify: true
+- name: Igareck Node 002 | 🌐 Anycast-IP | 🇭🇰 🇸🇪 [SNI-RU] vk.com
+  type: hysteria2
+  server: "\x32\x30\x32\x2e\x31\x34\x36\x2e\x32\x32\x32\x2e\x38\x39"
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  sni: vk.com
+  alpn:
+  - h3
+  skip-cert-verify: true
+- name: Igareck Node 003 | 🌐 Anycast-IP | 🇸🇪 🇺🇸 [SNI-RU] vk.com
+  type: hysteria2
+  server: "\x36\x36\x2e\x39\x34\x2e\x31\x32\x31\x2e\x34\x36"
+  port: 443
+  password: gf1:gfhysteria2024
+  udp: true
+  sni: vk.com
+  alpn:
+  - h3
   skip-cert-verify: true
