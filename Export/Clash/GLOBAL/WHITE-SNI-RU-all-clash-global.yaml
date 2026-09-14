@@ -2,8 +2,8 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-SNI-RU-all.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | SNI-RU
-# Количество/Quantity: 3
-# Date/Time: 2026-09-14 / 11:50 (Moscow)
+# Количество/Quantity: 5
+# Date/Time: 2026-09-14 / 20:44 (Moscow)
 #
 # Режим / Mode:
 # - Автоматический Выбор лучшего прокси / Igareck Auto Select;
@@ -151,36 +151,76 @@ sniffer:
       ports: [443, 8443]
 
 proxies:
-- name: Igareck Node 001 | 🇫🇷 France | 🌐 [SNI-RU] vk.com
-  type: hysteria2
-  server: "\x36\x32\x2e\x32\x31\x30\x2e\x37\x2e\x31\x33\x39"
-  port: 60111
-  password: github.com/Alvin9999-newpac/fanqiang
-  udp: true
-  sni: vk.com
-  alpn:
-  - h3
-  skip-cert-verify: true
-- name: Igareck Node 002 | 🌐 Anycast-IP | 🇭🇰 🇸🇪 [SNI-RU] vk.com
-  type: hysteria2
-  server: "\x32\x30\x32\x2e\x31\x34\x36\x2e\x32\x32\x32\x2e\x38\x39"
+- name: Igareck Node 001 | 🇩🇪 Germany | [SNI-RU] rutube.ru
+  type: vless
+  server: "\x31\x39\x33\x2e\x31\x36\x38\x2e\x31\x39\x36\x2e\x35\x38"
   port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  uuid: "\x64\x36\x33\x30\x62\x32\x66\x61\x2d\x62\x37\x61\x32\x2d\x34\x63\x39\x37\x2d\x62\x65\x61\x30\x2d\x36\x36\x34\x36\x32\x61\x31\x66\x31\x34\x61\x66"
   udp: true
-  sni: vk.com
-  alpn:
-  - h3
-  skip-cert-verify: true
-- name: Igareck Node 003 | 🌐 Anycast-IP | 🇸🇪 🇺🇸 [SNI-RU] vk.com
-  type: hysteria2
-  server: "\x36\x36\x2e\x39\x34\x2e\x31\x32\x31\x2e\x34\x36"
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
+  client-fingerprint: android
+  reality-opts:
+    public-key: vhhWn9SDSPq6LJ_9gPAbUfVc8X4WlGWTCyAk6Td6diE
+    short-id: "2f707fa3"
+  network: tcp
+- name: Igareck Node 002 | 🇩🇪 Germany | [SNI-RU] rutube.ru
+  type: vless
+  server: "\x31\x39\x33\x2e\x31\x36\x38\x2e\x31\x39\x36\x2e\x35\x38"
   port: 443
-  password: gf1:gfhysteria2024
+  uuid: "\x64\x36\x33\x30\x62\x32\x66\x61\x2d\x62\x37\x61\x32\x2d\x34\x63\x39\x37\x2d\x62\x65\x61\x30\x2d\x36\x36\x34\x36\x32\x61\x31\x66\x31\x34\x61\x66"
   udp: true
-  sni: vk.com
-  alpn:
-  - h3
-  skip-cert-verify: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: vhhWn9SDSPq6LJ_9gPAbUfVc8X4WlGWTCyAk6Td6diE
+    short-id: "2f707fa3"
+  network: tcp
+- name: Igareck Node 003 | 🇩🇪 Germany | [SNI-RU] rutube.ru
+  type: vless
+  server: "\x31\x39\x33\x2e\x31\x36\x38\x2e\x31\x39\x36\x2e\x35\x38"
+  port: 443
+  uuid: "\x64\x36\x33\x30\x62\x32\x66\x61\x2d\x62\x37\x61\x32\x2d\x34\x63\x39\x37\x2d\x62\x65\x61\x30\x2d\x36\x36\x34\x36\x32\x61\x31\x66\x31\x34\x61\x66"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: vhhWn9SDSPq6LJ_9gPAbUfVc8X4WlGWTCyAk6Td6diE
+    short-id: "2f707fa3"
+  network: tcp
+- name: Igareck Node 004 | 🇩🇪 Germany | [SNI-RU] rutube.ru
+  type: vless
+  server: "\x31\x39\x33\x2e\x31\x36\x38\x2e\x31\x39\x36\x2e\x35\x38"
+  port: 443
+  uuid: "\x64\x36\x33\x30\x62\x32\x66\x61\x2d\x62\x37\x61\x32\x2d\x34\x63\x39\x37\x2d\x62\x65\x61\x30\x2d\x36\x36\x34\x36\x32\x61\x31\x66\x31\x34\x61\x66"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
+  client-fingerprint: ios
+  reality-opts:
+    public-key: vhhWn9SDSPq6LJ_9gPAbUfVc8X4WlGWTCyAk6Td6diE
+    short-id: "2f707fa3"
+  network: tcp
+- name: Igareck Node 005 | 🇩🇪 Germany | [SNI-RU] rutube.ru
+  type: vless
+  server: "\x31\x39\x33\x2e\x31\x36\x38\x2e\x31\x39\x36\x2e\x35\x38"
+  port: 443
+  uuid: "\x64\x36\x33\x30\x62\x32\x66\x61\x2d\x62\x37\x61\x32\x2d\x34\x63\x39\x37\x2d\x62\x65\x61\x30\x2d\x36\x36\x34\x36\x32\x61\x31\x66\x31\x34\x61\x66"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x72\x75\x74\x75\x62\x65\x2e\x72\x75"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: vhhWn9SDSPq6LJ_9gPAbUfVc8X4WlGWTCyAk6Td6diE
+    short-id: "2f707fa3"
+  network: tcp
 
 proxy-groups:
   - name: "Igareck Auto Select (Автоподключение)"
