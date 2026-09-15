@@ -2,8 +2,8 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-CIDR-RU-all.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Полная • Full
-# Количество/Quantity: 9
-# Date/Time: 2026-09-15 / 13:20 (Moscow)
+# Количество/Quantity: 19
+# Date/Time: 2026-09-15 / 14:29 (Moscow)
 #
 # Режим / Mode:
 # - Автоматический Выбор лучшего прокси / Igareck Auto Select;
@@ -151,35 +151,87 @@ sniffer:
       ports: [443, 8443]
 
 proxies:
-- name: Igareck Node 001 | 🇷🇺 Russia | 🌐 [*CIDR]
-  type: hysteria2
-  server: "\x72\x75\x31\x2e\x78\x69\x61\x6f\x6c\x69\x79\x75\x2e\x63\x79\x6f\x75"
-  port: 4433
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  udp: true
-  sni: ru1.xiaoliyu.cyou
-  alpn:
-  - h3
-  skip-cert-verify: true
-- name: Igareck Node 002 | 🇷🇺 Russia | 🌐 [*CIDR]
-  type: hysteria2
-  server: "\x6d\x73\x6b\x2e\x66\x72\x6b\x6e\x2e\x6f\x72\x67"
+- name: Igareck Node 001 | 🌐 Anycast-IP | 🇮🇹 🇸🇪 | [*CIDR]
+  type: vless
+  server: "\x34\x35\x2e\x38\x2e\x32\x32\x38\x2e\x31\x36\x37"
   port: 443
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  uuid: "\x39\x35\x33\x33\x35\x38\x63\x62\x2d\x38\x32\x62\x61\x2d\x34\x32\x39\x36\x2d\x39\x36\x30\x64\x2d\x36\x64\x32\x65\x63\x33\x34\x36\x38\x66\x34\x63"
   udp: true
-  sni: msk.frkn.org
-  alpn:
-  - h3
-- name: Igareck Node 003 | 🇷🇺 Russia | 🌐 [*CIDR]
-  type: hysteria2
-  server: "\x6d\x73\x6b\x2e\x66\x72\x6b\x6e\x2e\x6f\x72\x67"
+  tls: true
+  servername: "\x64\x61\x69\x6c\x79\x63\x61\x6e\x76\x61\x73\x2e\x73\x79\x73\x6f\x70\x6e\x6f\x76\x61\x2e\x61\x72\x74"
+  client-fingerprint: android
+  reality-opts:
+    public-key: n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ
+    short-id: "5eca"
+  network: xhttp
+  xhttp-opts:
+    path: /xhttp_client_upload
+    mode: packet-up
+- name: Igareck Node 002 | 🌐 Anycast-IP | 🇮🇹 🇸🇪 | [*CIDR]
+  type: vless
+  server: "\x34\x35\x2e\x38\x2e\x32\x32\x38\x2e\x31\x36\x37"
   port: 443
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  uuid: "\x39\x35\x33\x33\x35\x38\x63\x62\x2d\x38\x32\x62\x61\x2d\x34\x32\x39\x36\x2d\x39\x36\x30\x64\x2d\x36\x64\x32\x65\x63\x33\x34\x36\x38\x66\x34\x63"
   udp: true
-  sni: msk.frkn.org
-  alpn:
-  - h3
-- name: Igareck Node 004 | 🌐 Anycast-IP | 🇱🇻 [*CIDR]
+  tls: true
+  servername: "\x64\x61\x69\x6c\x79\x63\x61\x6e\x76\x61\x73\x2e\x73\x79\x73\x6f\x70\x6e\x6f\x76\x61\x2e\x61\x72\x74"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ
+    short-id: "5eca"
+  network: xhttp
+  xhttp-opts:
+    path: /xhttp_client_upload
+    mode: packet-up
+- name: Igareck Node 003 | 🌐 Anycast-IP | 🇮🇹 🇸🇪 | [*CIDR]
+  type: vless
+  server: "\x34\x35\x2e\x38\x2e\x32\x32\x38\x2e\x31\x36\x37"
+  port: 443
+  uuid: "\x39\x35\x33\x33\x35\x38\x63\x62\x2d\x38\x32\x62\x61\x2d\x34\x32\x39\x36\x2d\x39\x36\x30\x64\x2d\x36\x64\x32\x65\x63\x33\x34\x36\x38\x66\x34\x63"
+  udp: true
+  tls: true
+  servername: "\x64\x61\x69\x6c\x79\x63\x61\x6e\x76\x61\x73\x2e\x73\x79\x73\x6f\x70\x6e\x6f\x76\x61\x2e\x61\x72\x74"
+  client-fingerprint: ios
+  reality-opts:
+    public-key: n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ
+    short-id: "5eca"
+  network: xhttp
+  xhttp-opts:
+    path: /xhttp_client_upload
+    mode: packet-up
+- name: Igareck Node 004 | 🌐 Anycast-IP | 🇮🇹 🇸🇪 | [*CIDR]
+  type: vless
+  server: "\x34\x35\x2e\x38\x2e\x32\x32\x38\x2e\x31\x36\x37"
+  port: 443
+  uuid: "\x39\x35\x33\x33\x35\x38\x63\x62\x2d\x38\x32\x62\x61\x2d\x34\x32\x39\x36\x2d\x39\x36\x30\x64\x2d\x36\x64\x32\x65\x63\x33\x34\x36\x38\x66\x34\x63"
+  udp: true
+  tls: true
+  servername: "\x64\x61\x69\x6c\x79\x63\x61\x6e\x76\x61\x73\x2e\x73\x79\x73\x6f\x70\x6e\x6f\x76\x61\x2e\x61\x72\x74"
+  client-fingerprint: qq
+  reality-opts:
+    public-key: n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ
+    short-id: "5eca"
+  network: xhttp
+  xhttp-opts:
+    path: /xhttp_client_upload
+    mode: packet-up
+- name: Igareck Node 005 | 🌐 Anycast-IP | 🇮🇹 🇸🇪 [*CIDR]
+  type: vless
+  server: "\x34\x35\x2e\x38\x2e\x32\x32\x38\x2e\x31\x36\x37"
+  port: 443
+  uuid: "\x39\x35\x33\x33\x35\x38\x63\x62\x2d\x38\x32\x62\x61\x2d\x34\x32\x39\x36\x2d\x39\x36\x30\x64\x2d\x36\x64\x32\x65\x63\x33\x34\x36\x38\x66\x34\x63"
+  udp: true
+  tls: true
+  servername: "\x64\x61\x69\x6c\x79\x63\x61\x6e\x76\x61\x73\x2e\x73\x79\x73\x6f\x70\x6e\x6f\x76\x61\x2e\x61\x72\x74"
+  client-fingerprint: edge
+  reality-opts:
+    public-key: n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ
+    short-id: "5eca"
+  network: xhttp
+  xhttp-opts:
+    path: /xhttp_client_upload
+    mode: packet-up
+- name: Igareck Node 006 | 🇱🇻 Latvia [*CIDR]
   type: hysteria2
   server: "\x39\x31\x2e\x32\x34\x30\x2e\x38\x36\x2e\x37\x30"
   port: 24443
@@ -189,7 +241,7 @@ proxies:
   alpn:
   - h3
   skip-cert-verify: true
-- name: Igareck Node 005 | 🌐 Anycast-IP | 🇷🇺 [*CIDR]
+- name: Igareck Node 007 | 🇷🇺 Russia [*CIDR]
   type: hysteria2
   server: "\x39\x31\x2e\x32\x34\x30\x2e\x38\x36\x2e\x37\x30"
   port: 22443
@@ -198,7 +250,16 @@ proxies:
   sni: hy.quattro-tech.ru
   alpn:
   - h3
-- name: Igareck Node 006 | 🌐 Anycast-IP | 🇷🇺 [*CIDR]
+- name: Igareck Node 008 | 🇷🇺 Russia [*CIDR]
+  type: hysteria2
+  server: "\x39\x31\x2e\x32\x34\x30\x2e\x38\x36\x2e\x37\x30"
+  port: 22443
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  udp: true
+  sni: hy.quattro-tech.ru
+  alpn:
+  - h3
+- name: Igareck Node 009 | 🇷🇺 Russia | 🌐 [*CIDR]
   type: hysteria2
   server: "\x65\x6c\x73\x31\x2e\x6d\x61\x6e\x67\x73\x68\x65\x2e\x78\x79\x7a"
   port: 2056
@@ -208,35 +269,144 @@ proxies:
   alpn:
   - h3
   skip-cert-verify: true
-- name: Igareck Node 007 | 🌐 Anycast-IP | 🇷🇺 [*CIDR]
+- name: Igareck Node 010 | 🇷🇺 Russia | 🌐 [*CIDR]
   type: hysteria2
-  server: "\x65\x6c\x73\x31\x2e\x6d\x61\x6e\x67\x73\x68\x65\x2e\x78\x79\x7a"
-  port: 2056
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  server: "\x6d\x73\x6b\x2e\x66\x72\x6b\x6e\x2e\x6f\x72\x67"
+  port: 443
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
   udp: true
-  sni: els1.mangshe.xyz
+  sni: msk.frkn.org
   alpn:
   - h3
-  skip-cert-verify: true
-- name: Igareck Node 008 | 🌐 Anycast-IP | 🇷🇺 🇸🇪 [*CIDR]
+- name: Igareck Node 011 | 🇷🇺 Russia | 🌐 [*CIDR]
   type: hysteria2
-  server: "\x39\x31\x2e\x32\x34\x30\x2e\x38\x36\x2e\x37\x30"
-  port: 22443
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  server: "\x6d\x73\x6b\x2e\x66\x72\x6b\x6e\x2e\x6f\x72\x67"
+  port: 443
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
   udp: true
-  sni: hy.quattro-tech.ru
+  sni: msk.frkn.org
   alpn:
   - h3
-- name: Igareck Node 009 | 🌐 Anycast-IP | 🇷🇺 🇸🇪 [*CIDR]
-  type: hysteria2
-  server: "\x65\x6c\x73\x31\x2e\x6d\x61\x6e\x67\x73\x68\x65\x2e\x78\x79\x7a"
-  port: 2056
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+- name: Igareck Node 012 | 🇩🇪 Germany [*CIDR]
+  type: vmess
+  server: "\x31\x39\x34\x2e\x32\x32\x36\x2e\x31\x34\x32\x2e\x31\x32\x30"
+  port: 443
+  uuid: "\x64\x62\x35\x30\x61\x32\x30\x65\x2d\x37\x66\x66\x35\x2d\x34\x65\x37\x30\x2d\x39\x34\x38\x66\x2d\x31\x37\x63\x63\x39\x63\x61\x37\x63\x31\x35\x34"
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: 127.0.0.1
+  tls: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: Igareck Node 013 | 🇩🇪 Germany [*CIDR]
+  type: vmess
+  server: "\x31\x39\x34\x2e\x32\x32\x36\x2e\x31\x34\x32\x2e\x31\x32\x30"
+  port: 443
+  uuid: "\x64\x62\x35\x30\x61\x32\x30\x65\x2d\x37\x66\x66\x35\x2d\x34\x65\x37\x30\x2d\x39\x34\x38\x66\x2d\x31\x37\x63\x63\x39\x63\x61\x37\x63\x31\x35\x34"
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: Igareck Node 014 | 🇩🇪 Germany | [*CIDR]
+  type: vmess
+  server: "\x35\x2e\x31\x38\x38\x2e\x32\x36\x2e\x38\x35"
+  port: 443
+  uuid: "\x64\x62\x35\x30\x61\x32\x30\x65\x2d\x37\x66\x66\x35\x2d\x34\x65\x37\x30\x2d\x39\x34\x38\x66\x2d\x31\x37\x63\x63\x39\x63\x61\x37\x63\x31\x35\x34"
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: "\x72\x65\x6e\x64\x65\x72\x65\x72\x2d\x73\x74\x72\x65\x61\x6d\x2d\x32\x2d\x36\x32\x2e\x6d\x69\x72\x72\x61\x2e\x6e\x6f\x77"
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: Igareck Node 015 | 🇩🇪 Germany | [*CIDR]
+  type: vmess
+  server: "\x72\x65\x6e\x64\x65\x72\x65\x72\x2d\x73\x74\x72\x65\x61\x6d\x2d\x32\x2d\x36\x32\x2e\x6d\x69\x72\x72\x61\x2e\x6e\x6f\x77"
+  port: 443
+  uuid: "\x64\x62\x35\x30\x61\x32\x30\x65\x2d\x37\x66\x66\x35\x2d\x34\x65\x37\x30\x2d\x39\x34\x38\x66\x2d\x31\x37\x63\x63\x39\x63\x61\x37\x63\x31\x35\x34"
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: "\x72\x65\x6e\x64\x65\x72\x65\x72\x2d\x73\x74\x72\x65\x61\x6d\x2d\x32\x2d\x36\x32\x2e\x6d\x69\x72\x72\x61\x2e\x6e\x6f\x77"
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: Igareck Node 016 | 🇩🇪 Germany | [*CIDR]
+  type: vmess
+  server: "\x72\x65\x6e\x64\x65\x72\x65\x72\x2d\x73\x74\x72\x65\x61\x6d\x2d\x32\x2d\x36\x32\x2e\x6d\x69\x72\x72\x61\x2e\x6e\x6f\x77"
+  port: 443
+  uuid: "\x64\x62\x35\x30\x61\x32\x30\x65\x2d\x37\x66\x66\x35\x2d\x34\x65\x37\x30\x2d\x39\x34\x38\x66\x2d\x31\x37\x63\x63\x39\x63\x61\x37\x63\x31\x35\x34"
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: Igareck Node 017 | 🇩🇪 Germany | [*CIDR]
+  type: vmess
+  server: "\x72\x65\x6e\x64\x65\x72\x65\x72\x2d\x73\x74\x72\x65\x61\x6d\x2d\x32\x2d\x36\x32\x2e\x6d\x69\x72\x72\x61\x2e\x6e\x6f\x77"
+  port: 443
+  uuid: "\x64\x62\x35\x30\x61\x32\x30\x65\x2d\x37\x66\x66\x35\x2d\x34\x65\x37\x30\x2d\x39\x34\x38\x66\x2d\x31\x37\x63\x63\x39\x63\x61\x37\x63\x31\x35\x34"
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: "\x72\x65\x6e\x64\x65\x72\x65\x72\x2d\x73\x74\x72\x65\x61\x6d\x2d\x32\x2d\x36\x32\x2e\x6d\x69\x72\x72\x61\x2e\x6e\x6f\x77"
   alpn:
-  - h3
-  skip-cert-verify: true
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: Igareck Node 018 | 🌐 Anycast-IP | 🇩🇪 🇸🇪 | [*CIDR]
+  type: vmess
+  server: "\x31\x39\x34\x2e\x32\x32\x36\x2e\x31\x34\x32\x2e\x31\x32\x30"
+  port: 443
+  uuid: "\x64\x62\x35\x30\x61\x32\x30\x65\x2d\x37\x66\x66\x35\x2d\x34\x65\x37\x30\x2d\x39\x34\x38\x66\x2d\x31\x37\x63\x63\x39\x63\x61\x37\x63\x31\x35\x34"
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: "\x72\x65\x6e\x64\x65\x72\x65\x72\x2d\x73\x74\x72\x65\x61\x6d\x2d\x32\x2d\x36\x32\x2e\x6d\x69\x72\x72\x61\x2e\x6e\x6f\x77"
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+- name: Igareck Node 019 | 🌐 Anycast-IP | 🇩🇪 🇸🇪 | [*CIDR]
+  type: vmess
+  server: "\x35\x2e\x31\x38\x38\x2e\x32\x36\x2e\x38\x35"
+  port: 443
+  uuid: "\x64\x62\x35\x30\x61\x32\x30\x65\x2d\x37\x66\x66\x35\x2d\x34\x65\x37\x30\x2d\x39\x34\x38\x66\x2d\x31\x37\x63\x63\x39\x63\x61\x37\x63\x31\x35\x34"
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-2-62.mirra.now
 
 proxy-groups:
   - name: "Igareck Auto Select (Автоподключение)"
