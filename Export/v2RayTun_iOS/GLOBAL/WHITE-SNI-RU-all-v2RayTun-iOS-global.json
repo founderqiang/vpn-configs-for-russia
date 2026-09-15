@@ -57,8 +57,7 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$",
-          "full:ns.o11111o.club"
+          "regexp:^[^.]+$"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -114,8 +113,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:ns.o11111o.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -135,8 +133,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:ns.o11111o.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -156,8 +153,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:ns.o11111o.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -177,8 +173,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:ns.o11111o.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -198,8 +193,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:ns.o11111o.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -219,8 +213,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:ns.o11111o.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -240,8 +233,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:ns.o11111o.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -261,8 +253,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:ns.o11111o.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -282,8 +273,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:ns.o11111o.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -303,8 +293,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:ns.o11111o.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -324,8 +313,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:ns.o11111o.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -345,8 +333,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:ns.o11111o.club"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -413,32 +400,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "ns.o11111o.club",
+            "address": "146.103.100.242",
             "port": 443,
             "users": [
               {
-                "id": "b1b3e430-ff52-44b8-b95d-27fa580fbc4f",
-                "encryption": "none"
+                "id": "a7c35c0c-e8b6-49a4-9d2c-1acee63fe2d6",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "vless-grpc-reality",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "id.vk.com",
+          "serverName": "dzen.ru",
           "fingerprint": "edge",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+          "publicKey": "CxjnGHCI3HXN2RAXwytela7jXyOGDCBqzMAqTfm60D0",
+          "shortId": "4ed920401771c4ab"
         }
       }
     },
@@ -448,32 +438,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "ns.o11111o.club",
+            "address": "146.103.100.242",
             "port": 443,
             "users": [
               {
-                "id": "b1b3e430-ff52-44b8-b95d-27fa580fbc4f",
-                "encryption": "none"
+                "id": "a7c35c0c-e8b6-49a4-9d2c-1acee63fe2d6",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "vless-grpc-reality",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "id.vk.com",
-          "fingerprint": "ios",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+          "serverName": "dzen.ru",
+          "fingerprint": "firefox",
+          "publicKey": "CxjnGHCI3HXN2RAXwytela7jXyOGDCBqzMAqTfm60D0",
+          "shortId": "4ed920401771c4ab"
         }
       }
     },
@@ -483,32 +476,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "ns.o11111o.club",
+            "address": "146.103.100.242",
             "port": 443,
             "users": [
               {
-                "id": "b1b3e430-ff52-44b8-b95d-27fa580fbc4f",
-                "encryption": "none"
+                "id": "a7c35c0c-e8b6-49a4-9d2c-1acee63fe2d6",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "vless-grpc-reality",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "id.vk.com",
-          "fingerprint": "safari",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+          "serverName": "dzen.ru",
+          "fingerprint": "ios",
+          "publicKey": "CxjnGHCI3HXN2RAXwytela7jXyOGDCBqzMAqTfm60D0",
+          "shortId": "4ed920401771c4ab"
         }
       }
     },
@@ -518,32 +514,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "ns.o11111o.club",
+            "address": "146.103.100.242",
             "port": 443,
             "users": [
               {
-                "id": "b1b3e430-ff52-44b8-b95d-27fa580fbc4f",
-                "encryption": "none"
+                "id": "a7c35c0c-e8b6-49a4-9d2c-1acee63fe2d6",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "vless-grpc-reality",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "id.vk.com",
-          "fingerprint": "chrome",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+          "serverName": "dzen.ru",
+          "fingerprint": "qq",
+          "publicKey": "CxjnGHCI3HXN2RAXwytela7jXyOGDCBqzMAqTfm60D0",
+          "shortId": "4ed920401771c4ab"
         }
       }
     },
@@ -553,32 +552,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "ns.o11111o.club",
+            "address": "146.103.100.242",
             "port": 443,
             "users": [
               {
-                "id": "b1b3e430-ff52-44b8-b95d-27fa580fbc4f",
-                "encryption": "none"
+                "id": "a7c35c0c-e8b6-49a4-9d2c-1acee63fe2d6",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "vless-grpc-reality",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "id.vk.com",
-          "fingerprint": "firefox",
-          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
+          "serverName": "dzen.ru",
+          "fingerprint": "safari",
+          "publicKey": "CxjnGHCI3HXN2RAXwytela7jXyOGDCBqzMAqTfm60D0",
+          "shortId": "4ed920401771c4ab"
         }
       }
     },
