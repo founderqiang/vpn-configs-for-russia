@@ -2,8 +2,8 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-CIDR-RU-checked.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
-# Количество/Quantity: 10
-# Date/Time: 2026-09-17 / 18:51 (Moscow)
+# Количество/Quantity: 9
+# Date/Time: 2026-09-17 / 21:07 (Moscow)
 #
 # Режим / Mode:
 # - Автоматический Выбор лучшего прокси / Igareck Auto Select;
@@ -151,63 +151,60 @@ sniffer:
       ports: [443, 8443]
 
 proxies:
-- name: Igareck Node 001 | 🇳🇱 The Netherlands | [*CIDR] YA
+- name: Igareck Node 001 | 🇮🇳 India [*CIDR] YA
   type: vless
-  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x34\x36\x2e\x38"
-  port: 443
-  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
+  server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x31\x37\x2e\x31\x37\x35"
+  port: 8443
+  uuid: "\x62\x33\x61\x31\x31\x30\x36\x38\x2d\x31\x61\x37\x65\x2d\x34\x36\x34\x33\x2d\x38\x35\x64\x65\x2d\x37\x63\x38\x32\x63\x63\x65\x34\x36\x39\x34\x33"
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: "\x6d\x61\x78\x2e\x72\x75"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
-  network: xhttp
-  xhttp-opts:
-    host: max.ru
-- name: Igareck Node 002 | 🇳🇱 The Netherlands | [*CIDR] YA
-  type: vless
-  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x34\x36\x2e\x38"
-  port: 443
-  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
-  udp: true
-  tls: true
-  servername: "\x6d\x61\x78\x2e\x72\x75"
+  servername: "\x79\x61\x2e\x72\x75"
   client-fingerprint: firefox
   reality-opts:
-    public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
-  network: xhttp
-  xhttp-opts:
-    host: max.ru
-- name: Igareck Node 003 | 🇳🇱 The Netherlands | [*CIDR] YA
+    public-key: BVwyZUEoTujbWy-7QczfJyYAsHw2y_H8SMMfbK5AEho
+    short-id: "81dd866769f057"
+  network: tcp
+- name: Igareck Node 002 | 🇳🇱 The Netherlands [*CIDR] CDN
   type: vless
-  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x34\x36\x2e\x38"
+  server: "\x34\x36\x2e\x32\x34\x33\x2e\x32\x33\x35\x2e\x31\x38\x38"
   port: 443
-  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
+  uuid: "\x65\x63\x66\x37\x32\x38\x64\x39\x2d\x31\x35\x35\x35\x2d\x34\x65\x31\x32\x2d\x62\x31\x37\x38\x2d\x31\x64\x38\x62\x64\x39\x38\x34\x36\x35\x65\x34"
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: "\x6d\x61\x78\x2e\x72\x75"
+  servername: "\x70\x6f\x6f\x6c\x2e\x64\x61\x74\x61\x72\x6f\x75\x74\x65\x2e\x62\x69\x7a"
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: _ilhBTibNauMOEUqylnlBAUTYiqHHtmEDXkx18SHCR4
+  network: tcp
+- name: Igareck Node 003 | 🇳🇱 The Netherlands [*CIDR] CDN
+  type: vless
+  server: "\x34\x36\x2e\x32\x34\x33\x2e\x32\x33\x35\x2e\x31\x38\x38"
+  port: 443
+  uuid: "\x65\x63\x66\x37\x32\x38\x64\x39\x2d\x31\x35\x35\x35\x2d\x34\x65\x31\x32\x2d\x62\x31\x37\x38\x2d\x31\x64\x38\x62\x64\x39\x38\x34\x36\x35\x65\x34"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x70\x6f\x6f\x6c\x2e\x64\x61\x74\x61\x72\x6f\x75\x74\x65\x2e\x62\x69\x7a"
+  client-fingerprint: safari
+  reality-opts:
+    public-key: _ilhBTibNauMOEUqylnlBAUTYiqHHtmEDXkx18SHCR4
+  network: tcp
+- name: Igareck Node 004 | 🇳🇱 The Netherlands [*CIDR] CDN
+  type: vless
+  server: "\x34\x36\x2e\x32\x34\x33\x2e\x32\x33\x35\x2e\x31\x38\x38"
+  port: 443
+  uuid: "\x65\x63\x66\x37\x32\x38\x64\x39\x2d\x31\x35\x35\x35\x2d\x34\x65\x31\x32\x2d\x62\x31\x37\x38\x2d\x31\x64\x38\x62\x64\x39\x38\x34\x36\x35\x65\x34"
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: "\x70\x6f\x6f\x6c\x2e\x64\x61\x74\x61\x72\x6f\x75\x74\x65\x2e\x62\x69\x7a"
   client-fingerprint: ios
   reality-opts:
-    public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
-  network: xhttp
-  xhttp-opts:
-    host: max.ru
-- name: Igareck Node 004 | 🇳🇱 The Netherlands | [*CIDR] YA
-  type: vless
-  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x34\x36\x2e\x38"
-  port: 443
-  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
-  udp: true
-  tls: true
-  servername: "\x6d\x61\x78\x2e\x72\x75"
-  client-fingerprint: qq
-  reality-opts:
-    public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
-  network: xhttp
-  xhttp-opts:
-    host: max.ru
-- name: Igareck Node 005 | 🇳🇱 The Netherlands | [*CIDR] YA
+    public-key: _ilhBTibNauMOEUqylnlBAUTYiqHHtmEDXkx18SHCR4
+  network: tcp
+- name: Igareck Node 005 | 🇳🇱 The Netherlands [*CIDR] YA
   type: vless
   server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x34\x36\x2e\x38"
   port: 443
@@ -221,7 +218,21 @@ proxies:
   network: xhttp
   xhttp-opts:
     host: max.ru
-- name: Igareck Node 006 | 🇳🇱 The Netherlands | [*CIDR] YA
+- name: Igareck Node 006 | 🇳🇱 The Netherlands [*CIDR] YA
+  type: vless
+  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x34\x36\x2e\x38"
+  port: 443
+  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
+  udp: true
+  tls: true
+  servername: "\x6d\x61\x78\x2e\x72\x75"
+  client-fingerprint: ios
+  reality-opts:
+    public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
+  network: xhttp
+  xhttp-opts:
+    host: max.ru
+- name: Igareck Node 007 | 🇳🇱 The Netherlands [*CIDR] YA
   type: vless
   server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x34\x36\x2e\x38"
   port: 443
@@ -230,20 +241,6 @@ proxies:
   tls: true
   servername: "\x6d\x61\x78\x2e\x72\x75"
   client-fingerprint: qq
-  reality-opts:
-    public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
-  network: xhttp
-  xhttp-opts:
-    host: max.ru
-- name: Igareck Node 007 | 🌐 Anycast-IP | 🇳🇱 [*CIDR] YA
-  type: vless
-  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x34\x36\x2e\x38"
-  port: 443
-  uuid: "\x46\x6c\x75\x66\x66\x79\x5f\x56\x50\x4e\x2d\x7a\x4b\x5a\x55\x61\x34\x49\x65"
-  udp: true
-  tls: true
-  servername: "\x6d\x61\x78\x2e\x72\x75"
-  client-fingerprint: firefox
   reality-opts:
     public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
   network: xhttp
@@ -251,46 +248,30 @@ proxies:
     host: max.ru
 - name: Igareck Node 008 | 🌐 Anycast-IP | 🇳🇱 [*CIDR] YA
   type: vless
-  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x34\x36\x2e\x38"
+  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x33\x36\x2e\x31\x33\x39"
   port: 443
   uuid: "\x46\x6c\x75\x66\x66\x79\x5f\x56\x50\x4e\x2d\x7a\x4b\x5a\x55\x61\x34\x49\x65"
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: "\x6d\x61\x78\x2e\x72\x75"
-  client-fingerprint: ios
+  servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
-  network: xhttp
-  xhttp-opts:
-    host: max.ru
-- name: Igareck Node 009 | 🌐 Anycast-IP | 🇳🇱 [*CIDR] YA
+    public-key: hkWS1b3Hr9QYpBJ47yEgghAMEWj293itZ-_BDHTYozQ
+  network: tcp
+- name: Igareck Node 009 | 🌐 Anycast-IP | 🇳🇱 🇸🇪 [*CIDR] YA
   type: vless
-  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x34\x36\x2e\x38"
+  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x33\x36\x2e\x31\x33\x39"
   port: 443
-  uuid: "\x46\x6c\x75\x66\x66\x79\x5f\x56\x50\x4e\x2d\x7a\x4b\x5a\x55\x61\x34\x49\x65"
+  uuid: "\x31\x65\x32\x62\x39\x63\x30\x63\x2d\x34\x66\x39\x62\x2d\x35\x36\x66\x35\x2d\x61\x30\x36\x32\x2d\x31\x63\x34\x66\x32\x64\x32\x61\x61\x32\x30\x30"
   udp: true
+  flow: xtls-rprx-vision
   tls: true
-  servername: "\x6d\x61\x78\x2e\x72\x75"
-  client-fingerprint: safari
+  servername: "\x61\x70\x69\x2d\x6d\x61\x70\x73\x2e\x79\x61\x6e\x64\x65\x78\x2e\x72\x75"
+  client-fingerprint: firefox
   reality-opts:
-    public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
-  network: xhttp
-  xhttp-opts:
-    host: max.ru
-- name: Igareck Node 010 | 🌐 Anycast-IP | 🇳🇱 🇸🇪 [*CIDR] YA
-  type: vless
-  server: "\x38\x34\x2e\x32\x30\x31\x2e\x31\x34\x36\x2e\x38"
-  port: 443
-  uuid: "\x46\x6c\x75\x66\x66\x79\x5f\x56\x50\x4e\x2d\x7a\x4b\x5a\x55\x61\x34\x49\x65"
-  udp: true
-  tls: true
-  servername: "\x6d\x61\x78\x2e\x72\x75"
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo
-  network: xhttp
-  xhttp-opts:
-    host: max.ru
+    public-key: hkWS1b3Hr9QYpBJ47yEgghAMEWj293itZ-_BDHTYozQ
+  network: tcp
 
 proxy-groups:
   - name: "Igareck Auto Select (Автоподключение)"
