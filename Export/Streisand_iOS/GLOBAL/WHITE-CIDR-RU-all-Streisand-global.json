@@ -59,9 +59,6 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
-          "full:n2.fiprotected.com",
-          "full:n1.plprotected.com",
-          "full:runode.protectednetwork.shop",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -119,9 +116,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:n2.fiprotected.com",
-          "full:n1.plprotected.com",
-          "full:runode.protectednetwork.shop",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -143,9 +137,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:n2.fiprotected.com",
-          "full:n1.plprotected.com",
-          "full:runode.protectednetwork.shop",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -167,9 +158,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:n2.fiprotected.com",
-          "full:n1.plprotected.com",
-          "full:runode.protectednetwork.shop",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -191,9 +179,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:n2.fiprotected.com",
-          "full:n1.plprotected.com",
-          "full:runode.protectednetwork.shop",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -215,9 +200,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:n2.fiprotected.com",
-          "full:n1.plprotected.com",
-          "full:runode.protectednetwork.shop",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -239,9 +221,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:n2.fiprotected.com",
-          "full:n1.plprotected.com",
-          "full:runode.protectednetwork.shop",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -263,9 +242,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:n2.fiprotected.com",
-          "full:n1.plprotected.com",
-          "full:runode.protectednetwork.shop",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -287,9 +263,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:n2.fiprotected.com",
-          "full:n1.plprotected.com",
-          "full:runode.protectednetwork.shop",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -311,9 +284,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:n2.fiprotected.com",
-          "full:n1.plprotected.com",
-          "full:runode.protectednetwork.shop",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -335,9 +305,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:n2.fiprotected.com",
-          "full:n1.plprotected.com",
-          "full:runode.protectednetwork.shop",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -359,9 +326,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:n2.fiprotected.com",
-          "full:n1.plprotected.com",
-          "full:runode.protectednetwork.shop",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -383,9 +347,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:n2.fiprotected.com",
-          "full:n1.plprotected.com",
-          "full:runode.protectednetwork.shop",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -476,34 +437,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "n2.fiprotected.com",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "3d53970b-419b-4a27-87b5-e9c99bb02eca",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "host": "max.ru"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "cdn2.fiprotected.com",
-          "fingerprint": "android",
-          "publicKey": "XBx1PANE_LKfrCRVCsu1LDwd2kywg7iDHW9tYEf2SQ0"
+          "serverName": "max.ru",
+          "fingerprint": "chrome",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -513,34 +472,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "n2.fiprotected.com",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "3d53970b-419b-4a27-87b5-e9c99bb02eca",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "host": "max.ru"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "cdn2.fiprotected.com",
-          "fingerprint": "chrome",
-          "publicKey": "XBx1PANE_LKfrCRVCsu1LDwd2kywg7iDHW9tYEf2SQ0"
+          "serverName": "max.ru",
+          "fingerprint": "firefox",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -550,34 +507,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "n2.fiprotected.com",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "3d53970b-419b-4a27-87b5-e9c99bb02eca",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "host": "max.ru"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "cdn2.fiprotected.com",
-          "fingerprint": "firefox",
-          "publicKey": "XBx1PANE_LKfrCRVCsu1LDwd2kywg7iDHW9tYEf2SQ0"
+          "serverName": "max.ru",
+          "fingerprint": "ios",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -587,34 +542,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "n2.fiprotected.com",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "3d53970b-419b-4a27-87b5-e9c99bb02eca",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "host": "max.ru"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "cdn2.fiprotected.com",
+          "serverName": "max.ru",
           "fingerprint": "qq",
-          "publicKey": "XBx1PANE_LKfrCRVCsu1LDwd2kywg7iDHW9tYEf2SQ0"
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -624,34 +577,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "n2.fiprotected.com",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "3d53970b-419b-4a27-87b5-e9c99bb02eca",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/",
+          "host": "max.ru"
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "cdn2.fiprotected.com",
+          "serverName": "max.ru",
           "fingerprint": "safari",
-          "publicKey": "XBx1PANE_LKfrCRVCsu1LDwd2kywg7iDHW9tYEf2SQ0"
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -661,11 +612,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.175",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "33a1a0e1-7dd1-414b-9751-901aeb44ae7d",
+                "id": "Fluffy_VPN-zKZUa4Ie",
                 "encryption": "none"
               }
             ]
@@ -679,17 +630,14 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/0828d250570a",
-          "host": "ru4.lebedvpn.cc",
-          "mode": "stream-up"
+          "path": "/",
+          "host": "max.ru"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ru4.lebedvpn.cc",
-          "fingerprint": "android",
-          "alpn": [
-            "h3"
-          ]
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
+          "fingerprint": "qq",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -699,7 +647,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "n1.plprotected.com",
+            "address": "188.225.47.177",
             "port": 443,
             "users": [
               {
@@ -724,10 +672,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "n1.plprotected.com",
+          "serverName": "s3.mmmnetwork.work",
           "fingerprint": "android",
-          "publicKey": "3vjBnBr2KimDf8k6Zhqw39mPb4q72Un4uOPCFfzE2FU",
-          "shortId": "42aac51856c6c83c"
+          "publicKey": "F732kKVYV_z7VxExBfZdZFxhvkyukvYnumsRlupQSDc",
+          "shortId": "adf12efb"
         }
       }
     },
@@ -737,7 +685,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "n1.plprotected.com",
+            "address": "188.225.47.177",
             "port": 443,
             "users": [
               {
@@ -762,10 +710,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "n1.plprotected.com",
-          "fingerprint": "edge",
-          "publicKey": "3vjBnBr2KimDf8k6Zhqw39mPb4q72Un4uOPCFfzE2FU",
-          "shortId": "42aac51856c6c83c"
+          "serverName": "s3.mmmnetwork.work",
+          "fingerprint": "chrome",
+          "publicKey": "F732kKVYV_z7VxExBfZdZFxhvkyukvYnumsRlupQSDc",
+          "shortId": "adf12efb"
         }
       }
     },
@@ -775,7 +723,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "n1.plprotected.com",
+            "address": "188.225.47.177",
             "port": 443,
             "users": [
               {
@@ -800,10 +748,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "n1.plprotected.com",
+          "serverName": "s3.mmmnetwork.work",
           "fingerprint": "firefox",
-          "publicKey": "3vjBnBr2KimDf8k6Zhqw39mPb4q72Un4uOPCFfzE2FU",
-          "shortId": "42aac51856c6c83c"
+          "publicKey": "F732kKVYV_z7VxExBfZdZFxhvkyukvYnumsRlupQSDc",
+          "shortId": "adf12efb"
         }
       }
     },
@@ -813,7 +761,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "n1.plprotected.com",
+            "address": "188.225.47.177",
             "port": 443,
             "users": [
               {
@@ -838,10 +786,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "n1.plprotected.com",
-          "fingerprint": "ios",
-          "publicKey": "3vjBnBr2KimDf8k6Zhqw39mPb4q72Un4uOPCFfzE2FU",
-          "shortId": "42aac51856c6c83c"
+          "serverName": "s3.mmmnetwork.work",
+          "fingerprint": "qq",
+          "publicKey": "F732kKVYV_z7VxExBfZdZFxhvkyukvYnumsRlupQSDc",
+          "shortId": "adf12efb"
         }
       }
     },
@@ -851,7 +799,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "n1.plprotected.com",
+            "address": "188.225.47.177",
             "port": 443,
             "users": [
               {
@@ -876,10 +824,10 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "n1.plprotected.com",
+          "serverName": "s3.mmmnetwork.work",
           "fingerprint": "safari",
-          "publicKey": "3vjBnBr2KimDf8k6Zhqw39mPb4q72Un4uOPCFfzE2FU",
-          "shortId": "42aac51856c6c83c"
+          "publicKey": "F732kKVYV_z7VxExBfZdZFxhvkyukvYnumsRlupQSDc",
+          "shortId": "adf12efb"
         }
       }
     },
@@ -889,7 +837,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "runode.protectednetwork.shop",
+            "address": "31.76.34.100",
             "port": 443,
             "users": [
               {
@@ -914,9 +862,9 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "rucdn.protectednetwork.shop",
-          "fingerprint": "chrome",
-          "publicKey": "qQ5v62tCMmdAXvcrfWj9e4pm732FGnWnjTomgwBYXwU"
+          "serverName": "cdn3.ndprotected.com",
+          "fingerprint": "android",
+          "publicKey": "nY7HQ2YzzXRZd2PJgWS7mPKG-5iXuIBIEl_V-OXmg0c"
         }
       }
     },
@@ -926,7 +874,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "runode.protectednetwork.shop",
+            "address": "31.76.34.100",
             "port": 443,
             "users": [
               {
@@ -951,9 +899,9 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "rucdn.protectednetwork.shop",
-          "fingerprint": "edge",
-          "publicKey": "qQ5v62tCMmdAXvcrfWj9e4pm732FGnWnjTomgwBYXwU"
+          "serverName": "cdn3.ndprotected.com",
+          "fingerprint": "chrome",
+          "publicKey": "nY7HQ2YzzXRZd2PJgWS7mPKG-5iXuIBIEl_V-OXmg0c"
         }
       }
     },
@@ -963,7 +911,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "runode.protectednetwork.shop",
+            "address": "31.76.34.100",
             "port": 443,
             "users": [
               {
@@ -988,9 +936,9 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "rucdn.protectednetwork.shop",
+          "serverName": "cdn3.ndprotected.com",
           "fingerprint": "firefox",
-          "publicKey": "qQ5v62tCMmdAXvcrfWj9e4pm732FGnWnjTomgwBYXwU"
+          "publicKey": "nY7HQ2YzzXRZd2PJgWS7mPKG-5iXuIBIEl_V-OXmg0c"
         }
       }
     },
@@ -1000,7 +948,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "runode.protectednetwork.shop",
+            "address": "31.76.34.100",
             "port": 443,
             "users": [
               {
@@ -1025,9 +973,9 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "rucdn.protectednetwork.shop",
+          "serverName": "cdn3.ndprotected.com",
           "fingerprint": "qq",
-          "publicKey": "qQ5v62tCMmdAXvcrfWj9e4pm732FGnWnjTomgwBYXwU"
+          "publicKey": "nY7HQ2YzzXRZd2PJgWS7mPKG-5iXuIBIEl_V-OXmg0c"
         }
       }
     },
@@ -1037,7 +985,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "runode.protectednetwork.shop",
+            "address": "31.76.34.100",
             "port": 443,
             "users": [
               {
@@ -1062,9 +1010,9 @@
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "rucdn.protectednetwork.shop",
+          "serverName": "cdn3.ndprotected.com",
           "fingerprint": "safari",
-          "publicKey": "qQ5v62tCMmdAXvcrfWj9e4pm732FGnWnjTomgwBYXwU"
+          "publicKey": "nY7HQ2YzzXRZd2PJgWS7mPKG-5iXuIBIEl_V-OXmg0c"
         }
       }
     },
@@ -1074,11 +1022,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.175",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "33a1a0e1-7dd1-414b-9751-901aeb44ae7d",
+                "id": "Fluffy_VPN-zKZUa4Ie",
                 "encryption": "none"
               }
             ]
@@ -1092,17 +1040,14 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/0828d250570a",
-          "host": "ru4.lebedvpn.cc",
-          "mode": "stream-up"
+          "path": "/",
+          "host": "max.ru"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ru4.lebedvpn.cc",
-          "fingerprint": "edge",
-          "alpn": [
-            "h3"
-          ]
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
+          "fingerprint": "firefox",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -1112,11 +1057,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.175",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "33a1a0e1-7dd1-414b-9751-901aeb44ae7d",
+                "id": "Fluffy_VPN-zKZUa4Ie",
                 "encryption": "none"
               }
             ]
@@ -1130,17 +1075,14 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/0828d250570a",
-          "host": "ru4.lebedvpn.cc",
-          "mode": "stream-up"
+          "path": "/",
+          "host": "max.ru"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ru4.lebedvpn.cc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
           "fingerprint": "ios",
-          "alpn": [
-            "h3"
-          ]
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -1150,11 +1092,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.175",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "33a1a0e1-7dd1-414b-9751-901aeb44ae7d",
+                "id": "Fluffy_VPN-zKZUa4Ie",
                 "encryption": "none"
               }
             ]
@@ -1168,17 +1110,14 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/0828d250570a",
-          "host": "ru4.lebedvpn.cc",
-          "mode": "stream-up"
+          "path": "/",
+          "host": "max.ru"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ru4.lebedvpn.cc",
-          "fingerprint": "qq",
-          "alpn": [
-            "h3"
-          ]
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
+          "fingerprint": "safari",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -1188,11 +1127,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.23.113.175",
+            "address": "84.201.146.8",
             "port": 443,
             "users": [
               {
-                "id": "33a1a0e1-7dd1-414b-9751-901aeb44ae7d",
+                "id": "Fluffy_VPN-zKZUa4Ie",
                 "encryption": "none"
               }
             ]
@@ -1206,87 +1145,19 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/0828d250570a",
-          "host": "ru4.lebedvpn.cc",
-          "mode": "stream-up"
+          "path": "/",
+          "host": "max.ru"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ru4.lebedvpn.cc",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
           "fingerprint": "chrome",
-          "alpn": [
-            "h3"
-          ]
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
     {
       "tag": "igareck-node-021",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "89.23.113.175",
-            "port": 443,
-            "users": [
-              {
-                "id": "33a1a0e1-7dd1-414b-9751-901aeb44ae7d",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/0828d250570a",
-          "host": "ru4.lebedvpn.cc",
-          "mode": "stream-up"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ru4.lebedvpn.cc",
-          "fingerprint": "firefox",
-          "alpn": [
-            "h3"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-022",
-      "protocol": "hysteria",
-      "settings": {
-        "version": 2,
-        "address": "msk.frkn.org",
-        "port": 443
-      },
-      "streamSettings": {
-        "network": "hysteria",
-        "security": "tls",
-        "hysteriaSettings": {
-          "version": 2,
-          "auth": "f317b5d6-d399-4d3d-a051-89d674ae953c"
-        },
-        "tlsSettings": {
-          "serverName": "msk.frkn.org",
-          "alpn": [
-            "h3"
-          ]
-        },
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-023",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -1313,7 +1184,7 @@
       }
     },
     {
-      "tag": "igareck-node-024",
+      "tag": "igareck-node-022",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -1340,12 +1211,93 @@
       }
     },
     {
+      "tag": "igareck-node-023",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "91.240.86.70",
+        "port": 22443
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+        },
+        "tlsSettings": {
+          "serverName": "hy.quattro-tech.ru",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-024",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "msk.frkn.org",
+        "port": 443
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "f317b5d6-d399-4d3d-a051-89d674ae953c"
+        },
+        "tlsSettings": {
+          "serverName": "msk.frkn.org",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        }
+      }
+    },
+    {
       "tag": "igareck-node-025",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "msk.frkn.org",
+        "port": 443
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "f317b5d6-d399-4d3d-a051-89d674ae953c"
+        },
+        "tlsSettings": {
+          "serverName": "msk.frkn.org",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-026",
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "194.226.142.120",
+            "address": "194.87.71.141",
             "port": 443,
             "users": [
               {
@@ -1370,7 +1322,9 @@
           }
         },
         "security": "tls",
-        "tlsSettings": {}
+        "tlsSettings": {
+          "serverName": "renderer-stream-2-62.mirra.now"
+        }
       }
     },
     {
