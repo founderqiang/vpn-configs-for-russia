@@ -453,7 +453,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "relay.funtime.best",
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         }
       }
     },
@@ -503,7 +503,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "relay.funtime.best",
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -553,7 +553,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "relay.funtime.best",
-          "fingerprint": "edge"
+          "fingerprint": "ios"
         }
       }
     },
@@ -563,11 +563,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "84.201.146.8",
+            "address": "relay.funtime.best",
             "port": 443,
             "users": [
               {
-                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "id": "63502f61-5e8b-4100-8826-868856e78c53",
                 "encryption": "none"
               }
             ]
@@ -581,14 +581,29 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
+          "path": "/media/v3/audio/",
+          "host": "relay.funtime.best",
+          "mode": "packet-up",
+          "extra": {
+            "path": "/media/v3/audio/",
+            "xmux": {
+              "cMaxLifetimeMs": 0,
+              "cMaxReuseTimes": "0",
+              "maxConcurrency": "16-32",
+              "maxConnections": 0,
+              "hKeepAlivePeriod": 30,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "1800-3000"
+            },
+            "noSSEHeader": false,
+            "xPaddingBytes": "100-1000",
+            "uplinkHTTPMethod": "GET"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "safari",
-          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "relay.funtime.best",
+          "fingerprint": "safari"
         }
       }
     },
@@ -622,7 +637,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "max.ru",
-          "fingerprint": "chrome",
+          "fingerprint": "android",
           "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
@@ -657,7 +672,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "max.ru",
-          "fingerprint": "firefox",
+          "fingerprint": "chrome",
           "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
@@ -692,7 +707,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "max.ru",
-          "fingerprint": "ios",
+          "fingerprint": "qq",
           "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
@@ -726,7 +741,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "max.ru",
-          "fingerprint": "edge",
+          "fingerprint": "android",
           "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
@@ -760,7 +775,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "max.ru",
-          "fingerprint": "firefox",
+          "fingerprint": "chrome",
           "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
@@ -794,13 +809,83 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "max.ru",
-          "fingerprint": "qq",
+          "fingerprint": "safari",
           "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
     {
       "tag": "igareck-node-011",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "84.201.146.8",
+            "port": 443,
+            "users": [
+              {
+                "id": "Fluffy_VPN-zKZUa4Ie",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/",
+          "host": "max.ru"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
+          "fingerprint": "ios",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-012",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "84.201.146.8",
+            "port": 443,
+            "users": [
+              {
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/",
+          "host": "max.ru"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
+          "fingerprint": "ios",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-013",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -824,76 +909,6 @@
         },
         "xhttpSettings": {
           "path": "/"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "safari",
-          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-012",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "84.201.146.8",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-zKZUa4Ie",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "chrome",
-          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-013",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "84.201.146.8",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-zKZUa4Ie",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
         },
         "security": "reality",
         "realitySettings": {
@@ -933,7 +948,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "max.ru",
-          "fingerprint": "ios",
+          "fingerprint": "chrome",
           "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
@@ -968,7 +983,7 @@
         "security": "reality",
         "realitySettings": {
           "serverName": "max.ru",
-          "fingerprint": "safari",
+          "fingerprint": "firefox",
           "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
@@ -979,11 +994,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "relay.funtime.best",
-            "port": 2096,
+            "address": "84.201.146.8",
+            "port": 443,
             "users": [
               {
-                "id": "63502f61-5e8b-4100-8826-868856e78c53",
+                "id": "Fluffy_VPN-zKZUa4Ie",
                 "encryption": "none"
               }
             ]
@@ -997,29 +1012,14 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/media/v3/posters/",
-          "host": "relay.funtime.best",
-          "mode": "packet-up",
-          "extra": {
-            "path": "/media/v3/posters/",
-            "xmux": {
-              "cMaxLifetimeMs": 0,
-              "cMaxReuseTimes": "0",
-              "maxConcurrency": "16-32",
-              "maxConnections": 0,
-              "hKeepAlivePeriod": 30,
-              "hMaxRequestTimes": "600-900",
-              "hMaxReusableSecs": "1800-3000"
-            },
-            "noSSEHeader": false,
-            "xPaddingBytes": "100-1000",
-            "uplinkHTTPMethod": "GET"
-          }
+          "path": "/",
+          "host": "max.ru"
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "relay.funtime.best",
-          "fingerprint": "firefox"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
+          "fingerprint": "qq",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
         }
       }
     },
@@ -1069,7 +1069,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "relay.funtime.best",
-          "fingerprint": "qq"
+          "fingerprint": "android"
         }
       }
     },
@@ -1119,7 +1119,107 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "relay.funtime.best",
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-019",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "relay.funtime.best",
+            "port": 2096,
+            "users": [
+              {
+                "id": "63502f61-5e8b-4100-8826-868856e78c53",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/media/v3/posters/",
+          "host": "relay.funtime.best",
+          "mode": "packet-up",
+          "extra": {
+            "path": "/media/v3/posters/",
+            "xmux": {
+              "cMaxLifetimeMs": 0,
+              "cMaxReuseTimes": "0",
+              "maxConcurrency": "16-32",
+              "maxConnections": 0,
+              "hKeepAlivePeriod": 30,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "1800-3000"
+            },
+            "noSSEHeader": false,
+            "xPaddingBytes": "100-1000",
+            "uplinkHTTPMethod": "GET"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "relay.funtime.best",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-020",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "relay.funtime.best",
+            "port": 2096,
+            "users": [
+              {
+                "id": "63502f61-5e8b-4100-8826-868856e78c53",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/media/v3/posters/",
+          "host": "relay.funtime.best",
+          "mode": "packet-up",
+          "extra": {
+            "path": "/media/v3/posters/",
+            "xmux": {
+              "cMaxLifetimeMs": 0,
+              "cMaxReuseTimes": "0",
+              "maxConcurrency": "16-32",
+              "maxConnections": 0,
+              "hKeepAlivePeriod": 30,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "1800-3000"
+            },
+            "noSSEHeader": false,
+            "xPaddingBytes": "100-1000",
+            "uplinkHTTPMethod": "GET"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "relay.funtime.best",
+          "fingerprint": "qq"
         }
       }
     },
