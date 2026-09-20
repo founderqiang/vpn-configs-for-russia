@@ -57,7 +57,8 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$"
+          "regexp:^[^.]+$",
+          "full:node3.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -113,7 +114,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:node3.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -133,7 +135,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:node3.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -153,7 +156,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:node3.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -173,7 +177,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:node3.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -193,7 +198,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:node3.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -213,7 +219,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:node3.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -233,7 +240,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:node3.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -253,7 +261,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:node3.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -273,7 +282,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:node3.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -293,7 +303,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:node3.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -313,7 +324,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:node3.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -333,7 +345,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:node3.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -400,35 +413,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
+            "address": "node3.frost-api.com",
             "port": 443,
             "users": [
               {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
+                "id": "fefe22c4-a9aa-4b56-b23d-e42aab4bbac0",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "serverName": "max.ru",
-          "fingerprint": "android",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U",
-          "alpn": [
-            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-          ]
+          "fingerprint": "chrome",
+          "publicKey": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw",
+          "shortId": "e7"
         }
       }
     },
@@ -438,35 +451,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
+            "address": "node3.frost-api.com",
             "port": 443,
             "users": [
               {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
+                "id": "fefe22c4-a9aa-4b56-b23d-e42aab4bbac0",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "serverName": "max.ru",
-          "fingerprint": "chrome",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U",
-          "alpn": [
-            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-          ]
+          "fingerprint": "edge",
+          "publicKey": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw",
+          "shortId": "e7"
         }
       }
     },
@@ -476,35 +489,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
+            "address": "node3.frost-api.com",
             "port": 443,
             "users": [
               {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
+                "id": "fefe22c4-a9aa-4b56-b23d-e42aab4bbac0",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "serverName": "max.ru",
-          "fingerprint": "firefox",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U",
-          "alpn": [
-            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-          ]
+          "fingerprint": "ios",
+          "publicKey": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw",
+          "shortId": "e7"
         }
       }
     },
@@ -514,35 +527,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
+            "address": "node3.frost-api.com",
             "port": 443,
             "users": [
               {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
+                "id": "fefe22c4-a9aa-4b56-b23d-e42aab4bbac0",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
           "serverName": "max.ru",
           "fingerprint": "qq",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U",
-          "alpn": [
-            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-          ]
+          "publicKey": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw",
+          "shortId": "e7"
         }
       }
     },
@@ -552,133 +565,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
+            "address": "node3.frost-api.com",
             "port": 443,
             "users": [
               {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
+                "id": "fefe22c4-a9aa-4b56-b23d-e42aab4bbac0",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "android",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-006",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
+        "rawSettings": {
+          "header": {
+            "type": "none"
           }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/"
         },
         "security": "reality",
         "realitySettings": {
           "serverName": "max.ru",
-          "fingerprint": "chrome",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-007",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "ios",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-008",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "qq",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
+          "fingerprint": "safari",
+          "publicKey": "SHIYN7zN9aFVxwKK-bIvDbhUgtHvlBhDi1qSl2sWwRw",
+          "shortId": "e7"
         }
       }
     },
