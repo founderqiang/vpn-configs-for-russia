@@ -59,6 +59,7 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
+          "full:posa6.api3-max.ru",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -116,6 +117,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:posa6.api3-max.ru",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -137,6 +139,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:posa6.api3-max.ru",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -158,6 +161,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:posa6.api3-max.ru",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -179,6 +183,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:posa6.api3-max.ru",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -200,6 +205,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:posa6.api3-max.ru",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -221,6 +227,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:posa6.api3-max.ru",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -242,6 +249,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:posa6.api3-max.ru",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -263,6 +271,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:posa6.api3-max.ru",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -284,6 +293,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:posa6.api3-max.ru",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -305,6 +315,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:posa6.api3-max.ru",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -326,6 +337,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:posa6.api3-max.ru",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -347,6 +359,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
+          "full:posa6.api3-max.ru",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -437,33 +450,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.125.214.154",
-            "port": 8444,
+            "address": "posa6.api3-max.ru",
+            "port": 443,
             "users": [
               {
-                "id": "82719790-ff61-4284-8668-ba140a4d6cbd",
-                "encryption": "none"
+                "id": "cdd6bfce-781a-4454-b7d5-4778abb5c24f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "grpc-de-grpc",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "vk.ru",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "posa6.api3-max.ru",
           "fingerprint": "chrome",
-          "publicKey": "O4ymaaoTi3woCs3MWktyrXKhlU5RCK1Wo0G_T0u_Vi4",
-          "shortId": "5db60b1f"
+          "alpn": [
+            "h3"
+          ]
         }
       }
     },
@@ -473,33 +489,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.125.214.154",
-            "port": 8444,
+            "address": "posa6.api3-max.ru",
+            "port": 443,
             "users": [
               {
-                "id": "82719790-ff61-4284-8668-ba140a4d6cbd",
-                "encryption": "none"
+                "id": "cdd6bfce-781a-4454-b7d5-4778abb5c24f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "grpc-de-grpc",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "vk.ru",
-          "fingerprint": "firefox",
-          "publicKey": "O4ymaaoTi3woCs3MWktyrXKhlU5RCK1Wo0G_T0u_Vi4",
-          "shortId": "5db60b1f"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "posa6.api3-max.ru",
+          "fingerprint": "edge",
+          "alpn": [
+            "h3"
+          ]
         }
       }
     },
@@ -509,33 +528,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.125.214.154",
-            "port": 8444,
+            "address": "posa6.api3-max.ru",
+            "port": 443,
             "users": [
               {
-                "id": "82719790-ff61-4284-8668-ba140a4d6cbd",
-                "encryption": "none"
+                "id": "cdd6bfce-781a-4454-b7d5-4778abb5c24f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "grpc-de-grpc",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "vk.ru",
-          "fingerprint": "ios",
-          "publicKey": "O4ymaaoTi3woCs3MWktyrXKhlU5RCK1Wo0G_T0u_Vi4",
-          "shortId": "5db60b1f"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "posa6.api3-max.ru",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h3"
+          ]
         }
       }
     },
@@ -545,33 +567,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.125.214.154",
-            "port": 8444,
+            "address": "posa6.api3-max.ru",
+            "port": 443,
             "users": [
               {
-                "id": "82719790-ff61-4284-8668-ba140a4d6cbd",
-                "encryption": "none"
+                "id": "cdd6bfce-781a-4454-b7d5-4778abb5c24f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "grpc-de-grpc",
-          "multiMode": false
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "vk.ru",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "posa6.api3-max.ru",
           "fingerprint": "qq",
-          "publicKey": "O4ymaaoTi3woCs3MWktyrXKhlU5RCK1Wo0G_T0u_Vi4",
-          "shortId": "5db60b1f"
+          "alpn": [
+            "h3"
+          ]
         }
       }
     },
@@ -581,11 +606,50 @@
       "settings": {
         "vnext": [
           {
-            "address": "89.125.214.154",
-            "port": 8444,
+            "address": "posa6.api3-max.ru",
+            "port": 443,
             "users": [
               {
-                "id": "82719790-ff61-4284-8668-ba140a4d6cbd",
+                "id": "cdd6bfce-781a-4454-b7d5-4778abb5c24f",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "posa6.api3-max.ru",
+          "fingerprint": "safari",
+          "alpn": [
+            "h3"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-006",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "186.246.2.254",
+            "port": 6443,
+            "users": [
+              {
+                "id": "ae8e2b94-5d44-437b-9002-80c2015f0e23",
                 "encryption": "none"
               }
             ]
@@ -599,20 +663,52 @@
           "tcpKeepAliveInterval": 60
         },
         "grpcSettings": {
-          "serviceName": "grpc-de-grpc",
+          "serviceName": "media.playback.v1.SessionGateway",
           "multiMode": false
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "vk.ru",
-          "fingerprint": "safari",
-          "publicKey": "O4ymaaoTi3woCs3MWktyrXKhlU5RCK1Wo0G_T0u_Vi4",
-          "shortId": "5db60b1f"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "nld.centermass.net",
+          "fingerprint": "chrome"
         }
       }
     },
     {
-      "tag": "igareck-node-006",
+      "tag": "igareck-node-007",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "186.246.2.254",
+            "port": 6443,
+            "users": [
+              {
+                "id": "ae8e2b94-5d44-437b-9002-80c2015f0e23",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "nld.centermass.net",
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-008",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -649,7 +745,7 @@
       }
     },
     {
-      "tag": "igareck-node-007",
+      "tag": "igareck-node-009",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -686,74 +782,6 @@
       }
     },
     {
-      "tag": "igareck-node-008",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "186.246.2.254",
-            "port": 6443,
-            "users": [
-              {
-                "id": "ae8e2b94-5d44-437b-9002-80c2015f0e23",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "media.playback.v1.SessionGateway",
-          "multiMode": false
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "nld.centermass.net",
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-009",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "186.246.2.254",
-            "port": 6443,
-            "users": [
-              {
-                "id": "ae8e2b94-5d44-437b-9002-80c2015f0e23",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "media.playback.v1.SessionGateway",
-          "multiMode": false
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "nld.centermass.net",
-          "fingerprint": "edge"
-        }
-      }
-    },
-    {
       "tag": "igareck-node-010",
       "protocol": "vless",
       "settings": {
@@ -783,7 +811,10 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "nld.centermass.net",
-          "fingerprint": "firefox"
+          "fingerprint": "ios",
+          "alpn": [
+            "h2"
+          ]
         }
       }
     },
@@ -817,7 +848,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "nld.centermass.net",
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -851,7 +882,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "nld.centermass.net",
-          "fingerprint": "safari"
+          "fingerprint": "qq"
         }
       }
     },
@@ -885,10 +916,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "nld.centermass.net",
-          "fingerprint": "android",
-          "alpn": [
-            "h2"
-          ]
+          "fingerprint": "safari"
         }
       }
     },
@@ -959,7 +987,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "nld.centermass.net",
-          "fingerprint": "ios",
+          "fingerprint": "safari",
           "alpn": [
             "h2"
           ]
@@ -968,21 +996,401 @@
     },
     {
       "tag": "igareck-node-016",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.129.236.239",
+            "port": 443,
+            "users": [
+              {
+                "id": "b1346aad-8d2b-4b06-a3cf-e20399c3ebd2",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/stream/615428/socket",
+          "headers": {
+            "Host": "wiki.solarinfra.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wiki.solarinfra.net",
+          "fingerprint": "chrome",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-017",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.129.236.239",
+            "port": 443,
+            "users": [
+              {
+                "id": "b1346aad-8d2b-4b06-a3cf-e20399c3ebd2",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/stream/615428/socket",
+          "headers": {
+            "Host": "wiki.solarinfra.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wiki.solarinfra.net",
+          "fingerprint": "edge",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-018",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.129.236.239",
+            "port": 443,
+            "users": [
+              {
+                "id": "b1346aad-8d2b-4b06-a3cf-e20399c3ebd2",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/stream/615428/socket",
+          "headers": {
+            "Host": "wiki.solarinfra.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wiki.solarinfra.net",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-019",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.129.236.239",
+            "port": 443,
+            "users": [
+              {
+                "id": "b1346aad-8d2b-4b06-a3cf-e20399c3ebd2",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/stream/615428/socket",
+          "headers": {
+            "Host": "wiki.solarinfra.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wiki.solarinfra.net",
+          "fingerprint": "ios",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-020",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.129.236.239",
+            "port": 443,
+            "users": [
+              {
+                "id": "b1346aad-8d2b-4b06-a3cf-e20399c3ebd2",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/stream/615428/socket",
+          "headers": {
+            "Host": "wiki.solarinfra.net"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "wiki.solarinfra.net",
+          "fingerprint": "safari",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-021",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.225.25.191",
+            "port": 5001,
+            "users": [
+              {
+                "id": "ae8e2b94-5d44-437b-9002-80c2015f0e23",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "rus.centermass.net",
+          "fingerprint": "android",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-022",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.225.25.191",
+            "port": 5001,
+            "users": [
+              {
+                "id": "ae8e2b94-5d44-437b-9002-80c2015f0e23",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "rus.centermass.net",
+          "fingerprint": "edge",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-023",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.225.25.191",
+            "port": 5001,
+            "users": [
+              {
+                "id": "ae8e2b94-5d44-437b-9002-80c2015f0e23",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "rus.centermass.net",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-024",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.225.25.191",
+            "port": 5001,
+            "users": [
+              {
+                "id": "ae8e2b94-5d44-437b-9002-80c2015f0e23",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "rus.centermass.net",
+          "fingerprint": "ios",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-025",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.225.25.191",
+            "port": 5001,
+            "users": [
+              {
+                "id": "ae8e2b94-5d44-437b-9002-80c2015f0e23",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "rus.centermass.net",
+          "fingerprint": "safari",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-026",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
-        "address": "46.8.210.152",
-        "port": 23443
+        "address": "84.23.54.203",
+        "port": 1935
       },
       "streamSettings": {
         "network": "hysteria",
         "security": "tls",
         "hysteriaSettings": {
           "version": 2,
-          "auth": "2a3b101d-d8f9-40e7-9373-b0ef487c0035"
+          "auth": "hysteria2_fastlane_cfm7kzssa:OHDpvCARUv5xvE07caQIrVo6IpqRkgkq"
         },
         "tlsSettings": {
-          "serverName": "disk.api-yandex.net",
+          "serverName": "ru2.h.smartaisupport.ru",
           "alpn": [
             "h3"
           ]
@@ -994,7 +1402,61 @@
       }
     },
     {
-      "tag": "igareck-node-017",
+      "tag": "igareck-node-027",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "87.239.111.109",
+        "port": 1935
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "hysteria2_fastlane_f6dt3q19m:vqCgcZnSL76jftd4853Sq8pUCmsYIjTJ"
+        },
+        "tlsSettings": {
+          "serverName": "ru2.h.smartaisupport.ru",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-028",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "91.240.86.70",
+        "port": 24443
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
+        },
+        "tlsSettings": {
+          "serverName": "hy.quattro-tech.ru",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-029",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -1021,7 +1483,34 @@
       }
     },
     {
-      "tag": "igareck-node-018",
+      "tag": "igareck-node-030",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "46.8.210.129",
+        "port": 22443
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "2a3b101d-d8f9-40e7-9373-b0ef487c0035"
+        },
+        "tlsSettings": {
+          "serverName": "disk.api-yandex.net",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-031",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -1048,7 +1537,34 @@
       }
     },
     {
-      "tag": "igareck-node-019",
+      "tag": "igareck-node-032",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "46.8.210.152",
+        "port": 23443
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "2a3b101d-d8f9-40e7-9373-b0ef487c0035"
+        },
+        "tlsSettings": {
+          "serverName": "disk.api-yandex.net",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-033",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -1075,7 +1591,7 @@
       }
     },
     {
-      "tag": "igareck-node-020",
+      "tag": "igareck-node-034",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -1102,7 +1618,7 @@
       }
     },
     {
-      "tag": "igareck-node-021",
+      "tag": "igareck-node-035",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -1129,7 +1645,7 @@
       }
     },
     {
-      "tag": "igareck-node-022",
+      "tag": "igareck-node-036",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -1156,7 +1672,7 @@
       }
     },
     {
-      "tag": "igareck-node-023",
+      "tag": "igareck-node-037",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
