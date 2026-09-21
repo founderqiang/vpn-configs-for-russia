@@ -3,12 +3,12 @@
     "name": "WHITE-CIDR-RU-all — v2rayNG Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "23 proxies",
+      "15 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "v2rayNG",
     "source": "WHITE-CIDR-RU-all.txt",
-    "source_datetime": "2026-09-21 19:36 Moscow"
+    "source_datetime": "2026-09-21 20:46 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -69,7 +69,8 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$"
+          "regexp:^[^.]+$",
+          "full:msk.frkn.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -125,7 +126,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:msk.frkn.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -145,7 +147,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:msk.frkn.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -165,7 +168,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:msk.frkn.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -185,7 +189,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:msk.frkn.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -205,7 +210,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:msk.frkn.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -225,7 +231,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:msk.frkn.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -245,7 +252,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:msk.frkn.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -265,7 +273,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:msk.frkn.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -285,7 +294,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:msk.frkn.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -305,7 +315,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:msk.frkn.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -325,7 +336,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:msk.frkn.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -345,7 +357,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:msk.frkn.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -433,32 +446,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
-            "port": 443,
+            "address": "191.44.45.10",
+            "port": 7443,
             "users": [
               {
-                "id": "06ec3898-f952-52a5-8547-51ae1e6f0a62",
-                "encryption": "none"
+                "id": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
+          "serverName": "speedtest.spectrum.vu",
           "fingerprint": "android",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
+          "publicKey": "7naINgyna0nJ73fMHGStdajWwIrsBk7pxgTKG7QerwY",
+          "shortId": "c8d3e5f1a9b2"
         }
       }
     },
@@ -468,32 +484,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
-            "port": 443,
+            "address": "191.44.45.10",
+            "port": 7443,
             "users": [
               {
-                "id": "06ec3898-f952-52a5-8547-51ae1e6f0a62",
-                "encryption": "none"
+                "id": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
+          "serverName": "speedtest.spectrum.vu",
           "fingerprint": "chrome",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
+          "publicKey": "7naINgyna0nJ73fMHGStdajWwIrsBk7pxgTKG7QerwY",
+          "shortId": "c8d3e5f1a9b2"
         }
       }
     },
@@ -503,32 +522,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
-            "port": 443,
+            "address": "191.44.45.10",
+            "port": 7443,
             "users": [
               {
-                "id": "06ec3898-f952-52a5-8547-51ae1e6f0a62",
-                "encryption": "none"
+                "id": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "firefox",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
+          "serverName": "speedtest.spectrum.vu",
+          "fingerprint": "edge",
+          "publicKey": "7naINgyna0nJ73fMHGStdajWwIrsBk7pxgTKG7QerwY",
+          "shortId": "c8d3e5f1a9b2"
         }
       }
     },
@@ -538,32 +560,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
-            "port": 443,
+            "address": "191.44.45.10",
+            "port": 7443,
             "users": [
               {
-                "id": "06ec3898-f952-52a5-8547-51ae1e6f0a62",
-                "encryption": "none"
+                "id": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "qq",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
+          "serverName": "speedtest.spectrum.vu",
+          "fingerprint": "firefox",
+          "publicKey": "7naINgyna0nJ73fMHGStdajWwIrsBk7pxgTKG7QerwY",
+          "shortId": "c8d3e5f1a9b2"
         }
       }
     },
@@ -573,32 +598,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
-            "port": 443,
+            "address": "191.44.45.10",
+            "port": 7443,
             "users": [
               {
-                "id": "06ec3898-f952-52a5-8547-51ae1e6f0a62",
-                "encryption": "none"
+                "id": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "safari",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
+          "serverName": "speedtest.spectrum.vu",
+          "fingerprint": "ios",
+          "publicKey": "7naINgyna0nJ73fMHGStdajWwIrsBk7pxgTKG7QerwY",
+          "shortId": "c8d3e5f1a9b2"
         }
       }
     },
@@ -608,31 +636,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
-            "port": 443,
+            "address": "191.44.45.10",
+            "port": 7443,
             "users": [
               {
-                "id": "06ec3898-f952-52a5-8547-51ae1e6f0a62",
-                "encryption": "none"
+                "id": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "edge",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
+          "serverName": "speedtest.spectrum.vu",
+          "fingerprint": "android",
+          "publicKey": "7naINgyna0nJ73fMHGStdajWwIrsBk7pxgTKG7QerwY",
+          "shortId": "2a6f8c4d1e9b"
         }
       }
     },
@@ -642,31 +674,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
-            "port": 443,
+            "address": "191.44.45.10",
+            "port": 7443,
             "users": [
               {
-                "id": "06ec3898-f952-52a5-8547-51ae1e6f0a62",
-                "encryption": "none"
+                "id": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
+          "serverName": "speedtest.spectrum.vu",
           "fingerprint": "firefox",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
+          "publicKey": "7naINgyna0nJ73fMHGStdajWwIrsBk7pxgTKG7QerwY",
+          "shortId": "2a6f8c4d1e9b"
         }
       }
     },
@@ -676,31 +712,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
-            "port": 443,
+            "address": "191.44.45.10",
+            "port": 7443,
             "users": [
               {
-                "id": "06ec3898-f952-52a5-8547-51ae1e6f0a62",
-                "encryption": "none"
+                "id": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
+          "serverName": "speedtest.spectrum.vu",
           "fingerprint": "ios",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
+          "publicKey": "7naINgyna0nJ73fMHGStdajWwIrsBk7pxgTKG7QerwY",
+          "shortId": "2a6f8c4d1e9b"
         }
       }
     },
@@ -710,31 +750,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
-            "port": 443,
+            "address": "191.44.45.10",
+            "port": 7443,
             "users": [
               {
-                "id": "06ec3898-f952-52a5-8547-51ae1e6f0a62",
-                "encryption": "none"
+                "id": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
+          "serverName": "speedtest.spectrum.vu",
           "fingerprint": "qq",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
+          "publicKey": "7naINgyna0nJ73fMHGStdajWwIrsBk7pxgTKG7QerwY",
+          "shortId": "2a6f8c4d1e9b"
         }
       }
     },
@@ -744,423 +788,40 @@
       "settings": {
         "vnext": [
           {
-            "address": "51.250.106.197",
-            "port": 443,
+            "address": "191.44.45.10",
+            "port": 7443,
             "users": [
               {
-                "id": "06ec3898-f952-52a5-8547-51ae1e6f0a62",
-                "encryption": "none"
+                "id": "76713d07-5a6b-49c2-abd8-bc450a2fa7fc",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "max.ru",
+          "serverName": "speedtest.spectrum.vu",
           "fingerprint": "safari",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
+          "publicKey": "7naINgyna0nJ73fMHGStdajWwIrsBk7pxgTKG7QerwY",
+          "shortId": "2a6f8c4d1e9b"
         }
       }
     },
     {
       "tag": "igareck-node-011",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "android",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U",
-          "alpn": [
-            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-012",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "chrome",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U",
-          "alpn": [
-            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-013",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "firefox",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U",
-          "alpn": [
-            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-014",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "ios",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U",
-          "alpn": [
-            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-015",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "qq",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U",
-          "alpn": [
-            "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-016",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "android",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-017",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "chrome",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-018",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "firefox",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-019",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "ios",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-020",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "51.250.106.197",
-            "port": 443,
-            "users": [
-              {
-                "id": "Fluffy_VPN-Oth8rOq3",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "qq",
-          "publicKey": "LGSiGIQDFwB3IgQw8IBEsI5qfQoPQRSeUZWofnEu00U"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-021",
-      "protocol": "hysteria",
-      "settings": {
-        "version": 2,
-        "address": "91.240.86.70",
-        "port": 24443
-      },
-      "streamSettings": {
-        "network": "hysteria",
-        "security": "tls",
-        "hysteriaSettings": {
-          "version": 2,
-          "auth": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5"
-        },
-        "tlsSettings": {
-          "serverName": "hy.quattro-tech.ru",
-          "alpn": [
-            "h3"
-          ]
-        },
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-022",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -1187,7 +848,7 @@
       }
     },
     {
-      "tag": "igareck-node-023",
+      "tag": "igareck-node-012",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -1203,6 +864,87 @@
         },
         "tlsSettings": {
           "serverName": "itsallproxy.quattro-tech.ru",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-013",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "msk.frkn.org",
+        "port": 443
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "f317b5d6-d399-4d3d-a051-89d674ae953c"
+        },
+        "tlsSettings": {
+          "serverName": "msk.frkn.org",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-014",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "msk.frkn.org",
+        "port": 443
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "f317b5d6-d399-4d3d-a051-89d674ae953c"
+        },
+        "tlsSettings": {
+          "serverName": "msk.frkn.org",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-015",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
+        "address": "msk.frkn.org",
+        "port": 443
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "f317b5d6-d399-4d3d-a051-89d674ae953c"
+        },
+        "tlsSettings": {
+          "serverName": "msk.frkn.org",
           "alpn": [
             "h3"
           ]
