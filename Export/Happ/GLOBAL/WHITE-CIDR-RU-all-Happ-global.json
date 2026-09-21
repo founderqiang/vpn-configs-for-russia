@@ -3,12 +3,12 @@
     "name": "WHITE-CIDR-RU-all — Happ Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "19 proxies",
+      "9 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "Happ",
     "source": "WHITE-CIDR-RU-all.txt",
-    "source_datetime": "2026-09-21 21:50 Moscow"
+    "source_datetime": "2026-09-21 22:54 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -70,7 +70,6 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
-          "full:de58.abvpn.net",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -128,7 +127,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:de58.abvpn.net",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -150,7 +148,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:de58.abvpn.net",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -172,7 +169,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:de58.abvpn.net",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -194,7 +190,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:de58.abvpn.net",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -216,7 +211,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:de58.abvpn.net",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -238,7 +232,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:de58.abvpn.net",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -260,7 +253,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:de58.abvpn.net",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -282,7 +274,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:de58.abvpn.net",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -304,7 +295,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:de58.abvpn.net",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -326,7 +316,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:de58.abvpn.net",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -348,7 +337,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:de58.abvpn.net",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -370,7 +358,6 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:de58.abvpn.net",
           "full:msk.frkn.org"
         ],
         "skipFallback": true,
@@ -459,31 +446,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.62.146",
+            "address": "159.194.217.26",
             "port": 443,
             "users": [
               {
-                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-                "encryption": "none"
+                "id": "e48e4377-1f29-485b-80d4-85fd4fa27bfa",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/cc118a5c-3229-4c8f-b388-210f4a008a28/",
-          "host": "de58.abvpn.net"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "de58.abvpn.net",
-          "fingerprint": "android"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.siemens.com",
+          "fingerprint": "android",
+          "publicKey": "APL7UqMEGSeIQNe4evUy3gdFRnTD_l3UMtgTcIfh2XY",
+          "shortId": "babcbe551bde8268"
         }
       }
     },
@@ -493,31 +484,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.62.146",
+            "address": "159.194.217.26",
             "port": 443,
             "users": [
               {
-                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-                "encryption": "none"
+                "id": "e48e4377-1f29-485b-80d4-85fd4fa27bfa",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/cc118a5c-3229-4c8f-b388-210f4a008a28/",
-          "host": "de58.abvpn.net"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "de58.abvpn.net",
-          "fingerprint": "edge"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.siemens.com",
+          "fingerprint": "chrome",
+          "publicKey": "APL7UqMEGSeIQNe4evUy3gdFRnTD_l3UMtgTcIfh2XY",
+          "shortId": "babcbe551bde8268"
         }
       }
     },
@@ -527,31 +522,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.62.146",
+            "address": "159.194.217.26",
             "port": 443,
             "users": [
               {
-                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-                "encryption": "none"
+                "id": "e48e4377-1f29-485b-80d4-85fd4fa27bfa",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/cc118a5c-3229-4c8f-b388-210f4a008a28/",
-          "host": "de58.abvpn.net"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "de58.abvpn.net",
-          "fingerprint": "firefox"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.siemens.com",
+          "fingerprint": "edge",
+          "publicKey": "APL7UqMEGSeIQNe4evUy3gdFRnTD_l3UMtgTcIfh2XY",
+          "shortId": "babcbe551bde8268"
         }
       }
     },
@@ -561,31 +560,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.62.146",
+            "address": "159.194.217.26",
             "port": 443,
             "users": [
               {
-                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-                "encryption": "none"
+                "id": "e48e4377-1f29-485b-80d4-85fd4fa27bfa",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/cc118a5c-3229-4c8f-b388-210f4a008a28/",
-          "host": "de58.abvpn.net"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "de58.abvpn.net",
-          "fingerprint": "qq"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.siemens.com",
+          "fingerprint": "ios",
+          "publicKey": "APL7UqMEGSeIQNe4evUy3gdFRnTD_l3UMtgTcIfh2XY",
+          "shortId": "babcbe551bde8268"
         }
       }
     },
@@ -595,411 +598,40 @@
       "settings": {
         "vnext": [
           {
-            "address": "45.151.62.146",
+            "address": "159.194.217.26",
             "port": 443,
             "users": [
               {
-                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-                "encryption": "none"
+                "id": "e48e4377-1f29-485b-80d4-85fd4fa27bfa",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/cc118a5c-3229-4c8f-b388-210f4a008a28/",
-          "host": "de58.abvpn.net"
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "de58.abvpn.net",
-          "fingerprint": "safari"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.siemens.com",
+          "fingerprint": "safari",
+          "publicKey": "APL7UqMEGSeIQNe4evUy3gdFRnTD_l3UMtgTcIfh2XY",
+          "shortId": "babcbe551bde8268"
         }
       }
     },
     {
       "tag": "igareck-node-006",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "de58.abvpn.net",
-            "port": 443,
-            "users": [
-              {
-                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/cc118a5c-3229-4c8f-b388-210f4a008a28/",
-          "host": "de58.abvpn.net"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "de58.abvpn.net",
-          "fingerprint": "android",
-          "alpn": [
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-007",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "de58.abvpn.net",
-            "port": 443,
-            "users": [
-              {
-                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/cc118a5c-3229-4c8f-b388-210f4a008a28/",
-          "host": "de58.abvpn.net"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "de58.abvpn.net",
-          "fingerprint": "firefox",
-          "alpn": [
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-008",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "de58.abvpn.net",
-            "port": 443,
-            "users": [
-              {
-                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/cc118a5c-3229-4c8f-b388-210f4a008a28/",
-          "host": "de58.abvpn.net"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "de58.abvpn.net",
-          "fingerprint": "ios",
-          "alpn": [
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-009",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "de58.abvpn.net",
-            "port": 443,
-            "users": [
-              {
-                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/cc118a5c-3229-4c8f-b388-210f4a008a28/",
-          "host": "de58.abvpn.net"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "de58.abvpn.net",
-          "fingerprint": "qq",
-          "alpn": [
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-010",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "de58.abvpn.net",
-            "port": 443,
-            "users": [
-              {
-                "id": "a289a3d3-5833-4b28-8809-ae72898a98d0",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/cc118a5c-3229-4c8f-b388-210f4a008a28/",
-          "host": "de58.abvpn.net"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "de58.abvpn.net",
-          "fingerprint": "safari",
-          "alpn": [
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-011",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "89.169.166.43",
-            "port": 2015,
-            "users": [
-              {
-                "id": "0a0667bd-1bdb-4555-a4a6-6903623fc804",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "gateway.icloud.com",
-          "fingerprint": "android",
-          "publicKey": "HnO7i6WBCj_5_km3TtotQJa76TbOVq1HuFhhqKVtr3U",
-          "shortId": "e787c66988b14914"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-012",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "89.169.166.43",
-            "port": 2015,
-            "users": [
-              {
-                "id": "0a0667bd-1bdb-4555-a4a6-6903623fc804",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "gateway.icloud.com",
-          "fingerprint": "edge",
-          "publicKey": "HnO7i6WBCj_5_km3TtotQJa76TbOVq1HuFhhqKVtr3U",
-          "shortId": "e787c66988b14914"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-013",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "89.169.166.43",
-            "port": 2015,
-            "users": [
-              {
-                "id": "0a0667bd-1bdb-4555-a4a6-6903623fc804",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "gateway.icloud.com",
-          "fingerprint": "firefox",
-          "publicKey": "HnO7i6WBCj_5_km3TtotQJa76TbOVq1HuFhhqKVtr3U",
-          "shortId": "e787c66988b14914"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-014",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "89.169.166.43",
-            "port": 2015,
-            "users": [
-              {
-                "id": "0a0667bd-1bdb-4555-a4a6-6903623fc804",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "gateway.icloud.com",
-          "fingerprint": "qq",
-          "publicKey": "HnO7i6WBCj_5_km3TtotQJa76TbOVq1HuFhhqKVtr3U",
-          "shortId": "e787c66988b14914"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-015",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "89.169.166.43",
-            "port": 2015,
-            "users": [
-              {
-                "id": "0a0667bd-1bdb-4555-a4a6-6903623fc804",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "gateway.icloud.com",
-          "fingerprint": "safari",
-          "publicKey": "HnO7i6WBCj_5_km3TtotQJa76TbOVq1HuFhhqKVtr3U",
-          "shortId": "e787c66988b14914"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-016",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -1026,7 +658,7 @@
       }
     },
     {
-      "tag": "igareck-node-017",
+      "tag": "igareck-node-007",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -1053,7 +685,7 @@
       }
     },
     {
-      "tag": "igareck-node-018",
+      "tag": "igareck-node-008",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -1080,7 +712,7 @@
       }
     },
     {
-      "tag": "igareck-node-019",
+      "tag": "igareck-node-009",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
