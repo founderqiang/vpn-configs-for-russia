@@ -3,12 +3,12 @@
     "name": "WHITE-CIDR-RU-checked — Happ Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "4 proxies",
+      "5 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "Happ",
     "source": "WHITE-CIDR-RU-checked.txt",
-    "source_datetime": "2026-09-21 05:00 Moscow"
+    "source_datetime": "2026-09-21 05:59 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -437,7 +437,44 @@
             "port": 443,
             "users": [
               {
-                "id": "b5a79dec-1bbe-431b-a144-d6660bf4d106",
+                "id": "d82e3813-9c83-43a5-bd30-385ed7c20a94",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/e7ws",
+          "headers": {}
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "dostavitos.stroymatdv.cc",
+          "fingerprint": "chrome",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-002",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.139.42.138",
+            "port": 443,
+            "users": [
+              {
+                "id": "d82e3813-9c83-43a5-bd30-385ed7c20a94",
                 "encryption": "none"
               }
             ]
@@ -465,7 +502,7 @@
       }
     },
     {
-      "tag": "igareck-node-002",
+      "tag": "igareck-node-003",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -474,7 +511,44 @@
             "port": 443,
             "users": [
               {
-                "id": "b5a79dec-1bbe-431b-a144-d6660bf4d106",
+                "id": "d82e3813-9c83-43a5-bd30-385ed7c20a94",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/e7ws",
+          "headers": {}
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "dostavitos.stroymatdv.cc",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-004",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.139.42.138",
+            "port": 443,
+            "users": [
+              {
+                "id": "d82e3813-9c83-43a5-bd30-385ed7c20a94",
                 "encryption": "none"
               }
             ]
@@ -502,7 +576,7 @@
       }
     },
     {
-      "tag": "igareck-node-003",
+      "tag": "igareck-node-005",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -511,7 +585,7 @@
             "port": 443,
             "users": [
               {
-                "id": "b5a79dec-1bbe-431b-a144-d6660bf4d106",
+                "id": "d82e3813-9c83-43a5-bd30-385ed7c20a94",
                 "encryption": "none"
               }
             ]
@@ -535,33 +609,6 @@
           "alpn": [
             "http/1.1"
           ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-004",
-      "protocol": "hysteria",
-      "settings": {
-        "version": 2,
-        "address": "84.23.54.203",
-        "port": 1935
-      },
-      "streamSettings": {
-        "network": "hysteria",
-        "security": "tls",
-        "hysteriaSettings": {
-          "version": 2,
-          "auth": "hysteria2_fastlane_cfm7kzssa:OHDpvCARUv5xvE07caQIrVo6IpqRkgkq"
-        },
-        "tlsSettings": {
-          "serverName": "ru2.h.smartaisupport.ru",
-          "alpn": [
-            "h3"
-          ]
-        },
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
         }
       }
     },
