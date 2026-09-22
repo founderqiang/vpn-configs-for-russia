@@ -58,8 +58,7 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$",
-          "full:t2xmzpec98.nl.cdnfludelivery.com"
+          "regexp:^[^.]+$"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -115,8 +114,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:t2xmzpec98.nl.cdnfludelivery.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -136,8 +134,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:t2xmzpec98.nl.cdnfludelivery.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -157,8 +154,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:t2xmzpec98.nl.cdnfludelivery.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -178,8 +174,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:t2xmzpec98.nl.cdnfludelivery.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -199,8 +194,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:t2xmzpec98.nl.cdnfludelivery.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -220,8 +214,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:t2xmzpec98.nl.cdnfludelivery.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -241,8 +234,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:t2xmzpec98.nl.cdnfludelivery.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -262,8 +254,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:t2xmzpec98.nl.cdnfludelivery.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -283,8 +274,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:t2xmzpec98.nl.cdnfludelivery.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -304,8 +294,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:t2xmzpec98.nl.cdnfludelivery.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -325,8 +314,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:t2xmzpec98.nl.cdnfludelivery.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -346,8 +334,7 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de",
-          "full:t2xmzpec98.nl.cdnfludelivery.com"
+          "full:blank.dnsforge.de"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -438,27 +425,25 @@
         "vnext": [
           {
             "address": "179.254.111.0",
-            "port": 443,
+            "port": 8443,
             "users": [
               {
                 "id": "94006a20-6cd6-4751-a14d-c5a0bacb68bb",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/upd8svpn-xhttp",
+          "host": "yandex.ru"
         },
         "security": "reality",
         "realitySettings": {
@@ -476,32 +461,30 @@
         "vnext": [
           {
             "address": "179.254.111.0",
-            "port": 443,
+            "port": 8443,
             "users": [
               {
                 "id": "94006a20-6cd6-4751-a14d-c5a0bacb68bb",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/upd8svpn-xhttp",
+          "host": "yandex.ru"
         },
         "security": "reality",
         "realitySettings": {
           "serverName": "yandex.ru",
-          "fingerprint": "chrome",
+          "fingerprint": "firefox",
           "publicKey": "dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg",
           "shortId": "992e5a9a"
         }
@@ -514,32 +497,30 @@
         "vnext": [
           {
             "address": "179.254.111.0",
-            "port": 443,
+            "port": 8443,
             "users": [
               {
                 "id": "94006a20-6cd6-4751-a14d-c5a0bacb68bb",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/upd8svpn-xhttp",
+          "host": "yandex.ru"
         },
         "security": "reality",
         "realitySettings": {
           "serverName": "yandex.ru",
-          "fingerprint": "ios",
+          "fingerprint": "chrome",
           "publicKey": "dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg",
           "shortId": "992e5a9a"
         }
@@ -552,252 +533,32 @@
         "vnext": [
           {
             "address": "179.254.111.0",
-            "port": 443,
+            "port": 8443,
             "users": [
               {
                 "id": "94006a20-6cd6-4751-a14d-c5a0bacb68bb",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "xhttpSettings": {
+          "path": "/upd8svpn-xhttp",
+          "host": "yandex.ru"
         },
         "security": "reality",
         "realitySettings": {
           "serverName": "yandex.ru",
-          "fingerprint": "qq",
+          "fingerprint": "edge",
           "publicKey": "dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg",
           "shortId": "992e5a9a"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-005",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "179.254.111.0",
-            "port": 443,
-            "users": [
-              {
-                "id": "94006a20-6cd6-4751-a14d-c5a0bacb68bb",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "yandex.ru",
-          "fingerprint": "safari",
-          "publicKey": "dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg",
-          "shortId": "992e5a9a"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-006",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "t2xmzpec98.nl.cdnfludelivery.com",
-            "port": 447,
-            "users": [
-              {
-                "id": "141bbdef-a341-4846-aec7-9d6531ff8790",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "api-maps.yandex.ru",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "api-maps.yandex.ru",
-          "fingerprint": "android",
-          "publicKey": "sCpeAZBGOOE_9CeeXyu3-jl68ODzQjts8gG_ZHk44Qk",
-          "shortId": "d7abeb515312dc2f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-007",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "t2xmzpec98.nl.cdnfludelivery.com",
-            "port": 447,
-            "users": [
-              {
-                "id": "141bbdef-a341-4846-aec7-9d6531ff8790",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "api-maps.yandex.ru",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "api-maps.yandex.ru",
-          "fingerprint": "chrome",
-          "publicKey": "sCpeAZBGOOE_9CeeXyu3-jl68ODzQjts8gG_ZHk44Qk",
-          "shortId": "d7abeb515312dc2f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-008",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "t2xmzpec98.nl.cdnfludelivery.com",
-            "port": 447,
-            "users": [
-              {
-                "id": "141bbdef-a341-4846-aec7-9d6531ff8790",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "api-maps.yandex.ru",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "api-maps.yandex.ru",
-          "fingerprint": "firefox",
-          "publicKey": "sCpeAZBGOOE_9CeeXyu3-jl68ODzQjts8gG_ZHk44Qk",
-          "shortId": "d7abeb515312dc2f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-009",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "t2xmzpec98.nl.cdnfludelivery.com",
-            "port": 447,
-            "users": [
-              {
-                "id": "141bbdef-a341-4846-aec7-9d6531ff8790",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "api-maps.yandex.ru",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "api-maps.yandex.ru",
-          "fingerprint": "ios",
-          "publicKey": "sCpeAZBGOOE_9CeeXyu3-jl68ODzQjts8gG_ZHk44Qk",
-          "shortId": "d7abeb515312dc2f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-010",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "t2xmzpec98.nl.cdnfludelivery.com",
-            "port": 447,
-            "users": [
-              {
-                "id": "141bbdef-a341-4846-aec7-9d6531ff8790",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "api-maps.yandex.ru",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "api-maps.yandex.ru",
-          "fingerprint": "qq",
-          "publicKey": "sCpeAZBGOOE_9CeeXyu3-jl68ODzQjts8gG_ZHk44Qk",
-          "shortId": "d7abeb515312dc2f"
         }
       }
     },
