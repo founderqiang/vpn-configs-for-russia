@@ -57,7 +57,9 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$"
+          "regexp:^[^.]+$",
+          "full:vd.lavivas.org",
+          "full:vdss.lavivas.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -113,7 +115,9 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd.lavivas.org",
+          "full:vdss.lavivas.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -133,7 +137,9 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd.lavivas.org",
+          "full:vdss.lavivas.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -153,7 +159,9 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd.lavivas.org",
+          "full:vdss.lavivas.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -173,7 +181,9 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd.lavivas.org",
+          "full:vdss.lavivas.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -193,7 +203,9 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd.lavivas.org",
+          "full:vdss.lavivas.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -213,7 +225,9 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd.lavivas.org",
+          "full:vdss.lavivas.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -233,7 +247,9 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd.lavivas.org",
+          "full:vdss.lavivas.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -253,7 +269,9 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd.lavivas.org",
+          "full:vdss.lavivas.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -273,7 +291,9 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd.lavivas.org",
+          "full:vdss.lavivas.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -293,7 +313,9 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd.lavivas.org",
+          "full:vdss.lavivas.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -313,7 +335,9 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd.lavivas.org",
+          "full:vdss.lavivas.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -333,7 +357,9 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:vd.lavivas.org",
+          "full:vdss.lavivas.org"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -400,33 +426,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.211.170.77",
+            "address": "92.255.79.246",
             "port": 443,
             "users": [
               {
-                "id": "a5a311a8-6b0b-4ddc-b354-79acb4e19d67",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "8057eabc-921d-0001-9acb-80ccc6b48379",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "Lizat",
+          "multiMode": true
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "polka3.cryposikel.ru",
-          "fingerprint": "chrome"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "supbober.mafioznik.xyz",
+          "fingerprint": "android",
+          "publicKey": "8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700"
         }
       }
     },
@@ -436,33 +461,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.211.170.77",
+            "address": "92.255.79.246",
             "port": 443,
             "users": [
               {
-                "id": "a5a311a8-6b0b-4ddc-b354-79acb4e19d67",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "8057eabc-921d-0001-9acb-80ccc6b48379",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "Lizat",
+          "multiMode": true
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "polka3.cryposikel.ru",
-          "fingerprint": "edge"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "supbober.mafioznik.xyz",
+          "fingerprint": "chrome",
+          "publicKey": "8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700"
         }
       }
     },
@@ -472,33 +496,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.211.170.77",
+            "address": "92.255.79.246",
             "port": 443,
             "users": [
               {
-                "id": "a5a311a8-6b0b-4ddc-b354-79acb4e19d67",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "8057eabc-921d-0001-9acb-80ccc6b48379",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "Lizat",
+          "multiMode": true
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "polka3.cryposikel.ru",
-          "fingerprint": "ios"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "supbober.mafioznik.xyz",
+          "fingerprint": "edge",
+          "publicKey": "8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700"
         }
       }
     },
@@ -508,33 +531,32 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.211.170.77",
+            "address": "92.255.79.246",
             "port": 443,
             "users": [
               {
-                "id": "a5a311a8-6b0b-4ddc-b354-79acb4e19d67",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "8057eabc-921d-0001-9acb-80ccc6b48379",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "Lizat",
+          "multiMode": true
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "polka3.cryposikel.ru",
-          "fingerprint": "safari"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "supbober.mafioznik.xyz",
+          "fingerprint": "ios",
+          "publicKey": "8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700"
         }
       }
     },
@@ -544,11 +566,1544 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.211.170.77",
+            "address": "92.255.79.246",
             "port": 443,
             "users": [
               {
-                "id": "a5a311a8-6b0b-4ddc-b354-79acb4e19d67",
+                "id": "8057eabc-921d-0001-9acb-80ccc6b48379",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "Lizat",
+          "multiMode": true
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "supbober.mafioznik.xyz",
+          "fingerprint": "safari",
+          "publicKey": "8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-006",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "195.133.198.200",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "safari",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-007",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vd.lavivas.org",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-008",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vd.lavivas.org",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "edge",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-009",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vd.lavivas.org",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-010",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vd.lavivas.org",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "qq",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-011",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 2096,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-012",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "edge",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-013",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-014",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "ios",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-015",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "qq",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-016",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "safari",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-017",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "195.133.198.200",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-018",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "195.133.198.200",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "edge",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-019",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "195.133.198.200",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-020",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "195.133.198.200",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "ios",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-021",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "195.133.198.200",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "qq",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-022",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.8.228.131",
+            "port": 2096,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "edge",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-023",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.8.228.131",
+            "port": 2096,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-024",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.8.228.131",
+            "port": 2096,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "ios",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-025",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.8.228.131",
+            "port": 2096,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "qq",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-026",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.8.228.131",
+            "port": 2096,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "safari",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-027",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.8.228.131",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-028",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.8.228.131",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "edge",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-029",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.8.228.131",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-030",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.8.228.131",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "ios",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-031",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "45.8.228.131",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "qq",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-032",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vd.lavivas.org",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "safari",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-033",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vd.lavivas.org",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-034",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vd.lavivas.org",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-035",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vd.lavivas.org",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-036",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vd.lavivas.org",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-037",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vd.lavivas.org",
+            "port": 7443,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vd.lavivas.org",
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-038",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 2096,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "edge",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-039",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 2096,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "ios",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-040",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 2096,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "qq",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-041",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 2096,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "safari",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-042",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "android"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-043",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-044",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-045",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-046",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "vdss.lavivas.org",
+            "port": 8080,
+            "users": [
+              {
+                "id": "44e1105d-b46e-402f-933b-eaa136fcbb24",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "vdss.lavivas.org",
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-047",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "90.156.218.106",
+            "port": 2103,
+            "users": [
+              {
+                "id": "a76f6959-7d88-40c5-8984-4d888aa42389",
                 "encryption": "none",
                 "flow": "xtls-rprx-vision"
               }
@@ -567,185 +2122,164 @@
             "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "polka3.cryposikel.ru",
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-006",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.171.138.229",
-            "port": 443,
-            "users": [
-              {
-                "id": "8057eabc-921d-0002-9acb-80ccc6b48379",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "Piska",
-          "multiMode": true
-        },
         "security": "reality",
         "realitySettings": {
-          "serverName": "cdn.mafioznik.xyz",
-          "fingerprint": "edge",
-          "publicKey": "aK5um9qlbrjpXgpI4H9n05FBmWAvKUbmLm7iAj9K9mw"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-007",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.171.138.229",
-            "port": 443,
-            "users": [
-              {
-                "id": "8057eabc-921d-0002-9acb-80ccc6b48379",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "Piska",
-          "multiMode": true
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "cdn.mafioznik.xyz",
+          "serverName": "747f0e.relay-edge.net",
           "fingerprint": "android",
-          "publicKey": "aK5um9qlbrjpXgpI4H9n05FBmWAvKUbmLm7iAj9K9mw"
+          "publicKey": "4YFpLhV9HbwlCXzvCL8EfvYe-V-VCuXZIaOWS11lKXI",
+          "shortId": "11f303a9ff001d7c"
         }
       }
     },
     {
-      "tag": "igareck-node-008",
+      "tag": "igareck-node-048",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.171.138.229",
-            "port": 443,
+            "address": "90.156.218.106",
+            "port": 2103,
             "users": [
               {
-                "id": "8057eabc-921d-0002-9acb-80ccc6b48379",
-                "encryption": "none"
+                "id": "a76f6959-7d88-40c5-8984-4d888aa42389",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "Piska",
-          "multiMode": true
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "cdn.mafioznik.xyz",
+          "serverName": "747f0e.relay-edge.net",
           "fingerprint": "chrome",
-          "publicKey": "aK5um9qlbrjpXgpI4H9n05FBmWAvKUbmLm7iAj9K9mw"
+          "publicKey": "4YFpLhV9HbwlCXzvCL8EfvYe-V-VCuXZIaOWS11lKXI",
+          "shortId": "11f303a9ff001d7c"
         }
       }
     },
     {
-      "tag": "igareck-node-009",
+      "tag": "igareck-node-049",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.171.138.229",
-            "port": 443,
+            "address": "90.156.218.106",
+            "port": 2103,
             "users": [
               {
-                "id": "8057eabc-921d-0002-9acb-80ccc6b48379",
-                "encryption": "none"
+                "id": "a76f6959-7d88-40c5-8984-4d888aa42389",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "Piska",
-          "multiMode": true
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "cdn.mafioznik.xyz",
+          "serverName": "747f0e.relay-edge.net",
+          "fingerprint": "edge",
+          "publicKey": "4YFpLhV9HbwlCXzvCL8EfvYe-V-VCuXZIaOWS11lKXI",
+          "shortId": "11f303a9ff001d7c"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-050",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "90.156.218.106",
+            "port": 2103,
+            "users": [
+              {
+                "id": "a76f6959-7d88-40c5-8984-4d888aa42389",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "raw",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "747f0e.relay-edge.net",
           "fingerprint": "ios",
-          "publicKey": "aK5um9qlbrjpXgpI4H9n05FBmWAvKUbmLm7iAj9K9mw"
+          "publicKey": "4YFpLhV9HbwlCXzvCL8EfvYe-V-VCuXZIaOWS11lKXI",
+          "shortId": "11f303a9ff001d7c"
         }
       }
     },
     {
-      "tag": "igareck-node-010",
+      "tag": "igareck-node-051",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "104.171.138.229",
-            "port": 443,
+            "address": "90.156.218.106",
+            "port": 2103,
             "users": [
               {
-                "id": "8057eabc-921d-0002-9acb-80ccc6b48379",
-                "encryption": "none"
+                "id": "a76f6959-7d88-40c5-8984-4d888aa42389",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "Piska",
-          "multiMode": true
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "cdn.mafioznik.xyz",
+          "serverName": "747f0e.relay-edge.net",
           "fingerprint": "safari",
-          "publicKey": "aK5um9qlbrjpXgpI4H9n05FBmWAvKUbmLm7iAj9K9mw"
+          "publicKey": "4YFpLhV9HbwlCXzvCL8EfvYe-V-VCuXZIaOWS11lKXI",
+          "shortId": "11f303a9ff001d7c"
         }
       }
     },
