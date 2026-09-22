@@ -2,8 +2,8 @@
 # Igareck Mihomo Subscription
 # Источник/Source: BLACK_SS+All_RUS.txt
 # 🏴 ЧЕРНЫЕ СПИСКИ 🏴 BLACK LISTS | Полная • Full | SS, Hy2, Vmess, Trojan
-# Количество/Quantity: 5
-# Date/Time: 2026-09-22 / 14:59 (Moscow)
+# Количество/Quantity: 10
+# Date/Time: 2026-09-22 / 16:22 (Moscow)
 #
 # Режим / Mode:
 # - Автоматический Выбор лучшего прокси / Igareck Auto Select;
@@ -156,17 +156,17 @@ sniffer:
 proxies:
 - name: Igareck Node 001 | 🇲🇾 Malaysia， Cyberjaya | [BL]
   type: hysteria2
-  server: "\x31\x30\x33\x2e\x31\x31\x37\x2e\x31\x34\x31\x2e\x31\x30\x33"
+  server: "\x31\x30\x33\x2e\x31\x31\x37\x2e\x31\x34\x31\x2e\x31\x32\x34"
   port: 2060
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   udp: true
-  sni: mlxy.mangshe.xyz
+  sni: mlxy1.mangshe.xyz
   alpn:
   - h3
   skip-cert-verify: true
 - name: Igareck Node 002 | 🇲🇾 Malaysia， Cyberjaya | [BL]
   type: hysteria2
-  server: "\x31\x30\x33\x2e\x31\x31\x37\x2e\x31\x34\x31\x2e\x31\x32\x34"
+  server: "\x6d\x6c\x78\x79\x31\x2e\x6d\x61\x6e\x67\x73\x68\x65\x2e\x78\x79\x7a"
   port: 2060
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   udp: true
@@ -214,6 +214,61 @@ proxies:
     path: /
     headers:
       Host: 654168416355441.oylfmxz.cn
+- name: Igareck Node 006 | 🇺🇸 United States， St Louis (Downtown) | [BL]
+  type: vmess
+  server: "\x63\x68\x61\x74\x67\x70\x74\x2e\x63\x6f\x6d"
+  port: 8443
+  uuid: "\x36\x30\x34\x34\x31\x35\x34\x38\x2d\x62\x36\x38\x65\x2d\x34\x33\x62\x32\x2d\x38\x31\x39\x31\x2d\x65\x33\x62\x38\x38\x34\x62\x65\x34\x62\x33\x63"
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: "\x76\x32\x72\x61\x79\x31\x2e\x64\x6f\x7a\x61\x70\x70\x2e\x78\x79\x7a"
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: Igareck Node 007 | .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  type: trojan
+  server: "\x34\x33\x2e\x31\x37\x33\x2e\x39\x30\x2e\x32\x30\x32"
+  port: 443
+  password: sg-trojan-2026
+  udp: true
+  sni: sg-proxy.local
+  client-fingerprint: qq
+  network: tcp
+  skip-cert-verify: true
+- name: Igareck Node 008 | .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  type: trojan
+  server: "\x34\x33\x2e\x31\x37\x33\x2e\x39\x30\x2e\x32\x30\x32"
+  port: 443
+  password: sg-trojan-2026
+  udp: true
+  sni: sg-proxy.local
+  client-fingerprint: safari
+  network: tcp
+  skip-cert-verify: true
+- name: Igareck Node 009 | 🇺🇸 United States， Santa Clara | [BL]
+  type: trojan
+  server: "\x34\x33\x2e\x31\x37\x33\x2e\x39\x30\x2e\x32\x30\x32"
+  port: 443
+  password: sg-trojan-2026
+  udp: true
+  sni: sg-proxy.local
+  client-fingerprint: android
+  network: tcp
+  skip-cert-verify: true
+- name: Igareck Node 010 | 🇺🇸 United States， Santa Clara | [BL]
+  type: trojan
+  server: "\x34\x33\x2e\x31\x37\x33\x2e\x39\x30\x2e\x32\x30\x32"
+  port: 443
+  password: sg-trojan-2026
+  udp: true
+  sni: sg-proxy.local
+  client-fingerprint: chrome
+  network: tcp
+  skip-cert-verify: true
 
 proxy-groups:
   - name: "Igareck Auto Select (Автоподключение)"
