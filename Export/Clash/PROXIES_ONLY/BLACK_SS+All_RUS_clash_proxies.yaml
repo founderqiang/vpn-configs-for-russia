@@ -2,14 +2,34 @@
 # Igareck Mihomo Subscription
 # Источник/Source: BLACK_SS+All_RUS.txt
 # 🏴 ЧЕРНЫЕ СПИСКИ 🏴 BLACK LISTS | Полная • Full | SS, Hy2, Vmess, Trojan
-# Количество/Quantity: 17
-# Date/Time: 2026-09-23 / 12:56 (Moscow)
+# Количество/Quantity: 19
+# Date/Time: 2026-09-23 / 13:58 (Moscow)
 #
 # Не содержит никаких настроек, только список прокси / No settings, just proxies list;
 # ============================================================
 
 proxies:
-- name: Igareck Node 001 | 🇳🇱 The Netherlands， Amsterdam (Amsterdam-Zuidoost) | [BL]
+- name: Igareck Node 001 | 🇭🇰 Hong Kong， Hong Kong | [BL]
+  type: hysteria2
+  server: "\x33\x31\x2e\x35\x37\x2e\x32\x34\x38\x2e\x31\x37\x36"
+  port: 50160
+  password: b0917015b656b3dd2286b5633af0c5c1
+  udp: true
+  sni: 31.57.248.176
+  alpn:
+  - h3
+  skip-cert-verify: true
+- name: Igareck Node 002 | 🇭🇰 Hong Kong， Hong Kong | [BL]
+  type: hysteria2
+  server: "\x33\x31\x2e\x35\x37\x2e\x32\x34\x38\x2e\x31\x37\x36"
+  port: 50160
+  password: b0917015b656b3dd2286b5633af0c5c1
+  udp: true
+  sni: www.bing.com#馃嚟馃嚢|hk|@wxgqlfx|147
+  alpn:
+  - h3
+  skip-cert-verify: true
+- name: Igareck Node 003 | 🇳🇱 The Netherlands， Amsterdam (Amsterdam-Zuidoost) | [BL]
   type: hysteria2
   server: "\x6e\x6c\x30\x31\x6e\x74\x72\x68\x79\x30\x31\x2e\x74\x63\x70\x2d\x72\x65\x73\x65\x74\x2d\x63\x6c\x75\x62\x2e\x6e\x65\x74"
   port: 443
@@ -19,7 +39,7 @@ proxies:
   alpn:
   - h3
   skip-cert-verify: true
-- name: Igareck Node 002 | 🇳🇱 The Netherlands， Amsterdam (Amsterdam-Zuidoost) | [BL]
+- name: Igareck Node 004 | 🇳🇱 The Netherlands， Amsterdam (Amsterdam-Zuidoost) | [BL]
   type: hysteria2
   server: "\x6e\x6c\x30\x31\x6e\x74\x72\x68\x79\x30\x31\x2e\x74\x63\x70\x2d\x72\x65\x73\x65\x74\x2d\x63\x6c\x75\x62\x2e\x6e\x65\x74"
   port: 443
@@ -29,50 +49,36 @@ proxies:
   alpn:
   - h3
   skip-cert-verify: true
-- name: Igareck Node 003 | 🇭🇰 Hong Kong， Hong Kong | [BL]
+- name: Igareck Node 005 | 🇺🇸 United States， St Louis (Downtown) | [BL]
   type: vmess
-  server: "\x6c\x63\x76\x38\x76\x39\x6c\x37\x6f\x79\x61\x6d\x78\x78\x66\x7a\x2e\x76\x2e\x33\x64\x6e\x73\x2e\x76\x69\x70"
-  port: 443
-  uuid: "\x66\x32\x33\x62\x62\x34\x32\x37\x63\x31\x66\x39\x34\x33\x37\x33\x38\x37\x36\x63\x32\x66\x34\x33\x65\x39\x66\x37\x39\x30\x66\x33"
+  server: "\x63\x68\x61\x74\x67\x70\x74\x2e\x63\x6f\x6d"
+  port: 8443
+  uuid: "\x36\x30\x34\x34\x31\x35\x34\x38\x2d\x62\x36\x38\x65\x2d\x34\x33\x62\x32\x2d\x38\x31\x39\x31\x2d\x65\x33\x62\x38\x38\x34\x62\x65\x34\x62\x33\x63"
   alterId: 0
   cipher: auto
   udp: true
   tls: true
+  servername: "\x76\x32\x72\x61\x79\x31\x2e\x64\x6f\x7a\x61\x70\x70\x2e\x78\x79\x7a"
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /lMnsZUN4/
     headers:
-      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
-- name: Igareck Node 004 | 🇨🇳 China， Guilin | [BL]
-  type: trojan
-  server: "\x31\x30\x30\x2e\x34\x32\x2e\x32\x32\x38\x2e\x31\x30\x39"
-  port: 443
-  password: BxceQaOe
+      Host: v2ray1.dozapp.xyz
+- name: Igareck Node 006 | 🇺🇸 United States， St Louis (Downtown) | [BL]
+  type: vmess
+  server: "\x31\x37\x32\x2e\x36\x34\x2e\x38\x30\x2e\x31"
+  port: 8443
+  uuid: "\x36\x30\x34\x34\x31\x35\x34\x38\x2d\x62\x36\x38\x65\x2d\x34\x33\x62\x32\x2d\x38\x31\x39\x31\x2d\x65\x33\x62\x38\x38\x34\x62\x65\x34\x62\x33\x63"
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: 100.42.228.109
-  client-fingerprint: chrome
-  network: tcp
-  skip-cert-verify: true
-- name: Igareck Node 005 | 🇨🇳 China， Guilin | [BL]
-  type: trojan
-  server: "\x31\x30\x30\x2e\x34\x32\x2e\x32\x32\x38\x2e\x31\x30\x39"
-  port: 443
-  password: BxceQaOe
-  udp: true
-  sni: 100.42.228.109
-  client-fingerprint: edge
-  network: tcp
-  skip-cert-verify: true
-- name: Igareck Node 006 | 🇨🇳 China， Guilin | [BL]
-  type: trojan
-  server: "\x31\x30\x30\x2e\x34\x32\x2e\x32\x32\x38\x2e\x31\x30\x39"
-  port: 443
-  password: BxceQaOe
-  udp: true
-  sni: 100.42.228.109
-  client-fingerprint: firefox
-  network: tcp
-  skip-cert-verify: true
+  tls: true
+  servername: "\x76\x32\x72\x61\x79\x31\x2e\x64\x6f\x7a\x61\x70\x70\x2e\x78\x79\x7a"
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 - name: Igareck Node 007 | 🇨🇳 China， Guilin | [BL]
   type: trojan
   server: "\x31\x30\x30\x2e\x34\x32\x2e\x32\x32\x38\x2e\x31\x30\x39"
@@ -80,7 +86,7 @@ proxies:
   password: BxceQaOe
   udp: true
   sni: 100.42.228.109
-  client-fingerprint: ios
+  client-fingerprint: chrome
   network: tcp
   skip-cert-verify: true
 - name: Igareck Node 008 | 🇨🇳 China， Guilin | [BL]
@@ -90,7 +96,7 @@ proxies:
   password: BxceQaOe
   udp: true
   sni: 100.42.228.109
-  client-fingerprint: random
+  client-fingerprint: edge
   network: tcp
   skip-cert-verify: true
 - name: Igareck Node 009 | 🇨🇳 China， Guilin | [BL]
@@ -99,8 +105,8 @@ proxies:
   port: 443
   password: BxceQaOe
   udp: true
-  sni: t.me/ripaojiedian
-  client-fingerprint: android
+  sni: 100.42.228.109
+  client-fingerprint: ios
   network: tcp
   skip-cert-verify: true
 - name: Igareck Node 010 | 🇨🇳 China， Guilin | [BL]
@@ -109,8 +115,8 @@ proxies:
   port: 443
   password: BxceQaOe
   udp: true
-  sni: t.me/ripaojiedian
-  client-fingerprint: edge
+  sni: 100.42.228.109
+  client-fingerprint: random
   network: tcp
   skip-cert-verify: true
 - name: Igareck Node 011 | 🇨🇳 China， Guilin | [BL]
@@ -120,7 +126,7 @@ proxies:
   password: BxceQaOe
   udp: true
   sni: t.me/ripaojiedian
-  client-fingerprint: firefox
+  client-fingerprint: android
   network: tcp
   skip-cert-verify: true
 - name: Igareck Node 012 | 🇨🇳 China， Guilin | [BL]
@@ -130,7 +136,7 @@ proxies:
   password: BxceQaOe
   udp: true
   sni: t.me/ripaojiedian
-  client-fingerprint: ios
+  client-fingerprint: edge
   network: tcp
   skip-cert-verify: true
 - name: Igareck Node 013 | 🇨🇳 China， Guilin | [BL]
@@ -140,27 +146,27 @@ proxies:
   password: BxceQaOe
   udp: true
   sni: t.me/ripaojiedian
-  client-fingerprint: safari
-  network: tcp
-  skip-cert-verify: true
-- name: Igareck Node 014 | 🇺🇸 United States， Santa Clara | [BL]
-  type: trojan
-  server: "\x34\x33\x2e\x31\x37\x33\x2e\x39\x30\x2e\x32\x30\x32"
-  port: 443
-  password: sg-trojan-2026
-  udp: true
-  sni: sg-proxy.local
-  client-fingerprint: chrome
-  network: tcp
-  skip-cert-verify: true
-- name: Igareck Node 015 | 🇺🇸 United States， Santa Clara | [BL]
-  type: trojan
-  server: "\x34\x33\x2e\x31\x37\x33\x2e\x39\x30\x2e\x32\x30\x32"
-  port: 443
-  password: sg-trojan-2026
-  udp: true
-  sni: sg-proxy.local
   client-fingerprint: firefox
+  network: tcp
+  skip-cert-verify: true
+- name: Igareck Node 014 | 🇨🇳 China， Guilin | [BL]
+  type: trojan
+  server: "\x31\x30\x30\x2e\x34\x32\x2e\x32\x32\x38\x2e\x31\x30\x39"
+  port: 443
+  password: BxceQaOe
+  udp: true
+  sni: t.me/ripaojiedian
+  client-fingerprint: ios
+  network: tcp
+  skip-cert-verify: true
+- name: Igareck Node 015 | 🇨🇳 China， Guilin | [BL]
+  type: trojan
+  server: "\x31\x30\x30\x2e\x34\x32\x2e\x32\x32\x38\x2e\x31\x30\x39"
+  port: 443
+  password: BxceQaOe
+  udp: true
+  sni: t.me/ripaojiedian
+  client-fingerprint: safari
   network: tcp
   skip-cert-verify: true
 - name: Igareck Node 016 | 🇺🇸 United States， Santa Clara | [BL]
@@ -170,7 +176,7 @@ proxies:
   password: sg-trojan-2026
   udp: true
   sni: sg-proxy.local
-  client-fingerprint: qq
+  client-fingerprint: android
   network: tcp
   skip-cert-verify: true
 - name: Igareck Node 017 | 🇺🇸 United States， Santa Clara | [BL]
@@ -180,6 +186,26 @@ proxies:
   password: sg-trojan-2026
   udp: true
   sni: sg-proxy.local
-  client-fingerprint: safari
+  client-fingerprint: chrome
+  network: tcp
+  skip-cert-verify: true
+- name: Igareck Node 018 | 🇺🇸 United States， Santa Clara | [BL]
+  type: trojan
+  server: "\x34\x33\x2e\x31\x37\x33\x2e\x39\x30\x2e\x32\x30\x32"
+  port: 443
+  password: sg-trojan-2026
+  udp: true
+  sni: sg-proxy.local
+  client-fingerprint: edge
+  network: tcp
+  skip-cert-verify: true
+- name: Igareck Node 019 | 🇺🇸 United States， Santa Clara | [BL]
+  type: trojan
+  server: "\x34\x33\x2e\x31\x37\x33\x2e\x39\x30\x2e\x32\x30\x32"
+  port: 443
+  password: sg-trojan-2026
+  udp: true
+  sni: sg-proxy.local
+  client-fingerprint: qq
   network: tcp
   skip-cert-verify: true
