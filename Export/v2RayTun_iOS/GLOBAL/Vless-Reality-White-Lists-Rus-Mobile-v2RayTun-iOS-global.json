@@ -58,7 +58,7 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
-          "full:dostavitos.stroymatdv.cc"
+          "full:media-se.compressor.work"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -115,7 +115,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dostavitos.stroymatdv.cc"
+          "full:media-se.compressor.work"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -136,7 +136,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dostavitos.stroymatdv.cc"
+          "full:media-se.compressor.work"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -157,7 +157,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dostavitos.stroymatdv.cc"
+          "full:media-se.compressor.work"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -178,7 +178,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dostavitos.stroymatdv.cc"
+          "full:media-se.compressor.work"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -199,7 +199,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dostavitos.stroymatdv.cc"
+          "full:media-se.compressor.work"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -220,7 +220,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dostavitos.stroymatdv.cc"
+          "full:media-se.compressor.work"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -241,7 +241,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dostavitos.stroymatdv.cc"
+          "full:media-se.compressor.work"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -262,7 +262,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dostavitos.stroymatdv.cc"
+          "full:media-se.compressor.work"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -283,7 +283,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dostavitos.stroymatdv.cc"
+          "full:media-se.compressor.work"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -304,7 +304,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dostavitos.stroymatdv.cc"
+          "full:media-se.compressor.work"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -325,7 +325,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dostavitos.stroymatdv.cc"
+          "full:media-se.compressor.work"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -346,7 +346,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dostavitos.stroymatdv.cc"
+          "full:media-se.compressor.work"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -413,35 +413,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "200.169.183.68",
-            "port": 443,
+            "address": "media-se.compressor.work",
+            "port": 14443,
             "users": [
               {
-                "id": "a72ca3b6-1a26-47f5-aca3-039bb5539eb4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "wsSettings": {
+          "path": "/ws",
+          "headers": {}
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "s3-m.perecmusic.ru",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "media-se.compressor.work",
           "fingerprint": "android",
-          "publicKey": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
-          "shortId": "4a7b1c8d"
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -451,35 +450,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "200.169.183.68",
-            "port": 443,
+            "address": "media-se.compressor.work",
+            "port": 14443,
             "users": [
               {
-                "id": "a72ca3b6-1a26-47f5-aca3-039bb5539eb4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/ws",
+          "headers": {
+            "Host": "media-se.compressor.work"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "s3-m.perecmusic.ru",
-          "fingerprint": "firefox",
-          "publicKey": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
-          "shortId": "4a7b1c8d"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "chrome"
         }
       }
     },
@@ -489,35 +486,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "200.169.183.68",
-            "port": 443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
-                "id": "a72ca3b6-1a26-47f5-aca3-039bb5539eb4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/ws",
+          "headers": {
+            "Host": "95.163.232.171"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "s3-m.perecmusic.ru",
-          "fingerprint": "ios",
-          "publicKey": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
-          "shortId": "4a7b1c8d"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "chrome",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -527,35 +525,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "200.169.183.68",
-            "port": 443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
-                "id": "a72ca3b6-1a26-47f5-aca3-039bb5539eb4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/ws",
+          "headers": {
+            "Host": "95.163.232.171"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "s3-m.perecmusic.ru",
-          "fingerprint": "qq",
-          "publicKey": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
-          "shortId": "4a7b1c8d"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "edge",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -565,35 +564,36 @@
       "settings": {
         "vnext": [
           {
-            "address": "200.169.183.68",
-            "port": 443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
-                "id": "a72ca3b6-1a26-47f5-aca3-039bb5539eb4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/ws",
+          "headers": {
+            "Host": "95.163.232.171"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "s3-m.perecmusic.ru",
-          "fingerprint": "safari",
-          "publicKey": "b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4",
-          "shortId": "4a7b1c8d"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -603,8 +603,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.139.42.138",
-            "port": 443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
                 "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
@@ -621,13 +621,18 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/e9ws",
-          "headers": {}
+          "path": "/ws",
+          "headers": {
+            "Host": "95.163.232.171"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "android"
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "qq",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -637,8 +642,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.139.42.138",
-            "port": 443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
                 "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
@@ -655,13 +660,18 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/e9ws",
-          "headers": {}
+          "path": "/ws",
+          "headers": {
+            "Host": "95.163.232.171"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "edge"
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "safari",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -671,8 +681,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.139.42.138",
-            "port": 443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
                 "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
@@ -689,13 +699,16 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/e9ws",
+          "path": "/ws",
           "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "firefox"
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "android",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -705,8 +718,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.139.42.138",
-            "port": 443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
                 "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
@@ -723,13 +736,16 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/e9ws",
+          "path": "/ws",
           "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "ios"
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "chrome",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -739,8 +755,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.139.42.138",
-            "port": 443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
                 "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
@@ -757,13 +773,16 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/e9ws",
+          "path": "/ws",
           "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "qq"
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -773,11 +792,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "176.124.214.116",
-            "port": 8443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
-                "id": "b71637c2-94a5-49bd-8233-b4ed5e3170c3",
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
                 "encryption": "none"
               }
             ]
@@ -791,15 +810,13 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/images",
-          "headers": {
-            "Host": "free-ger1.wooden-table.org"
-          }
+          "path": "/ws",
+          "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "free-ger1.wooden-table.org",
-          "fingerprint": "android",
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "ios",
           "alpn": [
             "http/1.1"
           ]
@@ -812,11 +829,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "176.124.214.116",
-            "port": 8443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
-                "id": "b71637c2-94a5-49bd-8233-b4ed5e3170c3",
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
                 "encryption": "none"
               }
             ]
@@ -830,15 +847,13 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/images",
-          "headers": {
-            "Host": "free-ger1.wooden-table.org"
-          }
+          "path": "/ws",
+          "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "free-ger1.wooden-table.org",
-          "fingerprint": "chrome",
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "qq",
           "alpn": [
             "http/1.1"
           ]
@@ -851,11 +866,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "176.124.214.116",
-            "port": 8443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
-                "id": "b71637c2-94a5-49bd-8233-b4ed5e3170c3",
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
                 "encryption": "none"
               }
             ]
@@ -869,18 +884,13 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/images",
-          "headers": {
-            "Host": "free-ger1.wooden-table.org"
-          }
+          "path": "/ws",
+          "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "free-ger1.wooden-table.org",
-          "fingerprint": "edge",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "chrome"
         }
       }
     },
@@ -890,11 +900,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "176.124.214.116",
-            "port": 8443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
-                "id": "b71637c2-94a5-49bd-8233-b4ed5e3170c3",
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
                 "encryption": "none"
               }
             ]
@@ -908,18 +918,13 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/images",
-          "headers": {
-            "Host": "free-ger1.wooden-table.org"
-          }
+          "path": "/ws",
+          "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "free-ger1.wooden-table.org",
-          "fingerprint": "ios",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "edge"
         }
       }
     },
@@ -929,11 +934,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "176.124.214.116",
-            "port": 8443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
-                "id": "b71637c2-94a5-49bd-8233-b4ed5e3170c3",
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
                 "encryption": "none"
               }
             ]
@@ -947,18 +952,13 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/images",
-          "headers": {
-            "Host": "free-ger1.wooden-table.org"
-          }
+          "path": "/ws",
+          "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "free-ger1.wooden-table.org",
-          "fingerprint": "safari",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -968,8 +968,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "dostavitos.stroymatdv.cc",
-            "port": 443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
                 "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
@@ -986,16 +986,13 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/e9ws",
+          "path": "/ws",
           "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "edge",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "qq"
         }
       }
     },
@@ -1005,8 +1002,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "dostavitos.stroymatdv.cc",
-            "port": 443,
+            "address": "95.163.232.171",
+            "port": 14443,
             "users": [
               {
                 "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
@@ -1023,16 +1020,13 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/e9ws",
+          "path": "/ws",
           "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "firefox",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "safari"
         }
       }
     },
@@ -1042,8 +1036,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "dostavitos.stroymatdv.cc",
-            "port": 443,
+            "address": "media-se.compressor.work",
+            "port": 14443,
             "users": [
               {
                 "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
@@ -1060,13 +1054,13 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/e9ws",
+          "path": "/ws",
           "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "qq",
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "chrome",
           "alpn": [
             "http/1.1"
           ]
@@ -1079,8 +1073,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "dostavitos.stroymatdv.cc",
-            "port": 443,
+            "address": "media-se.compressor.work",
+            "port": 14443,
             "users": [
               {
                 "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
@@ -1097,13 +1091,13 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/e9ws",
+          "path": "/ws",
           "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "safari",
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "edge",
           "alpn": [
             "http/1.1"
           ]
@@ -1116,8 +1110,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "dostavitos.stroymatdv.cc",
-            "port": 443,
+            "address": "media-se.compressor.work",
+            "port": 14443,
             "users": [
               {
                 "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
@@ -1134,13 +1128,13 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/e9ws",
+          "path": "/ws",
           "headers": {}
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "android",
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "firefox",
           "alpn": [
             "http/1.1"
           ]
@@ -1153,11 +1147,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.207.66.8",
-            "port": 443,
+            "address": "media-se.compressor.work",
+            "port": 14443,
             "users": [
               {
-                "id": "10394279-283c-4ab8-8529-f1e0a4c61bc8",
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
                 "encryption": "none"
               }
             ]
@@ -1165,21 +1159,22 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
+        "wsSettings": {
+          "path": "/ws",
+          "headers": {}
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "hexagonicfield.com",
-          "fingerprint": "android",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "5d1e8b3f6c2a9d4e"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "qq",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -1189,11 +1184,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.207.66.8",
-            "port": 443,
+            "address": "media-se.compressor.work",
+            "port": 14443,
             "users": [
               {
-                "id": "10394279-283c-4ab8-8529-f1e0a4c61bc8",
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
                 "encryption": "none"
               }
             ]
@@ -1201,21 +1196,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
+        "wsSettings": {
+          "path": "/ws",
+          "headers": {
+            "Host": "media-se.compressor.work"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "hexagonicfield.com",
-          "fingerprint": "chrome",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "5d1e8b3f6c2a9d4e"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "edge"
         }
       }
     },
@@ -1225,11 +1220,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.207.66.8",
-            "port": 443,
+            "address": "media-se.compressor.work",
+            "port": 14443,
             "users": [
               {
-                "id": "10394279-283c-4ab8-8529-f1e0a4c61bc8",
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
                 "encryption": "none"
               }
             ]
@@ -1237,21 +1232,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
+        "wsSettings": {
+          "path": "/ws",
+          "headers": {
+            "Host": "media-se.compressor.work"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "hexagonicfield.com",
-          "fingerprint": "edge",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "5d1e8b3f6c2a9d4e"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "ios"
         }
       }
     },
@@ -1261,11 +1256,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.207.66.8",
-            "port": 443,
+            "address": "media-se.compressor.work",
+            "port": 14443,
             "users": [
               {
-                "id": "10394279-283c-4ab8-8529-f1e0a4c61bc8",
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
                 "encryption": "none"
               }
             ]
@@ -1273,21 +1268,21 @@
         ]
       },
       "streamSettings": {
-        "network": "grpc",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
+        "wsSettings": {
+          "path": "/ws",
+          "headers": {
+            "Host": "media-se.compressor.work"
+          }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "hexagonicfield.com",
-          "fingerprint": "ios",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "5d1e8b3f6c2a9d4e"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "qq"
         }
       }
     },
@@ -1297,6 +1292,771 @@
       "settings": {
         "vnext": [
           {
+            "address": "media-se.compressor.work",
+            "port": 14443,
+            "users": [
+              {
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/ws",
+          "headers": {
+            "Host": "media-se.compressor.work"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "media-se.compressor.work",
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-026",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "161.104.38.98",
+            "port": 443,
+            "users": [
+              {
+                "id": "256c5e3e-431d-002f-bed4-bfcf1334f64b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/assets",
+          "mode": "packet-up",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": 0.0,
+              "hKeepAlivePeriod": 0.0,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "1800-3000",
+              "maxConnections": 2.0
+            }
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "donatov.net",
+          "fingerprint": "chrome",
+          "publicKey": "kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE",
+          "shortId": "8ba6e72ee60667f6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-027",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "161.104.38.98",
+            "port": 443,
+            "users": [
+              {
+                "id": "256c5e3e-431d-002f-bed4-bfcf1334f64b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/assets",
+          "mode": "packet-up",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": 0.0,
+              "hKeepAlivePeriod": 0.0,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "1800-3000",
+              "maxConnections": 2.0
+            }
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "donatov.net",
+          "fingerprint": "ios",
+          "publicKey": "kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE",
+          "shortId": "8ba6e72ee60667f6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-028",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "161.104.38.98",
+            "port": 443,
+            "users": [
+              {
+                "id": "256c5e3e-431d-002f-bed4-bfcf1334f64b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/assets",
+          "mode": "packet-up",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": 0.0,
+              "hKeepAlivePeriod": 0.0,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "1800-3000",
+              "maxConnections": 2.0
+            }
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "donatov.net",
+          "fingerprint": "qq",
+          "publicKey": "kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE",
+          "shortId": "8ba6e72ee60667f6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-029",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "161.104.38.98",
+            "port": 443,
+            "users": [
+              {
+                "id": "256c5e3e-431d-002f-bed4-bfcf1334f64b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/assets",
+          "mode": "packet-up",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": 0.0,
+              "hKeepAlivePeriod": 0.0,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "1800-3000",
+              "maxConnections": 2.0
+            }
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "donatov.net",
+          "fingerprint": "random",
+          "publicKey": "kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE",
+          "shortId": "8ba6e72ee60667f6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-030",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "161.104.38.98",
+            "port": 443,
+            "users": [
+              {
+                "id": "256c5e3e-431d-002f-bed4-bfcf1334f64b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/assets",
+          "mode": "packet-up",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": 0.0,
+              "hKeepAlivePeriod": 0.0,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "1800-3000",
+              "maxConnections": 2.0
+            }
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "donatov.net",
+          "fingerprint": "safari",
+          "publicKey": "kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE",
+          "shortId": "8ba6e72ee60667f6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-031",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.123.167.90",
+            "port": 9881,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "chrome",
+          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "shortId": "aa"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-032",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.123.167.90",
+            "port": 9881,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "shortId": "aa"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-033",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.123.167.90",
+            "port": 9881,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "ios",
+          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "shortId": "aa"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-034",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.123.167.90",
+            "port": 9881,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "random",
+          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "shortId": "aa"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-035",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.123.167.90",
+            "port": 9881,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "safari",
+          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "shortId": "aa"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-036",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.123.167.90",
+            "port": 9881,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "edge",
+          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "shortId": "aabb"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-037",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.123.167.90",
+            "port": 9881,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "firefox",
+          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "shortId": "aabb"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-038",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.123.167.90",
+            "port": 9881,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "ios",
+          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "shortId": "aabb"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-039",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.123.167.90",
+            "port": 9881,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "random",
+          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "shortId": "aabb"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-040",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "176.123.167.90",
+            "port": 9881,
+            "users": [
+              {
+                "id": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "grpc-tunnel",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "dl.google.com",
+          "fingerprint": "safari",
+          "publicKey": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "shortId": "aabb"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-041",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.207.66.8",
+            "port": 443,
+            "users": [
+              {
+                "id": "10394279-283c-4ab8-8529-f1e0a4c61bc8",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "moktana.net.v1.StreamService",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "hexagonicfield.com",
+          "fingerprint": "chrome",
+          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
+          "shortId": "5d1e8b3f6c2a9d4e"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-042",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.207.66.8",
+            "port": 443,
+            "users": [
+              {
+                "id": "10394279-283c-4ab8-8529-f1e0a4c61bc8",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "moktana.net.v1.StreamService",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "hexagonicfield.com",
+          "fingerprint": "edge",
+          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
+          "shortId": "5d1e8b3f6c2a9d4e"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-043",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.207.66.8",
+            "port": 443,
+            "users": [
+              {
+                "id": "10394279-283c-4ab8-8529-f1e0a4c61bc8",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "moktana.net.v1.StreamService",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "hexagonicfield.com",
+          "fingerprint": "firefox",
+          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
+          "shortId": "5d1e8b3f6c2a9d4e"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-044",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.207.66.8",
+            "port": 443,
+            "users": [
+              {
+                "id": "10394279-283c-4ab8-8529-f1e0a4c61bc8",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "moktana.net.v1.StreamService",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "hexagonicfield.com",
+          "fingerprint": "ios",
+          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
+          "shortId": "5d1e8b3f6c2a9d4e"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-045",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "185.207.66.8",
             "port": 443,
             "users": [
@@ -1328,736 +2088,16 @@
       }
     },
     {
-      "tag": "igareck-node-026",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "201.24.52.151",
-            "port": 443,
-            "users": [
-              {
-                "id": "8c40bb2c-157a-4830-a2c3-0b35ef50c660",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "hexagonicfield.com",
-          "fingerprint": "android",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "3f8e2d1c9b4a7e6f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-027",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "201.24.52.151",
-            "port": 443,
-            "users": [
-              {
-                "id": "8c40bb2c-157a-4830-a2c3-0b35ef50c660",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "hexagonicfield.com",
-          "fingerprint": "edge",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "3f8e2d1c9b4a7e6f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-028",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "201.24.52.151",
-            "port": 443,
-            "users": [
-              {
-                "id": "8c40bb2c-157a-4830-a2c3-0b35ef50c660",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "hexagonicfield.com",
-          "fingerprint": "firefox",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "3f8e2d1c9b4a7e6f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-029",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "201.24.52.151",
-            "port": 443,
-            "users": [
-              {
-                "id": "8c40bb2c-157a-4830-a2c3-0b35ef50c660",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "hexagonicfield.com",
-          "fingerprint": "ios",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "3f8e2d1c9b4a7e6f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-030",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "201.24.52.151",
-            "port": 443,
-            "users": [
-              {
-                "id": "8c40bb2c-157a-4830-a2c3-0b35ef50c660",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "hexagonicfield.com",
-          "fingerprint": "random",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "3f8e2d1c9b4a7e6f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-031",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.207.66.8",
-            "port": 443,
-            "users": [
-              {
-                "id": "f778d2eb-1bec-4d19-b0bf-0a5e39feed4f",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "upload.hexagonicfield.com",
-          "fingerprint": "android",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "5d1e8b3f6c2a9d4e"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-032",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.207.66.8",
-            "port": 443,
-            "users": [
-              {
-                "id": "f778d2eb-1bec-4d19-b0bf-0a5e39feed4f",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "upload.hexagonicfield.com",
-          "fingerprint": "chrome",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "5d1e8b3f6c2a9d4e"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-033",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.207.66.8",
-            "port": 443,
-            "users": [
-              {
-                "id": "f778d2eb-1bec-4d19-b0bf-0a5e39feed4f",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "upload.hexagonicfield.com",
-          "fingerprint": "edge",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "5d1e8b3f6c2a9d4e"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-034",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.207.66.8",
-            "port": 443,
-            "users": [
-              {
-                "id": "f778d2eb-1bec-4d19-b0bf-0a5e39feed4f",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "upload.hexagonicfield.com",
-          "fingerprint": "ios",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "5d1e8b3f6c2a9d4e"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-035",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.207.66.8",
-            "port": 443,
-            "users": [
-              {
-                "id": "f778d2eb-1bec-4d19-b0bf-0a5e39feed4f",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "upload.hexagonicfield.com",
-          "fingerprint": "safari",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "5d1e8b3f6c2a9d4e"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-036",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "186.246.6.110",
-            "port": 443,
-            "users": [
-              {
-                "id": "8c40bb2c-157a-4830-a2c3-0b35ef50c660",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "upload.hexagonicfield.com",
-          "fingerprint": "edge",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "a1b2c3d4e5f6a7b8"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-037",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "186.246.6.110",
-            "port": 443,
-            "users": [
-              {
-                "id": "8c40bb2c-157a-4830-a2c3-0b35ef50c660",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "upload.hexagonicfield.com",
-          "fingerprint": "firefox",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "a1b2c3d4e5f6a7b8"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-038",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "186.246.6.110",
-            "port": 443,
-            "users": [
-              {
-                "id": "8c40bb2c-157a-4830-a2c3-0b35ef50c660",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "upload.hexagonicfield.com",
-          "fingerprint": "ios",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "a1b2c3d4e5f6a7b8"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-039",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "186.246.6.110",
-            "port": 443,
-            "users": [
-              {
-                "id": "8c40bb2c-157a-4830-a2c3-0b35ef50c660",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "upload.hexagonicfield.com",
-          "fingerprint": "qq",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "a1b2c3d4e5f6a7b8"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-040",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "186.246.6.110",
-            "port": 443,
-            "users": [
-              {
-                "id": "8c40bb2c-157a-4830-a2c3-0b35ef50c660",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "upload.hexagonicfield.com",
-          "fingerprint": "random",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "a1b2c3d4e5f6a7b8"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-041",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "186.246.13.160",
-            "port": 443,
-            "users": [
-              {
-                "id": "f778d2eb-1bec-4d19-b0bf-0a5e39feed4f",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "my.hexagonicfield.com",
-          "fingerprint": "android",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "3f8e2d1c9b4a7e6f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-042",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "186.246.13.160",
-            "port": 443,
-            "users": [
-              {
-                "id": "f778d2eb-1bec-4d19-b0bf-0a5e39feed4f",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "my.hexagonicfield.com",
-          "fingerprint": "chrome",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "3f8e2d1c9b4a7e6f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-043",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "186.246.13.160",
-            "port": 443,
-            "users": [
-              {
-                "id": "f778d2eb-1bec-4d19-b0bf-0a5e39feed4f",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "my.hexagonicfield.com",
-          "fingerprint": "edge",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "3f8e2d1c9b4a7e6f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-044",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "186.246.13.160",
-            "port": 443,
-            "users": [
-              {
-                "id": "f778d2eb-1bec-4d19-b0bf-0a5e39feed4f",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "my.hexagonicfield.com",
-          "fingerprint": "firefox",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "3f8e2d1c9b4a7e6f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-045",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "186.246.13.160",
-            "port": 443,
-            "users": [
-              {
-                "id": "f778d2eb-1bec-4d19-b0bf-0a5e39feed4f",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "grpc",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "grpcSettings": {
-          "serviceName": "moktana.net.v1.StreamService",
-          "multiMode": false
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "my.hexagonicfield.com",
-          "fingerprint": "safari",
-          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "shortId": "3f8e2d1c9b4a7e6f"
-        }
-      }
-    },
-    {
       "tag": "igareck-node-046",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "95.129.236.239",
+            "address": "188.225.34.155",
             "port": 443,
             "users": [
               {
-                "id": "84a1511f-6672-4c1d-8e9d-3baa3d273083",
+                "id": "58112e44-a0d8-4ec7-87df-52fd34d150f4",
                 "encryption": "none"
               }
             ]
@@ -2071,18 +2111,15 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/stream/615428/socket",
+          "path": "/",
           "headers": {
-            "Host": "login.opendns.stream"
+            "Host": "dsfadfasdfwse87474.lllcc.top"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "login.opendns.stream",
-          "fingerprint": "android",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "dsfadfasdfwse87474.lllcc.top",
+          "fingerprint": "android"
         }
       }
     },
@@ -2092,11 +2129,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.129.236.239",
+            "address": "188.225.34.155",
             "port": 443,
             "users": [
               {
-                "id": "84a1511f-6672-4c1d-8e9d-3baa3d273083",
+                "id": "58112e44-a0d8-4ec7-87df-52fd34d150f4",
                 "encryption": "none"
               }
             ]
@@ -2110,18 +2147,15 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/stream/615428/socket",
+          "path": "/",
           "headers": {
-            "Host": "login.opendns.stream"
+            "Host": "dsfadfasdfwse87474.lllcc.top"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "login.opendns.stream",
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "dsfadfasdfwse87474.lllcc.top",
+          "fingerprint": "edge"
         }
       }
     },
@@ -2131,11 +2165,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.129.236.239",
+            "address": "188.225.34.155",
             "port": 443,
             "users": [
               {
-                "id": "84a1511f-6672-4c1d-8e9d-3baa3d273083",
+                "id": "58112e44-a0d8-4ec7-87df-52fd34d150f4",
                 "encryption": "none"
               }
             ]
@@ -2149,18 +2183,15 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/stream/615428/socket",
+          "path": "/",
           "headers": {
-            "Host": "login.opendns.stream"
+            "Host": "dsfadfasdfwse87474.lllcc.top"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "login.opendns.stream",
-          "fingerprint": "firefox",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "dsfadfasdfwse87474.lllcc.top",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -2170,11 +2201,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.129.236.239",
+            "address": "188.225.34.155",
             "port": 443,
             "users": [
               {
-                "id": "84a1511f-6672-4c1d-8e9d-3baa3d273083",
+                "id": "58112e44-a0d8-4ec7-87df-52fd34d150f4",
                 "encryption": "none"
               }
             ]
@@ -2188,18 +2219,15 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/stream/615428/socket",
+          "path": "/",
           "headers": {
-            "Host": "login.opendns.stream"
+            "Host": "dsfadfasdfwse87474.lllcc.top"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "login.opendns.stream",
-          "fingerprint": "ios",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "dsfadfasdfwse87474.lllcc.top",
+          "fingerprint": "qq"
         }
       }
     },
@@ -2209,11 +2237,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.129.236.239",
+            "address": "188.225.34.155",
             "port": 443,
             "users": [
               {
-                "id": "84a1511f-6672-4c1d-8e9d-3baa3d273083",
+                "id": "58112e44-a0d8-4ec7-87df-52fd34d150f4",
                 "encryption": "none"
               }
             ]
@@ -2227,18 +2255,15 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/stream/615428/socket",
+          "path": "/",
           "headers": {
-            "Host": "login.opendns.stream"
+            "Host": "dsfadfasdfwse87474.lllcc.top"
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "login.opendns.stream",
-          "fingerprint": "qq",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "dsfadfasdfwse87474.lllcc.top",
+          "fingerprint": "safari"
         }
       }
     },
@@ -2248,11 +2273,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.176.128.128",
+            "address": "5.159.101.86",
             "port": 443,
             "users": [
               {
-                "id": "d2e00857-9581-4030-96e2-9d1ed0b95049",
+                "id": "58112e44-a0d8-4ec7-87df-52fd34d150f4",
                 "encryption": "none"
               }
             ]
@@ -2260,19 +2285,21 @@
         ]
       },
       "streamSettings": {
-        "network": "httpupgrade",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "httpupgradeSettings": {
-          "path": "/assets/v1",
-          "host": "edge3.statiqedge.com"
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "dsfadfasdfwse87474.lllcc.top"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "edge3.statiqedge.com",
-          "fingerprint": "android"
+          "serverName": "dsfadfasdfwse87474.lllcc.top",
+          "fingerprint": "edge"
         }
       }
     },
@@ -2282,11 +2309,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.176.128.128",
+            "address": "5.159.101.86",
             "port": 443,
             "users": [
               {
-                "id": "d2e00857-9581-4030-96e2-9d1ed0b95049",
+                "id": "58112e44-a0d8-4ec7-87df-52fd34d150f4",
                 "encryption": "none"
               }
             ]
@@ -2294,19 +2321,21 @@
         ]
       },
       "streamSettings": {
-        "network": "httpupgrade",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "httpupgradeSettings": {
-          "path": "/assets/v1",
-          "host": "edge3.statiqedge.com"
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "dsfadfasdfwse87474.lllcc.top"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "edge3.statiqedge.com",
-          "fingerprint": "chrome"
+          "serverName": "dsfadfasdfwse87474.lllcc.top",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -2316,11 +2345,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.176.128.128",
+            "address": "5.159.101.86",
             "port": 443,
             "users": [
               {
-                "id": "d2e00857-9581-4030-96e2-9d1ed0b95049",
+                "id": "58112e44-a0d8-4ec7-87df-52fd34d150f4",
                 "encryption": "none"
               }
             ]
@@ -2328,19 +2357,21 @@
         ]
       },
       "streamSettings": {
-        "network": "httpupgrade",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "httpupgradeSettings": {
-          "path": "/assets/v1",
-          "host": "edge3.statiqedge.com"
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "dsfadfasdfwse87474.lllcc.top"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "edge3.statiqedge.com",
-          "fingerprint": "firefox"
+          "serverName": "dsfadfasdfwse87474.lllcc.top",
+          "fingerprint": "ios"
         }
       }
     },
@@ -2350,11 +2381,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.176.128.128",
+            "address": "5.159.101.86",
             "port": 443,
             "users": [
               {
-                "id": "d2e00857-9581-4030-96e2-9d1ed0b95049",
+                "id": "58112e44-a0d8-4ec7-87df-52fd34d150f4",
                 "encryption": "none"
               }
             ]
@@ -2362,19 +2393,21 @@
         ]
       },
       "streamSettings": {
-        "network": "httpupgrade",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "httpupgradeSettings": {
-          "path": "/assets/v1",
-          "host": "edge3.statiqedge.com"
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "dsfadfasdfwse87474.lllcc.top"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "edge3.statiqedge.com",
-          "fingerprint": "ios"
+          "serverName": "dsfadfasdfwse87474.lllcc.top",
+          "fingerprint": "qq"
         }
       }
     },
@@ -2384,11 +2417,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "178.176.128.128",
+            "address": "5.159.101.86",
             "port": 443,
             "users": [
               {
-                "id": "d2e00857-9581-4030-96e2-9d1ed0b95049",
+                "id": "58112e44-a0d8-4ec7-87df-52fd34d150f4",
                 "encryption": "none"
               }
             ]
@@ -2396,18 +2429,20 @@
         ]
       },
       "streamSettings": {
-        "network": "httpupgrade",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "httpupgradeSettings": {
-          "path": "/assets/v1",
-          "host": "edge3.statiqedge.com"
+        "wsSettings": {
+          "path": "/",
+          "headers": {
+            "Host": "dsfadfasdfwse87474.lllcc.top"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "edge3.statiqedge.com",
+          "serverName": "dsfadfasdfwse87474.lllcc.top",
           "fingerprint": "safari"
         }
       }
@@ -2418,36 +2453,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "201.51.12.29",
+            "address": "193.160.208.137",
             "port": 443,
             "users": [
               {
-                "id": "a72ca3b6-1a26-47f5-aca3-039bb5539eb4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "a08b9c24-3252-4f7f-afa9-4a37040950fd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "moktana.net.v1.StreamService",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "s3-m.perecmusic.ru",
-          "fingerprint": "android",
-          "publicKey": "Jg7t1GwxpS4fhsYzqgz37zlQRSd8YAHECtgdGFDrnDc",
-          "shortId": "5f6a7b8c",
-          "spiderX": "/"
+          "serverName": "api.hexagonicfield.com",
+          "fingerprint": "chrome",
+          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
+          "shortId": "a1b2c3d4e5f6a7b8"
         }
       }
     },
@@ -2457,36 +2489,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "201.51.12.29",
+            "address": "193.160.208.137",
             "port": 443,
             "users": [
               {
-                "id": "a72ca3b6-1a26-47f5-aca3-039bb5539eb4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "a08b9c24-3252-4f7f-afa9-4a37040950fd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "moktana.net.v1.StreamService",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "s3-m.perecmusic.ru",
-          "fingerprint": "chrome",
-          "publicKey": "Jg7t1GwxpS4fhsYzqgz37zlQRSd8YAHECtgdGFDrnDc",
-          "shortId": "5f6a7b8c",
-          "spiderX": "/"
+          "serverName": "api.hexagonicfield.com",
+          "fingerprint": "firefox",
+          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
+          "shortId": "a1b2c3d4e5f6a7b8"
         }
       }
     },
@@ -2496,36 +2525,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "201.51.12.29",
+            "address": "193.160.208.137",
             "port": 443,
             "users": [
               {
-                "id": "a72ca3b6-1a26-47f5-aca3-039bb5539eb4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "a08b9c24-3252-4f7f-afa9-4a37040950fd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "moktana.net.v1.StreamService",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "s3-m.perecmusic.ru",
-          "fingerprint": "firefox",
-          "publicKey": "Jg7t1GwxpS4fhsYzqgz37zlQRSd8YAHECtgdGFDrnDc",
-          "shortId": "5f6a7b8c",
-          "spiderX": "/"
+          "serverName": "api.hexagonicfield.com",
+          "fingerprint": "qq",
+          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
+          "shortId": "a1b2c3d4e5f6a7b8"
         }
       }
     },
@@ -2535,36 +2561,33 @@
       "settings": {
         "vnext": [
           {
-            "address": "201.51.12.29",
+            "address": "193.160.208.137",
             "port": 443,
             "users": [
               {
-                "id": "a72ca3b6-1a26-47f5-aca3-039bb5539eb4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "a08b9c24-3252-4f7f-afa9-4a37040950fd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
+        "grpcSettings": {
+          "serviceName": "moktana.net.v1.StreamService",
+          "multiMode": false
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "s3-m.perecmusic.ru",
-          "fingerprint": "ios",
-          "publicKey": "Jg7t1GwxpS4fhsYzqgz37zlQRSd8YAHECtgdGFDrnDc",
-          "shortId": "5f6a7b8c",
-          "spiderX": "/"
+          "serverName": "api.hexagonicfield.com",
+          "fingerprint": "random",
+          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
+          "shortId": "a1b2c3d4e5f6a7b8"
         }
       }
     },
@@ -2574,36 +2597,453 @@
       "settings": {
         "vnext": [
           {
-            "address": "201.51.12.29",
+            "address": "193.160.208.137",
             "port": 443,
             "users": [
               {
-                "id": "a72ca3b6-1a26-47f5-aca3-039bb5539eb4",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "a08b9c24-3252-4f7f-afa9-4a37040950fd",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "grpcSettings": {
+          "serviceName": "moktana.net.v1.StreamService",
+          "multiMode": false
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "api.hexagonicfield.com",
+          "fingerprint": "safari",
+          "publicKey": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
+          "shortId": "a1b2c3d4e5f6a7b8"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-061",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.129.236.239",
+            "port": 443,
+            "users": [
+              {
+                "id": "17ae4af4-a672-4780-b6f7-311fef62abd1",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/stream/615428/socket",
+          "headers": {
+            "Host": "login.opendns.stream"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "login.opendns.stream",
+          "fingerprint": "android",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-062",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.129.236.239",
+            "port": 443,
+            "users": [
+              {
+                "id": "17ae4af4-a672-4780-b6f7-311fef62abd1",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/stream/615428/socket",
+          "headers": {
+            "Host": "login.opendns.stream"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "login.opendns.stream",
+          "fingerprint": "chrome",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-063",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.129.236.239",
+            "port": 443,
+            "users": [
+              {
+                "id": "17ae4af4-a672-4780-b6f7-311fef62abd1",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/stream/615428/socket",
+          "headers": {
+            "Host": "login.opendns.stream"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "login.opendns.stream",
+          "fingerprint": "edge",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-064",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.129.236.239",
+            "port": 443,
+            "users": [
+              {
+                "id": "17ae4af4-a672-4780-b6f7-311fef62abd1",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/stream/615428/socket",
+          "headers": {
+            "Host": "login.opendns.stream"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "login.opendns.stream",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-065",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "95.129.236.239",
+            "port": 443,
+            "users": [
+              {
+                "id": "17ae4af4-a672-4780-b6f7-311fef62abd1",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/stream/615428/socket",
+          "headers": {
+            "Host": "login.opendns.stream"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "login.opendns.stream",
+          "fingerprint": "safari",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-066",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "161.104.38.98",
+            "port": 443,
+            "users": [
+              {
+                "id": "256c5e3e-431d-0032-bed4-bfcf1334f64b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/assets",
+          "mode": "packet-up",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": 0.0,
+              "hKeepAlivePeriod": 0.0,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "1800-3000",
+              "maxConnections": 2.0
+            }
           }
         },
         "security": "reality",
         "realitySettings": {
-          "serverName": "s3-m.perecmusic.ru",
+          "serverName": "donatov.net",
+          "fingerprint": "android",
+          "publicKey": "kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE",
+          "shortId": "8ba6e72ee60667f6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-067",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "161.104.38.98",
+            "port": 443,
+            "users": [
+              {
+                "id": "256c5e3e-431d-0032-bed4-bfcf1334f64b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/assets",
+          "mode": "packet-up",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": 0.0,
+              "hKeepAlivePeriod": 0.0,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "1800-3000",
+              "maxConnections": 2.0
+            }
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "donatov.net",
+          "fingerprint": "firefox",
+          "publicKey": "kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE",
+          "shortId": "8ba6e72ee60667f6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-068",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "161.104.38.98",
+            "port": 443,
+            "users": [
+              {
+                "id": "256c5e3e-431d-0032-bed4-bfcf1334f64b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/assets",
+          "mode": "packet-up",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": 0.0,
+              "hKeepAlivePeriod": 0.0,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "1800-3000",
+              "maxConnections": 2.0
+            }
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "donatov.net",
+          "fingerprint": "ios",
+          "publicKey": "kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE",
+          "shortId": "8ba6e72ee60667f6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-069",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "161.104.38.98",
+            "port": 443,
+            "users": [
+              {
+                "id": "256c5e3e-431d-0032-bed4-bfcf1334f64b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/assets",
+          "mode": "packet-up",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": 0.0,
+              "hKeepAlivePeriod": 0.0,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "1800-3000",
+              "maxConnections": 2.0
+            }
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "donatov.net",
+          "fingerprint": "qq",
+          "publicKey": "kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE",
+          "shortId": "8ba6e72ee60667f6"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-070",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "161.104.38.98",
+            "port": 443,
+            "users": [
+              {
+                "id": "256c5e3e-431d-0032-bed4-bfcf1334f64b",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/assets",
+          "mode": "packet-up",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": 0.0,
+              "hKeepAlivePeriod": 0.0,
+              "hMaxRequestTimes": "600-900",
+              "hMaxReusableSecs": "1800-3000",
+              "maxConnections": 2.0
+            }
+          }
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "donatov.net",
           "fingerprint": "random",
-          "publicKey": "Jg7t1GwxpS4fhsYzqgz37zlQRSd8YAHECtgdGFDrnDc",
-          "shortId": "5f6a7b8c",
-          "spiderX": "/"
+          "publicKey": "kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE",
+          "shortId": "8ba6e72ee60667f6"
         }
       }
     },
