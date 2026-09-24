@@ -3,12 +3,12 @@
     "name": "WHITE-CIDR-RU-checked — v2rayNG Auto Select GLOBAL",
     "generator": "Igareck GitHub",
     "notes": [
-      "9 proxies",
+      "10 proxies",
       "Interval is 5 minutes + leastPing + routing GLOBAL."
     ],
     "client": "v2rayNG",
     "source": "WHITE-CIDR-RU-checked.txt",
-    "source_datetime": "2026-09-24 17:56 Moscow"
+    "source_datetime": "2026-09-24 20:08 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -504,7 +504,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -538,7 +538,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         }
       }
     },
@@ -572,46 +572,12 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         }
       }
     },
     {
       "tag": "igareck-node-005",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.139.42.138",
-            "port": 443,
-            "users": [
-              {
-                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/e9ws",
-          "headers": {}
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "qq"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-006",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -648,6 +614,43 @@
       }
     },
     {
+      "tag": "igareck-node-006",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dostavitos.stroymatdv.cc",
+            "port": 443,
+            "users": [
+              {
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/e9ws",
+          "headers": {}
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "dostavitos.stroymatdv.cc",
+          "fingerprint": "edge",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
       "tag": "igareck-node-007",
       "protocol": "vless",
       "settings": {
@@ -677,7 +680,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "chrome",
+          "fingerprint": "firefox",
           "alpn": [
             "http/1.1"
           ]
@@ -714,7 +717,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "dostavitos.stroymatdv.cc",
-          "fingerprint": "edge",
+          "fingerprint": "qq",
           "alpn": [
             "http/1.1"
           ]
@@ -755,6 +758,40 @@
           "alpn": [
             "http/1.1"
           ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-010",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "37.139.42.138",
+            "port": 443,
+            "users": [
+              {
+                "id": "365de9e9-ba29-4819-af2d-766f9638e3be",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/e9ws",
+          "headers": {}
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "dostavitos.stroymatdv.cc",
+          "fingerprint": "edge"
         }
       }
     },
