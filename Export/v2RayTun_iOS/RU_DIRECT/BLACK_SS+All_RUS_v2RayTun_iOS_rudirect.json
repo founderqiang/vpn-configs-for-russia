@@ -235,7 +235,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "cf.lunex-vpn.xyz",
-          "fingerprint": "android",
+          "fingerprint": "chrome",
           "alpn": [
             "h3",
             "h2",
@@ -271,7 +271,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "cf.lunex-vpn.xyz",
-          "fingerprint": "chrome",
+          "fingerprint": "edge",
           "alpn": [
             "h3",
             "h2",
@@ -308,6 +308,42 @@
         "tlsSettings": {
           "serverName": "cf.lunex-vpn.xyz",
           "fingerprint": "firefox",
+          "alpn": [
+            "h3",
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-007",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "8.6.112.0",
+            "port": 443,
+            "password": "zO79_fE_wEIhphCLNOo3mQ"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/Lunex",
+          "headers": {
+            "Host": "cf.lunex-vpn.xyz"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cf.lunex-vpn.xyz",
+          "fingerprint": "ios",
           "alpn": [
             "h3",
             "h2",
