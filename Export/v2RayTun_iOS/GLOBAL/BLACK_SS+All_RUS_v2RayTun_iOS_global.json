@@ -142,11 +142,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "163.245.196.106",
-            "port": 40443,
+            "address": "24864168545164.oylfmxz.cn",
+            "port": 443,
             "users": [
               {
-                "id": "XEXEVIL",
+                "id": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -161,8 +161,14 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/user_xexevil tel",
-          "headers": {}
+          "path": "/",
+          "headers": {
+            "Host": "24864168545164.oylfmxz.cn"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "24864168545164.oylfmxz.cn"
         }
       }
     },
@@ -202,6 +208,36 @@
       "settings": {
         "vnext": [
           {
+            "address": "163.245.196.106",
+            "port": 40443,
+            "users": [
+              {
+                "id": "XEXEVIL",
+                "alterId": 0,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/user_xexevil tel",
+          "headers": {}
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-005",
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
             "address": "172.64.80.1",
             "port": 8443,
             "users": [
@@ -228,42 +264,6 @@
         },
         "security": "tls",
         "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-005",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "chatgpt.com",
-            "port": 8443,
-            "users": [
-              {
-                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/lMnsZUN4/",
-          "headers": {
-            "Host": "v2ray1.dozapp.xyz"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "v2ray1.dozapp.xyz"
-        }
       }
     },
     {
@@ -374,19 +374,13 @@
     },
     {
       "tag": "igareck-node-009",
-      "protocol": "vmess",
+      "protocol": "trojan",
       "settings": {
-        "vnext": [
+        "servers": [
           {
-            "address": "chatgpt.com",
-            "port": 8443,
-            "users": [
-              {
-                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
+            "address": "8.6.112.0",
+            "port": 443,
+            "password": "zO79_fE_wEIhphCLNOo3mQ"
           }
         ]
       },
@@ -397,12 +391,92 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/lMnsZUN4/",
-          "headers": {}
+          "path": "/Lunex",
+          "headers": {
+            "Host": "cf.lunex-vpn.xyz"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "v2ray1.dozapp.xyz"
+          "serverName": "cf.lunex-vpn.xyz",
+          "fingerprint": "android",
+          "alpn": [
+            "h3",
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-010",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "8.6.112.0",
+            "port": 443,
+            "password": "zO79_fE_wEIhphCLNOo3mQ"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/Lunex",
+          "headers": {
+            "Host": "cf.lunex-vpn.xyz"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cf.lunex-vpn.xyz",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h3",
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-011",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "8.6.112.0",
+            "port": 443,
+            "password": "zO79_fE_wEIhphCLNOo3mQ"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/Lunex",
+          "headers": {
+            "Host": "cf.lunex-vpn.xyz"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cf.lunex-vpn.xyz",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h3",
+            "h2",
+            "http/1.1"
+          ]
         }
       }
     },
