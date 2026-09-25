@@ -3,7 +3,7 @@
 # Источник/Source: WHITE-CIDR-RU-checked.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # Количество/Quantity: 18
-# Date/Time: 2026-09-25 / 16:50 (Moscow)
+# Date/Time: 2026-09-25 / 18:59 (Moscow)
 #
 # Не содержит никаких настроек, только список прокси / No settings, just proxies list;
 # ============================================================
@@ -161,7 +161,7 @@ proxies:
   servername: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
   alpn:
   - http/1.1
-  client-fingerprint: safari
+  client-fingerprint: random
   network: ws
   ws-opts:
     path: /e9ws
@@ -173,7 +173,9 @@ proxies:
   udp: true
   tls: true
   servername: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
-  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  client-fingerprint: safari
   network: ws
   ws-opts:
     path: /e9ws
@@ -185,7 +187,7 @@ proxies:
   udp: true
   tls: true
   servername: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /e9ws
@@ -233,9 +235,7 @@ proxies:
   udp: true
   tls: true
   servername: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
-  alpn:
-  - http/1.1
-  client-fingerprint: random
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /e9ws
