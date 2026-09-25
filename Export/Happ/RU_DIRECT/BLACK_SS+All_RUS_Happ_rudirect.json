@@ -3,12 +3,12 @@
     "name": "BLACK_SS+All_RUS — Happ Auto Select RU-DIRECT",
     "generator": "Igareck GitHub",
     "notes": [
-      "19 proxies",
+      "15 proxies",
       "Interval is 5 minutes + leastPing + routing RU-DIRECT."
     ],
     "client": "Happ",
     "source": "BLACK_SS+All_RUS.txt",
-    "source_datetime": "2026-09-25 07:14 Moscow"
+    "source_datetime": "2026-09-25 08:47 Moscow"
   },
   "log": {
     "loglevel": "warning"
@@ -398,6 +398,33 @@
       "protocol": "hysteria",
       "settings": {
         "version": 2,
+        "address": "cze-01.node.lumixnet.com",
+        "port": 443
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "8645697d-51c1-4e90-aca5-ba63a0392f11"
+        },
+        "tlsSettings": {
+          "serverName": "cze-01.node.lumixnet.com",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-004",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
         "address": "162.249.126.13",
         "port": 8443
       },
@@ -421,7 +448,7 @@
       }
     },
     {
-      "tag": "igareck-node-004",
+      "tag": "igareck-node-005",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -437,33 +464,6 @@
         },
         "tlsSettings": {
           "serverName": "hopp-swizland-new.mysynology.net",
-          "alpn": [
-            "h3"
-          ]
-        },
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-005",
-      "protocol": "hysteria",
-      "settings": {
-        "version": 2,
-        "address": "31.59.150.248",
-        "port": 4433
-      },
-      "streamSettings": {
-        "network": "hysteria",
-        "security": "tls",
-        "hysteriaSettings": {
-          "version": 2,
-          "auth": "d929e993-8053-488a-8a22-0ae09f706a2e"
-        },
-        "tlsSettings": {
-          "serverName": "nl.nextgencloud.tech",
           "alpn": [
             "h3"
           ]
@@ -506,6 +506,33 @@
       "protocol": "hysteria",
       "settings": {
         "version": 2,
+        "address": "31.59.150.248",
+        "port": 4433
+      },
+      "streamSettings": {
+        "network": "hysteria",
+        "security": "tls",
+        "hysteriaSettings": {
+          "version": 2,
+          "auth": "d929e993-8053-488a-8a22-0ae09f706a2e"
+        },
+        "tlsSettings": {
+          "serverName": "nl.nextgencloud.tech",
+          "alpn": [
+            "h3"
+          ]
+        },
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-008",
+      "protocol": "hysteria",
+      "settings": {
+        "version": 2,
         "address": "77.74.123.99",
         "port": 8443
       },
@@ -529,7 +556,7 @@
       }
     },
     {
-      "tag": "igareck-node-008",
+      "tag": "igareck-node-009",
       "protocol": "hysteria",
       "settings": {
         "version": 2,
@@ -552,37 +579,6 @@
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-009",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "31.77.8.97",
-            "port": 110,
-            "users": [
-              {
-                "id": "e8758bf0-c234-4809-89f7-25fd868316d0",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
         }
       }
     },
@@ -628,11 +624,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "163.245.196.106",
-            "port": 40443,
+            "address": "chatgpt.com",
+            "port": 8443,
             "users": [
               {
-                "id": "XEXEVIL",
+                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
                 "alterId": 0,
                 "security": "auto"
               }
@@ -647,183 +643,19 @@
           "tcpKeepAliveInterval": 60
         },
         "wsSettings": {
-          "path": "/user_xexevil tel",
-          "headers": {}
+          "path": "/lMnsZUN4/",
+          "headers": {
+            "Host": "v2ray1.dozapp.xyz"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "v2ray1.dozapp.xyz"
         }
       }
     },
     {
       "tag": "igareck-node-012",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "163.245.196.106",
-            "port": 40443,
-            "users": [
-              {
-                "id": "XEXEVIL",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/user_xexevil tel",
-          "headers": {}
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-013",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.80.1",
-            "port": 8443,
-            "users": [
-              {
-                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/lMnsZUN4/",
-          "headers": {
-            "Host": "v2ray1.dozapp.xyz"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-014",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.80.1",
-            "port": 8443,
-            "users": [
-              {
-                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/lMnsZUN4/",
-          "headers": {
-            "Host": "v2ray1.dozapp.xyz"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "v2ray1.dozapp.xyz"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-015",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.80.1",
-            "port": 8443,
-            "users": [
-              {
-                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/lMnsZUN4/",
-          "headers": {
-            "Host": "v2ray1.dozapp.xyz"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "v2ray1.dozapp.xyz"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-016",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "172.64.80.1",
-            "port": 8443,
-            "users": [
-              {
-                "id": "60441548-b68e-43b2-8191-e3b884be4b3c",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "wsSettings": {
-          "path": "/lMnsZUN4/",
-          "headers": {
-            "Host": "v2ray1.dozapp.xyz"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {}
-      }
-    },
-    {
-      "tag": "igareck-node-017",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -859,7 +691,7 @@
       }
     },
     {
-      "tag": "igareck-node-018",
+      "tag": "igareck-node-013",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -895,7 +727,7 @@
       }
     },
     {
-      "tag": "igareck-node-019",
+      "tag": "igareck-node-014",
       "protocol": "trojan",
       "settings": {
         "servers": [
@@ -922,6 +754,42 @@
         "tlsSettings": {
           "serverName": "cf.lunex-vpn.xyz",
           "fingerprint": "firefox",
+          "alpn": [
+            "h3",
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-015",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "8.6.112.0",
+            "port": 443,
+            "password": "zO79_fE_wEIhphCLNOo3mQ"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "wsSettings": {
+          "path": "/Lunex",
+          "headers": {
+            "Host": "cf.lunex-vpn.xyz"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "cf.lunex-vpn.xyz",
+          "fingerprint": "ios",
           "alpn": [
             "h3",
             "h2",
