@@ -3,7 +3,7 @@
 # Источник/Source: WHITE-CIDR-RU-checked.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
 # Количество/Quantity: 10
-# Date/Time: 2026-09-26 / 12:29 (Moscow)
+# Date/Time: 2026-09-26 / 15:02 (Moscow)
 #
 # Режим / Mode:
 # - Автоматический Выбор лучшего прокси / Igareck Auto Select;
@@ -151,7 +151,7 @@ sniffer:
       ports: [443, 8443]
 
 proxies:
-- name: Igareck Node 001 | 🇩🇪 Germany | [*CIDR] VK
+- name: Igareck Node 001 | 🇩🇪 Germany | 🌐 [*CIDR] VK
   type: vless
   server: "\x33\x37\x2e\x31\x33\x39\x2e\x34\x32\x2e\x31\x33\x38"
   port: 443
@@ -165,21 +165,21 @@ proxies:
     path: /e9ws
     headers:
       Host: dostavitos.stroymatdv.cc
-- name: Igareck Node 002 | 🇩🇪 Germany | [*CIDR] VK
+- name: Igareck Node 002 | 🇩🇪 Germany | 🌐 [*CIDR] VK
   type: vless
-  server: "\x33\x37\x2e\x31\x33\x39\x2e\x34\x32\x2e\x31\x33\x38"
+  server: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
   port: 443
   uuid: "\x33\x36\x35\x64\x65\x39\x65\x39\x2d\x62\x61\x32\x39\x2d\x34\x38\x31\x39\x2d\x61\x66\x32\x64\x2d\x37\x36\x36\x66\x39\x36\x33\x38\x65\x33\x62\x65"
   udp: true
   tls: true
   servername: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
-  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /e9ws
-    headers:
-      Host: dostavitos.stroymatdv.cc
-- name: Igareck Node 003 | 🇩🇪 Germany | [*CIDR] VK
+- name: Igareck Node 003 | 🇩🇪 Germany | 🌐 | [*CIDR] VK
   type: vless
   server: "\x33\x37\x2e\x31\x33\x39\x2e\x34\x32\x2e\x31\x33\x38"
   port: 443
@@ -193,7 +193,7 @@ proxies:
     path: /e9ws
     headers:
       Host: dostavitos.stroymatdv.cc
-- name: Igareck Node 004 | 🇩🇪 Germany | [*CIDR] VK
+- name: Igareck Node 004 | 🇩🇪 Germany | 🌐 | [*CIDR] VK
   type: vless
   server: "\x33\x37\x2e\x31\x33\x39\x2e\x34\x32\x2e\x31\x33\x38"
   port: 443
@@ -201,36 +201,40 @@ proxies:
   udp: true
   tls: true
   servername: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
-  client-fingerprint: firefox
+  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /e9ws
     headers:
       Host: dostavitos.stroymatdv.cc
-- name: Igareck Node 005 | 🇩🇪 Germany | 🌐 [*CIDR] VK
+- name: Igareck Node 005 | 🇩🇪 Germany | 🌐 | [*CIDR] VK
   type: vless
-  server: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
+  server: "\x33\x37\x2e\x31\x33\x39\x2e\x34\x32\x2e\x31\x33\x38"
   port: 443
   uuid: "\x33\x36\x35\x64\x65\x39\x65\x39\x2d\x62\x61\x32\x39\x2d\x34\x38\x31\x39\x2d\x61\x66\x32\x64\x2d\x37\x36\x36\x66\x39\x36\x33\x38\x65\x33\x62\x65"
   udp: true
   tls: true
   servername: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
-  client-fingerprint: android
+  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /e9ws
+    headers:
+      Host: dostavitos.stroymatdv.cc
 - name: Igareck Node 006 | 🇩🇪 Germany | 🌐 | [*CIDR] VK
   type: vless
-  server: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
+  server: "\x33\x37\x2e\x31\x33\x39\x2e\x34\x32\x2e\x31\x33\x38"
   port: 443
   uuid: "\x33\x36\x35\x64\x65\x39\x65\x39\x2d\x62\x61\x32\x39\x2d\x34\x38\x31\x39\x2d\x61\x66\x32\x64\x2d\x37\x36\x36\x66\x39\x36\x33\x38\x65\x33\x62\x65"
   udp: true
   tls: true
   servername: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
-  client-fingerprint: firefox
+  client-fingerprint: safari
   network: ws
   ws-opts:
     path: /e9ws
+    headers:
+      Host: dostavitos.stroymatdv.cc
 - name: Igareck Node 007 | 🇩🇪 Germany | 🌐 | [*CIDR] VK
   type: vless
   server: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
@@ -239,7 +243,9 @@ proxies:
   udp: true
   tls: true
   servername: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
-  client-fingerprint: ios
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /e9ws
@@ -251,7 +257,9 @@ proxies:
   udp: true
   tls: true
   servername: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
-  client-fingerprint: qq
+  alpn:
+  - http/1.1
+  client-fingerprint: edge
   network: ws
   ws-opts:
     path: /e9ws
@@ -263,24 +271,26 @@ proxies:
   udp: true
   tls: true
   servername: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
-  client-fingerprint: safari
+  alpn:
+  - http/1.1
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /e9ws
-- name: Igareck Node 010 | 🇩🇪 Germany [*CIDR] VK
+- name: Igareck Node 010 | 🇩🇪 Germany | 🌐 | [*CIDR] VK
   type: vless
-  server: "\x33\x37\x2e\x31\x33\x39\x2e\x34\x32\x2e\x31\x33\x38"
+  server: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
   port: 443
   uuid: "\x33\x36\x35\x64\x65\x39\x65\x39\x2d\x62\x61\x32\x39\x2d\x34\x38\x31\x39\x2d\x61\x66\x32\x64\x2d\x37\x36\x36\x66\x39\x36\x33\x38\x65\x33\x62\x65"
   udp: true
   tls: true
   servername: "\x64\x6f\x73\x74\x61\x76\x69\x74\x6f\x73\x2e\x73\x74\x72\x6f\x79\x6d\x61\x74\x64\x76\x2e\x63\x63"
-  client-fingerprint: qq
+  alpn:
+  - http/1.1
+  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /e9ws
-    headers:
-      Host: dostavitos.stroymatdv.cc
 
 proxy-groups:
   - name: "Igareck Auto Select (Автоподключение)"
