@@ -57,7 +57,8 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$"
+          "regexp:^[^.]+$",
+          "full:apis.stroymatdv.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -113,7 +114,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:apis.stroymatdv.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -133,7 +135,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:apis.stroymatdv.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -153,7 +156,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:apis.stroymatdv.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -173,7 +177,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:apis.stroymatdv.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -193,7 +198,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:apis.stroymatdv.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -213,7 +219,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:apis.stroymatdv.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -233,7 +240,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:apis.stroymatdv.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -253,7 +261,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:apis.stroymatdv.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -273,7 +282,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:apis.stroymatdv.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -293,7 +303,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:apis.stroymatdv.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -313,7 +324,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:apis.stroymatdv.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -333,7 +345,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:apis.stroymatdv.cc"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -400,36 +413,34 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
+            "address": "37.139.42.221",
             "port": 443,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "3a8b464f-3701-40ed-b6b6-b612019e34c1",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/amsws",
+          "headers": {
+            "Host": "apis.stroymatdv.cc"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "firefox",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "apis.stroymatdv.cc",
+          "fingerprint": "qq"
         }
       }
     },
@@ -439,36 +450,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
+            "address": "apis.stroymatdv.cc",
             "port": 443,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "3a8b464f-3701-40ed-b6b6-b612019e34c1",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/amsws",
+          "headers": {
+            "Host": "apis.stroymatdv.cc"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "ios",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "apis.stroymatdv.cc",
+          "fingerprint": "edge",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -478,36 +490,37 @@
       "settings": {
         "vnext": [
           {
-            "address": "90.156.218.163",
+            "address": "apis.stroymatdv.cc",
             "port": 443,
             "users": [
               {
-                "id": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
+                "id": "3a8b464f-3701-40ed-b6b6-b612019e34c1",
+                "encryption": "none"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "raw",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "rawSettings": {
-          "header": {
-            "type": "none"
+        "wsSettings": {
+          "path": "/amsws",
+          "headers": {
+            "Host": "apis.stroymatdv.cc"
           }
         },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "eh.vk.ru",
-          "fingerprint": "safari",
-          "publicKey": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "shortId": "db04ce8bdb8900f1"
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "apis.stroymatdv.cc",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -581,7 +594,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "apis.stroymatdv.cc",
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         }
       }
     },
@@ -618,7 +631,7 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "apis.stroymatdv.cc",
-          "fingerprint": "random"
+          "fingerprint": "ios"
         }
       }
     },
@@ -628,7 +641,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.139.42.221",
+            "address": "apis.stroymatdv.cc",
             "port": 443,
             "users": [
               {
@@ -655,7 +668,10 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "apis.stroymatdv.cc",
-          "fingerprint": "qq"
+          "fingerprint": "android",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
@@ -665,7 +681,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.139.42.221",
+            "address": "apis.stroymatdv.cc",
             "port": 443,
             "users": [
               {
@@ -692,7 +708,90 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "apis.stroymatdv.cc",
-          "fingerprint": "safari"
+          "fingerprint": "ios",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-009",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "apis.stroymatdv.cc",
+            "port": 443,
+            "users": [
+              {
+                "id": "3a8b464f-3701-40ed-b6b6-b612019e34c1",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/amsws",
+          "headers": {
+            "Host": "apis.stroymatdv.cc"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "apis.stroymatdv.cc",
+          "fingerprint": "qq",
+          "alpn": [
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-010",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "apis.stroymatdv.cc",
+            "port": 443,
+            "users": [
+              {
+                "id": "3a8b464f-3701-40ed-b6b6-b612019e34c1",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/amsws",
+          "headers": {
+            "Host": "apis.stroymatdv.cc"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "apis.stroymatdv.cc",
+          "fingerprint": "safari",
+          "alpn": [
+            "http/1.1"
+          ]
         }
       }
     },
