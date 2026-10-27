@@ -2,8 +2,8 @@
 # Igareck Mihomo Subscription
 # Источник/Source: WHITE-CIDR-RU-checked.txt
 # 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
-# Количество/Quantity: 18
-# Date/Time: 2026-10-27 / 10:31 (Moscow)
+# Количество/Quantity: 19
+# Date/Time: 2026-10-27 / 12:53 (Moscow)
 #
 # Режим / Mode:
 # - Автоматический Выбор лучшего прокси / Igareck Auto Select;
@@ -153,7 +153,21 @@ sniffer:
 proxies:
 - name: Igareck Node 001 | 🇧🇬 Bulgaria | [*CIDR] CDN
   type: vless
-  server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  port: 8443
+  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
+  udp: true
+  tls: true
+  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  client-fingerprint: edge
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: flatcrest.net
+    mode: auto
+- name: Igareck Node 002 | 🇧🇬 Bulgaria | [*CIDR] CDN
+  type: vless
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
   port: 8443
   uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
   udp: true
@@ -165,7 +179,21 @@ proxies:
     path: /api/v1/upload
     host: flatcrest.net
     mode: auto
-- name: Igareck Node 002 | 🇧🇬 Bulgaria | 🌐 [*CIDR] CDN
+- name: Igareck Node 003 | 🇧🇬 Bulgaria | [*CIDR] CDN
+  type: vless
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  port: 8443
+  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
+  udp: true
+  tls: true
+  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  client-fingerprint: ios
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: flatcrest.net
+    mode: auto
+- name: Igareck Node 004 | 🇧🇬 Bulgaria | [*CIDR] CDN
   type: vless
   server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
   port: 8443
@@ -176,13 +204,54 @@ proxies:
   alpn:
   - http/1.1
   - h2
-  client-fingerprint: qq
+  client-fingerprint: firefox
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
     host: flatcrest.net
     mode: auto
-- name: Igareck Node 003 | 🇧🇬 Bulgaria | 🌐 [*CIDR] CDN
+- name: Igareck Node 005 | 🇧🇬 Bulgaria | [*CIDR] CDN
+  type: vless
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  port: 8443
+  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
+  udp: true
+  tls: true
+  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+- name: Igareck Node 006 | 🇧🇬 Bulgaria | [*CIDR] CDN
+  type: vless
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  port: 8443
+  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
+  udp: true
+  tls: true
+  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  client-fingerprint: qq
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+- name: Igareck Node 007 | 🇧🇬 Bulgaria | 🌐 [*CIDR] CDN
+  type: vless
+  server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  port: 8443
+  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
+  udp: true
+  tls: true
+  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  alpn:
+  - http/1.1
+  - h2
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: flatcrest.net
+    mode: auto
+- name: Igareck Node 008 | 🇧🇬 Bulgaria | 🌐 | [*CIDR] CDN
   type: vless
   server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
   port: 8443
@@ -199,7 +268,7 @@ proxies:
     path: /api/v1/upload
     host: flatcrest.net
     mode: auto
-- name: Igareck Node 004 | 🇧🇬 Bulgaria | 🌐 [*CIDR] CDN
+- name: Igareck Node 009 | 🇧🇬 Bulgaria | 🌐 | [*CIDR] CDN
   type: vless
   server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
   port: 8443
@@ -213,23 +282,9 @@ proxies:
     path: /api/v1/upload
     host: flatcrest.net
     mode: auto
-- name: Igareck Node 005 | 🇧🇬 Bulgaria | 🌐 | [*CIDR] CDN
+- name: Igareck Node 010 | 🇧🇬 Bulgaria | 🌐 | [*CIDR] CDN
   type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 8443
-  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
-  udp: true
-  tls: true
-  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
-  client-fingerprint: edge
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: flatcrest.net
-    mode: auto
-- name: Igareck Node 006 | 🇧🇬 Bulgaria | 🌐 | [*CIDR] CDN
-  type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
+  server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
   port: 8443
   uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
   udp: true
@@ -241,21 +296,7 @@ proxies:
     path: /api/v1/upload
     host: flatcrest.net
     mode: auto
-- name: Igareck Node 007 | 🇧🇬 Bulgaria | 🌐 | [*CIDR] CDN
-  type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 8443
-  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
-  udp: true
-  tls: true
-  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
-  client-fingerprint: ios
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: flatcrest.net
-    mode: auto
-- name: Igareck Node 008 | 🇧🇬 Bulgaria | 🌐 | [*CIDR] CDN
+- name: Igareck Node 011 | 🇧🇬 Bulgaria [*CIDR] CDN
   type: vless
   server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
   port: 8443
@@ -272,9 +313,9 @@ proxies:
     path: /api/v1/upload
     host: flatcrest.net
     mode: auto
-- name: Igareck Node 009 | 🇧🇬 Bulgaria | 🌐 | [*CIDR] CDN
+- name: Igareck Node 012 | 🇧🇬 Bulgaria [*CIDR] CDN
   type: vless
-  server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
   port: 8443
   uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
   udp: true
@@ -283,13 +324,13 @@ proxies:
   alpn:
   - http/1.1
   - h2
-  client-fingerprint: firefox
+  client-fingerprint: qq
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
     host: flatcrest.net
     mode: auto
-- name: Igareck Node 010 | 🇷🇺 Russia | 🌐 | [*CIDR] CDN
+- name: Igareck Node 013 | 🇷🇺 Russia | 🌐 [*CIDR] CDN
   type: vless
   server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
   port: 2053
@@ -300,51 +341,6 @@ proxies:
   alpn:
   - http/1.1
   - h2
-  client-fingerprint: android
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: flatcrest.net
-    mode: auto
-- name: Igareck Node 011 | 🇷🇺 Russia | 🌐 | [*CIDR] CDN
-  type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 2053
-  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
-  udp: true
-  tls: true
-  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
-  alpn:
-  - http/1.1
-  - h2
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: flatcrest.net
-    mode: auto
-- name: Igareck Node 012 | 🇷🇺 Russia | 🌐 | [*CIDR] CDN
-  type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 2053
-  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
-  udp: true
-  tls: true
-  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
-  client-fingerprint: android
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/upload
-    host: flatcrest.net
-    mode: auto
-- name: Igareck Node 013 | 🇷🇺 Russia | 🌐 | [*CIDR] CDN
-  type: vless
-  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
-  port: 2053
-  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
-  udp: true
-  tls: true
-  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
   client-fingerprint: firefox
   network: xhttp
   xhttp-opts:
@@ -353,7 +349,7 @@ proxies:
     mode: auto
 - name: Igareck Node 014 | 🇷🇺 Russia | 🌐 | [*CIDR] CDN
   type: vless
-  server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  server: "\x33\x37\x2e\x31\x38\x2e\x31\x34\x2e\x34\x33"
   port: 2053
   uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
   udp: true
@@ -379,7 +375,7 @@ proxies:
   alpn:
   - http/1.1
   - h2
-  client-fingerprint: firefox
+  client-fingerprint: android
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -393,7 +389,10 @@ proxies:
   udp: true
   tls: true
   servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
-  client-fingerprint: android
+  alpn:
+  - http/1.1
+  - h2
+  client-fingerprint: firefox
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
@@ -407,13 +406,27 @@ proxies:
   udp: true
   tls: true
   servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  client-fingerprint: android
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/upload
+    host: flatcrest.net
+    mode: auto
+- name: Igareck Node 018 | 🇷🇺 Russia | 🌐 | [*CIDR] CDN
+  type: vless
+  server: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
+  port: 2053
+  uuid: "\x37\x64\x64\x36\x39\x30\x34\x37\x2d\x30\x34\x37\x65\x2d\x34\x32\x32\x65\x2d\x61\x32\x62\x61\x2d\x65\x64\x37\x37\x33\x63\x33\x34\x66\x64\x31\x61"
+  udp: true
+  tls: true
+  servername: "\x66\x6c\x61\x74\x63\x72\x65\x73\x74\x2e\x6e\x65\x74"
   client-fingerprint: firefox
   network: xhttp
   xhttp-opts:
     path: /api/v1/upload
     host: flatcrest.net
     mode: auto
-- name: Igareck Node 018 | 🇷🇺 Russia | [*CIDR] YA
+- name: Igareck Node 019 | 🇷🇺 Russia | [*CIDR] YA
   type: vmess
   server: "\x31\x35\x38\x2e\x31\x36\x30\x2e\x31\x38\x30\x2e\x31\x36\x35"
   port: 24212
