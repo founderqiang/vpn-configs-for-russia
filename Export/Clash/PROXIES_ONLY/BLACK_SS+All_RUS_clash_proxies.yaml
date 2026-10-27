@@ -2,23 +2,34 @@
 # Igareck Mihomo Subscription
 # Источник/Source: BLACK_SS+All_RUS.txt
 # 🏴 ЧЕРНЫЕ СПИСКИ 🏴 BLACK LISTS | Полная • Full | SS, Hy2, Vmess, Trojan
-# Количество/Quantity: 56
-# Date/Time: 2026-10-27 / 15:36 (Moscow)
+# Количество/Quantity: 57
+# Date/Time: 2026-10-27 / 16:42 (Moscow)
 #
 # Не содержит никаких настроек, только список прокси / No settings, just proxies list;
 # ============================================================
 
 proxies:
-- name: Igareck Node 001 | 🇵🇱 Poland， Warsaw | [BL]
+- name: Igareck Node 001 | 🇭🇰 Hong Kong， Fo Tan | [BL]
   type: hysteria2
-  server: "\x6d\x65\x64\x69\x61\x2e\x65\x6d\x62\x72\x6f\x66\x72\x65\x65\x2e\x6f\x72\x67"
+  server: "\x76\x70\x6e\x2d\x68\x6b\x2d\x30\x30\x34\x2e\x66\x61\x73\x74\x65\x72\x76\x70\x6e\x2e\x77\x6f\x72\x6c\x64"
   port: 443
-  password: 8d18449d-e60d-40e1-b100-0468f1c2035b
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   udp: true
-  sni: media.embrofree.org
+  sni: vpn-hk-004.fastervpn.world
   alpn:
   - h3
-- name: Igareck Node 002 | 🇷🇴 Romania， Bucharest | 🌐 | [BL]
+  skip-cert-verify: true
+- name: Igareck Node 002 | 🇭🇰 Hong Kong， Fo Tan | [BL]
+  type: hysteria2
+  server: "\x76\x70\x6e\x2d\x68\x6b\x2d\x30\x30\x34\x2e\x66\x61\x73\x74\x65\x72\x76\x70\x6e\x2e\x77\x6f\x72\x6c\x64"
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  sni: vpn-hk-004.fastervpn.world
+  alpn:
+  - h3
+  skip-cert-verify: true
+- name: Igareck Node 003 | 🇷🇴 Romania， Bucharest | 🌐 | [BL]
   type: hysteria2
   server: "\x31\x38\x35\x2e\x31\x35\x36\x2e\x34\x34\x2e\x39\x39"
   port: 443
@@ -28,56 +39,35 @@ proxies:
   alpn:
   - h3
   skip-cert-verify: true
-- name: Igareck Node 003 | 🇨🇳 China， Shenzhen | [BL]
+- name: Igareck Node 004 | 🇷🇴 Romania， Bucharest | 🌐 | [BL]
+  type: hysteria2
+  server: "\x31\x38\x35\x2e\x31\x35\x36\x2e\x34\x34\x2e\x39\x39"
+  port: 443
+  password: gf1:gfhysteria2024
+  udp: true
+  sni: css.rbxcdn.com
+  alpn:
+  - h3
+  skip-cert-verify: true
+- name: Igareck Node 005 | 🇩🇪 Germany， Düsseldorf | 🌐 | [BL]
   type: vmess
-  server: "\x33\x39\x2e\x31\x30\x38\x2e\x31\x31\x33\x2e\x31\x32\x37"
-  port: 10086
-  uuid: "\x32\x65\x62\x32\x35\x63\x31\x65\x2d\x63\x33\x62\x35\x2d\x34\x35\x63\x66\x2d\x39\x61\x66\x64\x2d\x64\x64\x33\x64\x64\x63\x30\x30\x64\x61\x31\x30"
+  server: "\x64\x65\x2e\x7a\x68\x6f\x75\x2d\x79\x75\x66\x61\x6e\x2e\x63\x6f\x6d"
+  port: 443
+  uuid: "\x66\x33\x38\x65\x35\x39\x31\x64\x2d\x64\x31\x33\x61\x2d\x34\x63\x33\x30\x2d\x39\x37\x36\x33\x2d\x36\x62\x65\x33\x61\x64\x36\x35\x66\x33\x65\x63"
   alterId: 0
   cipher: auto
   udp: true
-  network: ws
-  ws-opts:
-    path: /
-- name: Igareck Node 004 | 🇫🇷 France， Paris | [BL]
-  type: trojan
-  server: "\x31\x34\x31\x2e\x31\x39\x33\x2e\x32\x31\x33\x2e\x31\x37\x32"
+  tls: true
+  servername: "\x64\x65\x2e\x7a\x68\x6f\x75\x2d\x79\x75\x66\x61\x6e\x2e\x63\x6f\x6d"
+- name: Igareck Node 006 | 🇩🇪 Germany， Düsseldorf | 🌐 | [BL]
+  type: vmess
+  server: "\x64\x65\x2e\x7a\x68\x6f\x75\x2d\x79\x75\x66\x61\x6e\x2e\x63\x6f\x6d"
   port: 443
-  password: humanity
+  uuid: "\x66\x33\x38\x65\x35\x39\x31\x64\x2d\x64\x31\x33\x61\x2d\x34\x63\x33\x30\x2d\x39\x37\x36\x33\x2d\x36\x62\x65\x33\x61\x64\x36\x35\x66\x33\x65\x63"
+  alterId: 0
+  cipher: auto
   udp: true
-  sni: www.calmlunch.com
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: Igareck Node 005 | 🇫🇷 France， Paris | [BL]
-  type: trojan
-  server: "\x31\x34\x31\x2e\x31\x39\x33\x2e\x32\x31\x33\x2e\x31\x37\x32"
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: Igareck Node 006 | 🇫🇷 France， Paris | [BL]
-  type: trojan
-  server: "\x31\x34\x31\x2e\x31\x39\x33\x2e\x32\x31\x33\x2e\x31\x37\x32"
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
+  tls: true
 - name: Igareck Node 007 | 🇫🇷 France， Paris | [BL]
   type: trojan
   server: "\x31\x34\x31\x2e\x31\x39\x33\x2e\x32\x31\x33\x2e\x31\x37\x32"
@@ -85,7 +75,7 @@ proxies:
   password: humanity
   udp: true
   sni: www.calmlunch.com
-  client-fingerprint: firefox
+  client-fingerprint: android
   network: ws
   ws-opts:
     path: /assignment
@@ -98,7 +88,7 @@ proxies:
   password: humanity
   udp: true
   sni: www.calmlunch.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /assignment
@@ -111,7 +101,7 @@ proxies:
   password: humanity
   udp: true
   sni: www.calmlunch.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /assignment
@@ -124,7 +114,7 @@ proxies:
   password: humanity
   udp: true
   sni: www.calmlunch.com
-  client-fingerprint: safari
+  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /assignment
@@ -132,12 +122,12 @@ proxies:
       Host: www.calmlunch.com
 - name: Igareck Node 011 | 🇫🇷 France， Paris | [BL]
   type: trojan
-  server: "\x32\x31\x32\x2e\x32\x32\x37\x2e\x39\x30\x2e\x31\x34\x32"
+  server: "\x31\x34\x31\x2e\x31\x39\x33\x2e\x32\x31\x33\x2e\x31\x37\x32"
   port: 443
   password: humanity
   udp: true
   sni: www.calmlunch.com
-  client-fingerprint: ios
+  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /assignment
@@ -145,12 +135,12 @@ proxies:
       Host: www.calmlunch.com
 - name: Igareck Node 012 | 🇫🇷 France， Paris | [BL]
   type: trojan
-  server: "\x32\x31\x32\x2e\x32\x32\x37\x2e\x39\x30\x2e\x31\x34\x32"
+  server: "\x31\x34\x31\x2e\x31\x39\x33\x2e\x32\x31\x33\x2e\x31\x37\x32"
   port: 443
   password: humanity
   udp: true
   sni: www.calmlunch.com
-  client-fingerprint: qq
+  client-fingerprint: safari
   network: ws
   ws-opts:
     path: /assignment
@@ -163,7 +153,7 @@ proxies:
   password: humanity
   udp: true
   sni: www.calmlunch.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /assignment
@@ -171,29 +161,7 @@ proxies:
       Host: www.calmlunch.com
 - name: Igareck Node 014 | 🇫🇷 France， Paris | [BL]
   type: trojan
-  server: "\x34\x35\x2e\x38\x30\x2e\x31\x31\x31\x2e\x37"
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: Igareck Node 015 | 🇫🇷 France， Paris | [BL]
-  type: trojan
-  server: "\x34\x35\x2e\x38\x30\x2e\x31\x31\x31\x2e\x37"
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.calmlunch.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: Igareck Node 016 | 🇫🇷 France， Paris | [BL]
-  type: trojan
-  server: "\x34\x35\x2e\x38\x30\x2e\x31\x31\x31\x2e\x37"
+  server: "\x32\x31\x32\x2e\x32\x32\x37\x2e\x39\x30\x2e\x31\x34\x32"
   port: 443
   password: humanity
   udp: true
@@ -202,9 +170,11 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: Igareck Node 017 | 🇫🇷 France， Paris | [BL]
+    headers:
+      Host: www.calmlunch.com
+- name: Igareck Node 015 | 🇫🇷 France， Paris | [BL]
   type: trojan
-  server: "\x34\x35\x2e\x38\x30\x2e\x31\x31\x31\x2e\x37"
+  server: "\x32\x31\x32\x2e\x32\x32\x37\x2e\x39\x30\x2e\x31\x34\x32"
   port: 443
   password: humanity
   udp: true
@@ -213,9 +183,11 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: Igareck Node 018 | 🇫🇷 France， Paris | [BL]
+    headers:
+      Host: www.calmlunch.com
+- name: Igareck Node 016 | 🇫🇷 France， Paris | [BL]
   type: trojan
-  server: "\x34\x35\x2e\x38\x30\x2e\x31\x31\x31\x2e\x37"
+  server: "\x32\x31\x32\x2e\x32\x32\x37\x2e\x39\x30\x2e\x31\x34\x32"
   port: 443
   password: humanity
   udp: true
@@ -224,6 +196,34 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: Igareck Node 017 | 🇫🇷 France， Paris | [BL]
+  type: trojan
+  server: "\x32\x31\x32\x2e\x32\x32\x37\x2e\x39\x30\x2e\x31\x34\x32"
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: Igareck Node 018 | 🇫🇷 France， Paris | [BL]
+  type: trojan
+  server: "\x32\x31\x32\x2e\x32\x32\x37\x2e\x39\x30\x2e\x31\x34\x32"
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
 - name: Igareck Node 019 | 🇫🇷 France， Paris | [BL]
   type: trojan
   server: "\x34\x35\x2e\x38\x30\x2e\x31\x31\x31\x2e\x37"
@@ -231,7 +231,7 @@ proxies:
   password: humanity
   udp: true
   sni: www.calmlunch.com
-  client-fingerprint: qq
+  client-fingerprint: android
   network: ws
   ws-opts:
     path: /assignment
@@ -242,113 +242,93 @@ proxies:
   password: humanity
   udp: true
   sni: www.calmlunch.com
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: Igareck Node 021 | 🇸🇬 Singapore， Singapore | 🌐 | [BL]
-  type: trojan
-  server: "\x73\x75\x70\x70\x6f\x72\x74\x2e\x7a\x6f\x6f\x6d\x2e\x75\x73"
-  port: 443
-  password: 34bfb8d8-e37f-4872-a452-a2b2b4310aed
-  udp: true
-  sni: support.zoom.us.sg4.zidstore.net
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /whatever/trojan-ws
-    headers:
-      Host: support.zoom.us.sg4.zidstore.net
-  skip-cert-verify: true
-- name: Igareck Node 022 | 🇸🇬 Singapore， Singapore | 🌐 | [BL]
-  type: trojan
-  server: "\x73\x75\x70\x70\x6f\x72\x74\x2e\x7a\x6f\x6f\x6d\x2e\x75\x73"
-  port: 443
-  password: 34bfb8d8-e37f-4872-a452-a2b2b4310aed
-  udp: true
-  sni: support.zoom.us.sg4.zidstore.net
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /whatever/trojan-ws
-    headers:
-      Host: support.zoom.us.sg4.zidstore.net
-  skip-cert-verify: true
-- name: Igareck Node 023 | 🇳🇱 The Netherlands， Haarlem | [BL]
-  type: trojan
-  server: "\x34\x35\x2e\x31\x33\x31\x2e\x34\x2e\x33\x38"
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  alpn:
-  - http/1.1
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: Igareck Node 024 | 🇳🇱 The Netherlands， Haarlem | [BL]
-  type: trojan
-  server: "\x34\x35\x2e\x31\x33\x31\x2e\x34\x2e\x33\x38"
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  alpn:
-  - http/1.1
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: Igareck Node 025 | 🇳🇱 The Netherlands， Haarlem | [BL]
+- name: Igareck Node 021 | 🇫🇷 France， Paris | [BL]
   type: trojan
-  server: "\x34\x35\x2e\x31\x33\x31\x2e\x34\x2e\x33\x38"
+  server: "\x34\x35\x2e\x38\x30\x2e\x31\x31\x31\x2e\x37"
   port: 443
   password: humanity
   udp: true
-  sni: www.pleadcourt.org
-  alpn:
-  - http/1.1
+  sni: www.calmlunch.com
   client-fingerprint: edge
   network: ws
   ws-opts:
     path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: Igareck Node 026 | 🇳🇱 The Netherlands， Haarlem | [BL]
+- name: Igareck Node 022 | 🇫🇷 France， Paris | [BL]
   type: trojan
-  server: "\x34\x35\x2e\x31\x33\x31\x2e\x34\x2e\x33\x38"
+  server: "\x34\x35\x2e\x38\x30\x2e\x31\x31\x31\x2e\x37"
   port: 443
   password: humanity
   udp: true
-  sni: www.pleadcourt.org
-  alpn:
-  - http/1.1
+  sni: www.calmlunch.com
   client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: Igareck Node 027 | 🇳🇱 The Netherlands， Haarlem | [BL]
+- name: Igareck Node 023 | 🇫🇷 France， Paris | [BL]
   type: trojan
-  server: "\x34\x35\x2e\x31\x33\x31\x2e\x34\x2e\x33\x38"
+  server: "\x34\x35\x2e\x38\x30\x2e\x31\x31\x31\x2e\x37"
   port: 443
   password: humanity
   udp: true
-  sni: www.pleadcourt.org
-  alpn:
-  - http/1.1
+  sni: www.calmlunch.com
   client-fingerprint: ios
   network: ws
   ws-opts:
     path: /assignment
+- name: Igareck Node 024 | 🇫🇷 France， Paris | [BL]
+  type: trojan
+  server: "\x34\x35\x2e\x38\x30\x2e\x31\x31\x31\x2e\x37"
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: Igareck Node 025 | 🇫🇷 France， Paris | [BL]
+  type: trojan
+  server: "\x34\x35\x2e\x38\x30\x2e\x31\x31\x31\x2e\x37"
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.calmlunch.com
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: Igareck Node 026 | 🇸🇬 Singapore， Singapore | 🌐 | [BL]
+  type: trojan
+  server: "\x73\x75\x70\x70\x6f\x72\x74\x2e\x7a\x6f\x6f\x6d\x2e\x75\x73"
+  port: 443
+  password: 34bfb8d8-e37f-4872-a452-a2b2b4310aed
+  udp: true
+  sni: support.zoom.us.sg4.zidstore.net
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /whatever/trojan-ws
     headers:
-      Host: www.pleadcourt.org
+      Host: support.zoom.us.sg4.zidstore.net
+  skip-cert-verify: true
+- name: Igareck Node 027 | 🇸🇬 Singapore， Singapore | 🌐 | [BL]
+  type: trojan
+  server: "\x73\x75\x70\x70\x6f\x72\x74\x2e\x7a\x6f\x6f\x6d\x2e\x75\x73"
+  port: 443
+  password: 34bfb8d8-e37f-4872-a452-a2b2b4310aed
+  udp: true
+  sni: support.zoom.us.sg4.zidstore.net
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /whatever/trojan-ws
+    headers:
+      Host: support.zoom.us.sg4.zidstore.net
+  skip-cert-verify: true
 - name: Igareck Node 028 | 🇳🇱 The Netherlands， Haarlem | [BL]
   type: trojan
   server: "\x34\x35\x2e\x31\x33\x31\x2e\x34\x2e\x33\x38"
@@ -358,7 +338,7 @@ proxies:
   sni: www.pleadcourt.org
   alpn:
   - http/1.1
-  client-fingerprint: qq
+  client-fingerprint: android
   network: ws
   ws-opts:
     path: /assignment
@@ -373,7 +353,7 @@ proxies:
   sni: www.pleadcourt.org
   alpn:
   - http/1.1
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /assignment
@@ -388,7 +368,7 @@ proxies:
   sni: www.pleadcourt.org
   alpn:
   - http/1.1
-  client-fingerprint: unsafe
+  client-fingerprint: edge
   network: ws
   ws-opts:
     path: /assignment
@@ -396,52 +376,7 @@ proxies:
       Host: www.pleadcourt.org
 - name: Igareck Node 031 | 🇳🇱 The Netherlands， Haarlem | [BL]
   type: trojan
-  server: "\x38\x2e\x34\x37\x2e\x36\x39\x2e\x30"
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  alpn:
-  - http/1.1
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: Igareck Node 032 | 🇳🇱 The Netherlands， Haarlem | [BL]
-  type: trojan
-  server: "\x38\x2e\x34\x37\x2e\x36\x39\x2e\x30"
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: Igareck Node 033 | 🇳🇱 The Netherlands， Haarlem | [BL]
-  type: trojan
-  server: "\x38\x2e\x34\x37\x2e\x36\x39\x2e\x30"
-  port: 443
-  password: humanity
-  udp: true
-  sni: www.pleadcourt.org
-  alpn:
-  - http/1.1
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.pleadcourt.org
-- name: Igareck Node 034 | 🇳🇱 The Netherlands， Haarlem | [BL]
-  type: trojan
-  server: "\x38\x2e\x34\x37\x2e\x36\x39\x2e\x30"
+  server: "\x34\x35\x2e\x31\x33\x31\x2e\x34\x2e\x33\x38"
   port: 443
   password: humanity
   udp: true
@@ -449,6 +384,51 @@ proxies:
   alpn:
   - http/1.1
   client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: Igareck Node 032 | 🇳🇱 The Netherlands， Haarlem | [BL]
+  type: trojan
+  server: "\x34\x35\x2e\x31\x33\x31\x2e\x34\x2e\x33\x38"
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  alpn:
+  - http/1.1
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: Igareck Node 033 | 🇳🇱 The Netherlands， Haarlem | [BL]
+  type: trojan
+  server: "\x34\x35\x2e\x31\x33\x31\x2e\x34\x2e\x33\x38"
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  alpn:
+  - http/1.1
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: Igareck Node 034 | 🇳🇱 The Netherlands， Haarlem | [BL]
+  type: trojan
+  server: "\x34\x35\x2e\x31\x33\x31\x2e\x34\x2e\x33\x38"
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  alpn:
+  - http/1.1
+  client-fingerprint: safari
   network: ws
   ws-opts:
     path: /assignment
@@ -463,7 +443,7 @@ proxies:
   sni: www.pleadcourt.org
   alpn:
   - http/1.1
-  client-fingerprint: ios
+  client-fingerprint: android
   network: ws
   ws-opts:
     path: /assignment
@@ -478,7 +458,7 @@ proxies:
   sni: www.pleadcourt.org
   alpn:
   - http/1.1
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /assignment
@@ -493,7 +473,7 @@ proxies:
   sni: www.pleadcourt.org
   alpn:
   - http/1.1
-  client-fingerprint: safari
+  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /assignment
@@ -508,7 +488,7 @@ proxies:
   sni: www.pleadcourt.org
   alpn:
   - http/1.1
-  client-fingerprint: unsafe
+  client-fingerprint: safari
   network: ws
   ws-opts:
     path: /assignment
@@ -521,7 +501,9 @@ proxies:
   password: humanity
   udp: true
   sni: www.pleadcourt.org
-  client-fingerprint: android
+  alpn:
+  - http/1.1
+  client-fingerprint: unsafe
   network: ws
   ws-opts:
     path: /assignment
@@ -534,7 +516,7 @@ proxies:
   password: humanity
   udp: true
   sni: www.pleadcourt.org
-  client-fingerprint: chrome
+  client-fingerprint: android
   network: ws
   ws-opts:
     path: /assignment
@@ -547,7 +529,7 @@ proxies:
   password: humanity
   udp: true
   sni: www.pleadcourt.org
-  client-fingerprint: edge
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /assignment
@@ -560,7 +542,7 @@ proxies:
   password: humanity
   udp: true
   sni: www.pleadcourt.org
-  client-fingerprint: firefox
+  client-fingerprint: edge
   network: ws
   ws-opts:
     path: /assignment
@@ -573,7 +555,7 @@ proxies:
   password: humanity
   udp: true
   sni: www.pleadcourt.org
-  client-fingerprint: qq
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /assignment
@@ -586,61 +568,39 @@ proxies:
   password: humanity
   udp: true
   sni: www.pleadcourt.org
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: Igareck Node 045 | 🇳🇱 The Netherlands， Haarlem | [BL]
+  type: trojan
+  server: "\x38\x2e\x34\x37\x2e\x36\x39\x2e\x30"
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+- name: Igareck Node 046 | 🇳🇱 The Netherlands， Haarlem | [BL]
+  type: trojan
+  server: "\x38\x2e\x34\x37\x2e\x36\x39\x2e\x30"
+  port: 443
+  password: humanity
+  udp: true
+  sni: www.pleadcourt.org
   client-fingerprint: safari
   network: ws
   ws-opts:
     path: /assignment
     headers:
       Host: www.pleadcourt.org
-- name: Igareck Node 045 | 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇸🇪 🇺🇸 | [BL]
-  type: trojan
-  server: "\x31\x39\x39\x2e\x32\x33\x32\x2e\x37\x38\x2e\x31\x36\x30"
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: community.fastly.steamstatic.com
-  alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
-    headers:
-      Host: mitivpn-mitivpn.ac.ir
-  skip-cert-verify: true
-- name: Igareck Node 046 | 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇸🇪 🇺🇸 | [BL]
-  type: trojan
-  server: "\x31\x39\x39\x2e\x32\x33\x32\x2e\x39\x2e\x32\x34\x34"
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ns1.firefox.com
-  alpn:
-  - http%2F1.1
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/NLSus—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN
-    headers:
-      Host: mitivpn-mitivpn.ac.ir
-  skip-cert-verify: true
 - name: Igareck Node 047 | 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇸🇪 🇺🇸 | [BL]
-  type: trojan
-  server: "\x31\x39\x39\x2e\x32\x33\x32\x2e\x39\x2e\x32\x34\x34"
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ns1.firefox.com
-  alpn:
-  - http%2F1.1
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/NLSus—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN
-    headers:
-      Host: mitivpn-mitivpn.ac.ir
-  skip-cert-verify: true
-- name: Igareck Node 048 | 🌐 Anycast-IP | 🇨🇦 🇸🇪 | [BL]
   type: trojan
   server: "\x31\x35\x31\x2e\x31\x30\x31\x2e\x33\x36\x2e\x32\x34\x34"
   port: 443
@@ -656,13 +616,75 @@ proxies:
     headers:
       Host: mitivpn-mitivpn.ac.ir
   skip-cert-verify: true
-- name: Igareck Node 049 | 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇳🇱 🇸🇪 🇺🇸 | [BL]
+- name: Igareck Node 048 | 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇸🇪 🇺🇸 | [BL]
   type: trojan
   server: "\x31\x39\x39\x2e\x32\x33\x32\x2e\x37\x38\x2e\x31\x36\x30"
   port: 443
   password: mitivpn
   udp: true
   sni: community.fastly.steamstatic.com
+  alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
+    headers:
+      Host: mitivpn-mitivpn.ac.ir
+  skip-cert-verify: true
+- name: Igareck Node 049 | 🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]
+  type: trojan
+  server: "\x31\x39\x39\x2e\x32\x33\x32\x2e\x39\x2e\x32\x34\x34"
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ns1.firefox.com
+  alpn:
+  - http%2F1.1
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/NLSus—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN
+    headers:
+      Host: mitivpn-mitivpn.ac.ir
+  skip-cert-verify: true
+- name: Igareck Node 050 | 🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]
+  type: trojan
+  server: "\x31\x39\x39\x2e\x32\x33\x32\x2e\x39\x2e\x32\x34\x34"
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ns1.firefox.com
+  alpn:
+  - http%2F1.1
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/NLSus—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN/—@MiTiVPN—@MiTiVPN
+    headers:
+      Host: mitivpn-mitivpn.ac.ir
+  skip-cert-verify: true
+- name: Igareck Node 051 | 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇸🇪 | [BL]
+  type: trojan
+  server: "\x31\x39\x39\x2e\x32\x33\x32\x2e\x37\x38\x2e\x31\x36\x30"
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: community.fastly.steamstatic.com
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
+    headers:
+      Host: mitivpn-mitivpn.ac.ir
+  skip-cert-verify: true
+- name: Igareck Node 052 | 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇸🇪 🇺🇸 | [BL]
+  type: trojan
+  server: "\x31\x35\x31\x2e\x31\x30\x31\x2e\x33\x36\x2e\x32\x34\x34"
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: ns2.firefox.com
   alpn:
   - http/1.1
   client-fingerprint: android
@@ -672,21 +694,37 @@ proxies:
     headers:
       Host: mitivpn-mitivpn.ac.ir
   skip-cert-verify: true
-- name: Igareck Node 050 | 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇸🇪 | [BL]
+- name: Igareck Node 053 | 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇸🇪 🇺🇸 | [BL]
   type: trojan
   server: "\x31\x39\x39\x2e\x32\x33\x32\x2e\x37\x38\x2e\x31\x36\x30"
   port: 443
   password: mitivpn
   udp: true
   sni: community.fastly.steamstatic.com
-  client-fingerprint: firefox
+  alpn:
+  - http/1.1
+  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
     headers:
       Host: mitivpn-mitivpn.ac.ir
   skip-cert-verify: true
-- name: Igareck Node 051 | 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇸🇪 🇺🇸 | [BL]
+- name: Igareck Node 054 | 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇸🇪 🇺🇸 | [BL]
+  type: trojan
+  server: "\x31\x39\x39\x2e\x32\x33\x32\x2e\x37\x38\x2e\x31\x36\x30"
+  port: 443
+  password: mitivpn
+  udp: true
+  sni: community.fastly.steamstatic.com
+  client-fingerprint: android
+  network: ws
+  ws-opts:
+    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
+    headers:
+      Host: mitivpn-mitivpn.ac.ir
+  skip-cert-verify: true
+- name: Igareck Node 055 | 🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]
   type: trojan
   server: "\x31\x35\x31\x2e\x31\x30\x31\x2e\x33\x36\x2e\x32\x34\x34"
   port: 443
@@ -702,23 +740,7 @@ proxies:
     headers:
       Host: mitivpn-mitivpn.ac.ir
   skip-cert-verify: true
-- name: Igareck Node 052 | 🌐 Anycast-IP | 🇨🇦 🇸🇪 | [BL]
-  type: trojan
-  server: "\x31\x35\x31\x2e\x31\x30\x31\x2e\x33\x36\x2e\x32\x34\x34"
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: ns2.firefox.com
-  alpn:
-  - http/1.1
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
-    headers:
-      Host: mitivpn-mitivpn.ac.ir
-  skip-cert-verify: true
-- name: Igareck Node 053 | 🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]
+- name: Igareck Node 056 | 🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]
   type: trojan
   server: "\x31\x35\x31\x2e\x31\x30\x31\x2e\x33\x36\x2e\x32\x34\x34"
   port: 443
@@ -734,44 +756,14 @@ proxies:
     headers:
       Host: mitivpn-mitivpn.ac.ir
   skip-cert-verify: true
-- name: Igareck Node 054 | 🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]
+- name: Igareck Node 057 | 🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]
   type: trojan
   server: "\x31\x39\x39\x2e\x32\x33\x32\x2e\x37\x38\x2e\x31\x36\x30"
   port: 443
   password: mitivpn
   udp: true
   sni: community.fastly.steamstatic.com
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
-    headers:
-      Host: mitivpn-mitivpn.ac.ir
-  skip-cert-verify: true
-- name: Igareck Node 055 | 🌐 Anycast-IP | 🇩🇪 🇳🇱 🇸🇪 🇺🇸 | [BL]
-  type: trojan
-  server: "\x31\x39\x39\x2e\x32\x33\x32\x2e\x37\x38\x2e\x31\x36\x30"
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: community.fastly.steamstatic.com
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
-    headers:
-      Host: mitivpn-mitivpn.ac.ir
-  skip-cert-verify: true
-- name: Igareck Node 056 | 🌐 Anycast-IP | 🇩🇪 🇸🇪 🇺🇸 | [BL]
-  type: trojan
-  server: "\x31\x39\x39\x2e\x32\x33\x32\x2e\x37\x38\x2e\x31\x36\x30"
-  port: 443
-  password: mitivpn
-  udp: true
-  sni: community.fastly.steamstatic.com
-  alpn:
-  - http/1.1
-  client-fingerprint: ios
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSus---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
