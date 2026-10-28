@@ -59,7 +59,7 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
-          "full:dropstyle.lol"
+          "full:flatcrest.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -116,7 +116,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dropstyle.lol"
+          "full:flatcrest.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -137,7 +137,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dropstyle.lol"
+          "full:flatcrest.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -158,7 +158,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dropstyle.lol"
+          "full:flatcrest.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -179,7 +179,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dropstyle.lol"
+          "full:flatcrest.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -200,7 +200,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dropstyle.lol"
+          "full:flatcrest.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -221,7 +221,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dropstyle.lol"
+          "full:flatcrest.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -242,7 +242,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dropstyle.lol"
+          "full:flatcrest.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -263,7 +263,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dropstyle.lol"
+          "full:flatcrest.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -284,7 +284,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dropstyle.lol"
+          "full:flatcrest.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -305,7 +305,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dropstyle.lol"
+          "full:flatcrest.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -326,7 +326,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dropstyle.lol"
+          "full:flatcrest.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -347,7 +347,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:dropstyle.lol"
+          "full:flatcrest.net"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -455,14 +455,12 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/api/v2/events",
-          "host": "static.bakarova-top.ru",
-          "mode": "packet-up"
+          "path": "/api/v2/events"
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "static.bakarova-top.ru",
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         }
       }
     },
@@ -490,14 +488,12 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/api/v2/events",
-          "host": "static.bakarova-top.ru",
-          "mode": "packet-up"
+          "path": "/api/v2/events"
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "static.bakarova-top.ru",
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -507,11 +503,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.178.208.167",
+            "address": "185.178.208.140",
             "port": 443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "ea277838-a188-44f1-a2e8-94aa110c4f27",
                 "encryption": "none"
               }
             ]
@@ -519,25 +515,18 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v2/events"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "static.bakarova-top.ru",
+          "fingerprint": "qq"
         }
       }
     },
@@ -547,11 +536,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.178.208.167",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -559,24 +548,23 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "edge",
+          "serverName": "flatcrest.net",
+          "fingerprint": "chrome",
           "alpn": [
-            "http/1.1"
+            "http/1.1",
+            "h2"
           ]
         }
       }
@@ -587,11 +575,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.178.208.167",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -599,24 +587,23 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "ios",
+          "serverName": "flatcrest.net",
+          "fingerprint": "firefox",
           "alpn": [
-            "http/1.1"
+            "http/1.1",
+            "h2"
           ]
         }
       }
@@ -627,11 +614,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.178.208.167",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -639,24 +626,23 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "android",
+          "serverName": "flatcrest.net",
+          "fingerprint": "ios",
           "alpn": [
-            "http/1.1"
+            "http/1.1",
+            "h2"
           ]
         }
       }
@@ -667,11 +653,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.178.208.167",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -679,24 +665,23 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "chrome",
+          "serverName": "flatcrest.net",
+          "fingerprint": "safari",
           "alpn": [
-            "http/1.1"
+            "http/1.1",
+            "h2"
           ]
         }
       }
@@ -707,11 +692,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.178.208.167",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -719,25 +704,18 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "qq",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "flatcrest.net",
+          "fingerprint": "edge"
         }
       }
     },
@@ -747,11 +725,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.178.208.167",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -759,22 +737,18 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "chrome"
+          "serverName": "flatcrest.net",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -784,11 +758,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.178.208.167",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -796,22 +770,18 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "firefox"
+          "serverName": "flatcrest.net",
+          "fingerprint": "qq"
         }
       }
     },
@@ -821,11 +791,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.178.208.167",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -833,22 +803,18 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "ios"
+          "serverName": "flatcrest.net",
+          "fingerprint": "safari"
         }
       }
     },
@@ -858,11 +824,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.178.208.167",
-            "port": 443,
+            "address": "flatcrest.net",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -870,22 +836,24 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "safari"
+          "serverName": "flatcrest.net",
+          "fingerprint": "ios",
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ]
         }
       }
     },
@@ -895,11 +863,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -907,24 +875,23 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "chrome",
+          "serverName": "flatcrest.net",
+          "fingerprint": "qq",
           "alpn": [
-            "http/1.1"
+            "http/1.1",
+            "h2"
           ]
         }
       }
@@ -935,11 +902,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
+            "address": "flatcrest.net",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -947,24 +914,23 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "ios",
+          "serverName": "flatcrest.net",
+          "fingerprint": "safari",
           "alpn": [
-            "http/1.1"
+            "http/1.1",
+            "h2"
           ]
         }
       }
@@ -975,11 +941,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
+            "address": "flatcrest.net",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -987,25 +953,30 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": "64-128",
+              "maxConcurrency": "16-32",
+              "maxConnections": 0
+            },
+            "xPaddingBytes": "100-1000",
+            "scMaxEachPostBytes": 1000000,
+            "scMinPostsIntervalMs": 30
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "android",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "flatcrest.net",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -1015,11 +986,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -1027,25 +998,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "firefox",
-          "alpn": [
-            "http/1.1"
-          ]
+          "serverName": "flatcrest.net",
+          "fingerprint": "edge"
         }
       }
     },
@@ -1055,11 +1021,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -1067,23 +1033,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {}
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "chrome",
-          "alpn": [
-            "http%2F1.1"
-          ]
+          "serverName": "flatcrest.net",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -1093,11 +1056,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
+            "address": "37.18.14.43",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -1105,23 +1068,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {}
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "firefox",
-          "alpn": [
-            "http%2F1.1"
-          ]
+          "serverName": "flatcrest.net",
+          "fingerprint": "ios"
         }
       }
     },
@@ -1131,11 +1091,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
+            "address": "flatcrest.net",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -1143,23 +1103,30 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {}
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": "64-128",
+              "maxConcurrency": "16-32",
+              "maxConnections": 0
+            },
+            "xPaddingBytes": "100-1000",
+            "scMaxEachPostBytes": 1000000,
+            "scMinPostsIntervalMs": 30
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "qq",
-          "alpn": [
-            "http%2F1.1"
-          ]
+          "serverName": "flatcrest.net",
+          "fingerprint": "edge"
         }
       }
     },
@@ -1169,11 +1136,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
+            "address": "flatcrest.net",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -1181,22 +1148,30 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto",
+          "extra": {
+            "xmux": {
+              "cMaxReuseTimes": "64-128",
+              "maxConcurrency": "16-32",
+              "maxConnections": 0
+            },
+            "xPaddingBytes": "100-1000",
+            "scMaxEachPostBytes": 1000000,
+            "scMinPostsIntervalMs": 30
           }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "chrome"
+          "serverName": "flatcrest.net",
+          "fingerprint": "qq"
         }
       }
     },
@@ -1206,11 +1181,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
+            "address": "flatcrest.net",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -1218,22 +1193,24 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "edge"
+          "serverName": "flatcrest.net",
+          "fingerprint": "firefox",
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ]
         }
       }
     },
@@ -1243,34 +1220,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
+            "address": "85.198.85.55",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
+                "id": "7e1dc732-1691-4699-8517-e3ca53887978",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
+        "rawSettings": {
+          "header": {
+            "type": "none"
           }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "safari"
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "api.max.ru",
+          "fingerprint": "firefox",
+          "publicKey": "J5j_EwGWM1vgrApg31dnnu5cwMP-OgfJYYwl3kn9zFg"
         }
       }
     },
@@ -1280,35 +1258,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
+            "address": "85.198.85.55",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
+                "id": "7e1dc732-1691-4699-8517-e3ca53887978",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {}
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "android",
-          "alpn": [
-            "http%2F1.1"
-          ]
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "api.max.ru",
+          "fingerprint": "ios",
+          "publicKey": "J5j_EwGWM1vgrApg31dnnu5cwMP-OgfJYYwl3kn9zFg"
         }
       }
     },
@@ -1318,35 +1296,35 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
+            "address": "85.198.85.55",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
+                "id": "7e1dc732-1691-4699-8517-e3ca53887978",
+                "encryption": "none",
+                "flow": "xtls-rprx-vision"
               }
             ]
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "raw",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60,
           "dialerProxy": "fragment"
         },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {}
+        "rawSettings": {
+          "header": {
+            "type": "none"
+          }
         },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "edge",
-          "alpn": [
-            "http%2F1.1"
-          ]
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "api.max.ru",
+          "fingerprint": "qq",
+          "publicKey": "J5j_EwGWM1vgrApg31dnnu5cwMP-OgfJYYwl3kn9zFg"
         }
       }
     },
@@ -1356,11 +1334,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
+            "address": "185.178.208.140",
             "port": 443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "ea277838-a188-44f1-a2e8-94aa110c4f27",
                 "encryption": "none"
               }
             ]
@@ -1368,23 +1346,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {}
+        "xhttpSettings": {
+          "path": "/api/v2/events",
+          "host": "static.bakarova-top.ru",
+          "mode": "packet-up"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "ios",
-          "alpn": [
-            "http%2F1.1"
-          ]
+          "serverName": "static.bakarova-top.ru",
+          "fingerprint": "android"
         }
       }
     },
@@ -1394,11 +1369,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
+            "address": "185.178.208.140",
             "port": 443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "ea277838-a188-44f1-a2e8-94aa110c4f27",
                 "encryption": "none"
               }
             ]
@@ -1406,22 +1381,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v2/events",
+          "host": "static.bakarova-top.ru",
+          "mode": "packet-up"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "android"
+          "serverName": "static.bakarova-top.ru",
+          "fingerprint": "chrome"
         }
       }
     },
@@ -1431,11 +1404,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
+            "address": "185.178.208.140",
             "port": 443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "ea277838-a188-44f1-a2e8-94aa110c4f27",
                 "encryption": "none"
               }
             ]
@@ -1443,22 +1416,20 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v2/events",
+          "host": "static.bakarova-top.ru",
+          "mode": "packet-up"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "chrome"
+          "serverName": "static.bakarova-top.ru",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -1468,11 +1439,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
+            "address": "flatcrest.net",
+            "port": 8443,
             "users": [
               {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
+                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
                 "encryption": "none"
               }
             ]
@@ -1480,22 +1451,23 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "xhttp",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
+        "xhttpSettings": {
+          "path": "/api/v1/upload",
+          "host": "flatcrest.net",
+          "mode": "auto"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "edge"
+          "serverName": "flatcrest.net",
+          "alpn": [
+            "http/1.1",
+            "h2"
+          ]
         }
       }
     },
@@ -1505,655 +1477,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "dropstyle.lol",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {}
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-030",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "dropstyle.lol",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {}
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "firefox",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-031",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "dropstyle.lol",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {}
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "qq",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-032",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.178.208.167",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "firefox",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-033",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.178.208.167",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "firefox",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-034",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.178.208.167",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "edge"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-035",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.178.208.167",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "android"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-036",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.178.208.167",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-037",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.178.208.167",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "edge"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-038",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.178.208.167",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-039",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.178.208.167",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-040",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.178.208.167",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "safari"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-041",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "dropstyle.lol",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/player/metrics/97662863db53/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
-          "fingerprint": "firefox",
-          "alpn": [
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-042",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "91.197.98.94",
-            "port": 8443,
-            "users": [
-              {
-                "id": "5940086d-3158-464a-9abd-95ade1482140",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ads.x5.ru",
-          "fingerprint": "android",
-          "publicKey": "uEAZ8LNf1nlIhGncag8NmLxbxmJamQx2eiX3SKTnxWs",
-          "shortId": "12934b0bcd48eee6"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-043",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "91.197.98.94",
-            "port": 8443,
-            "users": [
-              {
-                "id": "5940086d-3158-464a-9abd-95ade1482140",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "ads.x5.ru",
-          "fingerprint": "firefox",
-          "publicKey": "uEAZ8LNf1nlIhGncag8NmLxbxmJamQx2eiX3SKTnxWs",
-          "shortId": "12934b0bcd48eee6"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-044",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "31.184.253.134",
-            "port": 53869,
-            "users": [
-              {
-                "id": "252b4a9c-520d-459c-9dbc-366995206089",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.moddb.com",
-          "fingerprint": "chrome",
-          "publicKey": "rtc2Krk2fVhHCRG82EsUc4_mlw304HKHkl6MggQZEAU",
-          "shortId": "0f2cc340a69ed7"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-045",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "31.184.253.134",
-            "port": 53869,
-            "users": [
-              {
-                "id": "252b4a9c-520d-459c-9dbc-366995206089",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.moddb.com",
-          "fingerprint": "qq",
-          "publicKey": "rtc2Krk2fVhHCRG82EsUc4_mlw304HKHkl6MggQZEAU",
-          "shortId": "0f2cc340a69ed7"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-046",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "185.178.208.140",
             "port": 443,
             "users": [
@@ -2172,192 +1495,15 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/api/v2/events"
+          "path": "/api/v2/events",
+          "host": "static.bakarova-top.ru",
+          "mode": "packet-up"
         },
         "security": "tls",
         "tlsSettings": {
           "serverName": "static.bakarova-top.ru",
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-047",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.178.208.140",
-            "port": 443,
-            "users": [
-              {
-                "id": "ea277838-a188-44f1-a2e8-94aa110c4f27",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v2/events"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "static.bakarova-top.ru",
-          "fingerprint": "edge"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-048",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.178.208.140",
-            "port": 443,
-            "users": [
-              {
-                "id": "ea277838-a188-44f1-a2e8-94aa110c4f27",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v2/events"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "static.bakarova-top.ru",
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-049",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "109.248.168.122",
-            "port": 43000,
-            "users": [
-              {
-                "id": "4e055977-5ac7-4371-a714-aeaa31bd025c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "ijCPMgX_OhpQu9KkQc8rkluX9QgV5pkJ5GLv7aymTWQ",
-          "shortId": "603f424f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-050",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "109.248.168.122",
-            "port": 43000,
-            "users": [
-              {
-                "id": "4e055977-5ac7-4371-a714-aeaa31bd025c",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "fingerprint": "qq",
-          "publicKey": "ijCPMgX_OhpQu9KkQc8rkluX9QgV5pkJ5GLv7aymTWQ",
-          "shortId": "603f424f"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-051",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.178.208.167",
-            "port": 443,
-            "users": [
-              {
-                "id": "d49f7cc7-0c15-4a49-9644-ef72e00d8e56",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/service/metrics/51dec2df3071/",
-          "headers": {
-            "Host": "dropstyle.lol"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "dropstyle.lol",
           "alpn": [
-            "http/1.1"
+            "h2"
           ]
         }
       }
