@@ -59,7 +59,7 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
-          "full:flatcrest.net",
+          "full:node6.frost-api.com",
           "full:apis.repotraffic.org",
           "full:ararat.rtkdvbr.cc"
         ],
@@ -118,7 +118,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net",
+          "full:node6.frost-api.com",
           "full:apis.repotraffic.org",
           "full:ararat.rtkdvbr.cc"
         ],
@@ -141,7 +141,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net",
+          "full:node6.frost-api.com",
           "full:apis.repotraffic.org",
           "full:ararat.rtkdvbr.cc"
         ],
@@ -164,7 +164,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net",
+          "full:node6.frost-api.com",
           "full:apis.repotraffic.org",
           "full:ararat.rtkdvbr.cc"
         ],
@@ -187,7 +187,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net",
+          "full:node6.frost-api.com",
           "full:apis.repotraffic.org",
           "full:ararat.rtkdvbr.cc"
         ],
@@ -210,7 +210,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net",
+          "full:node6.frost-api.com",
           "full:apis.repotraffic.org",
           "full:ararat.rtkdvbr.cc"
         ],
@@ -233,7 +233,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net",
+          "full:node6.frost-api.com",
           "full:apis.repotraffic.org",
           "full:ararat.rtkdvbr.cc"
         ],
@@ -256,7 +256,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net",
+          "full:node6.frost-api.com",
           "full:apis.repotraffic.org",
           "full:ararat.rtkdvbr.cc"
         ],
@@ -279,7 +279,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net",
+          "full:node6.frost-api.com",
           "full:apis.repotraffic.org",
           "full:ararat.rtkdvbr.cc"
         ],
@@ -302,7 +302,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net",
+          "full:node6.frost-api.com",
           "full:apis.repotraffic.org",
           "full:ararat.rtkdvbr.cc"
         ],
@@ -325,7 +325,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net",
+          "full:node6.frost-api.com",
           "full:apis.repotraffic.org",
           "full:ararat.rtkdvbr.cc"
         ],
@@ -348,7 +348,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net",
+          "full:node6.frost-api.com",
           "full:apis.repotraffic.org",
           "full:ararat.rtkdvbr.cc"
         ],
@@ -371,7 +371,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net",
+          "full:node6.frost-api.com",
           "full:apis.repotraffic.org",
           "full:ararat.rtkdvbr.cc"
         ],
@@ -463,11 +463,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
-            "port": 8443,
+            "address": "217.16.31.218",
+            "port": 5003,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
                 "encryption": "none"
               }
             ]
@@ -475,24 +475,19 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "firefox",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ]
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "chrome"
         }
       }
     },
@@ -502,11 +497,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
-            "port": 8443,
+            "address": "217.16.31.218",
+            "port": 5003,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
                 "encryption": "none"
               }
             ]
@@ -514,24 +509,19 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "safari",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ]
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -541,11 +531,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
-            "port": 8443,
+            "address": "node6.frost-api.com",
+            "port": 5003,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
                 "encryption": "none"
               }
             ]
@@ -553,18 +543,22 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload"
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "edge"
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2"
+          ]
         }
       }
     },
@@ -574,11 +568,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
-            "port": 8443,
+            "address": "node6.frost-api.com",
+            "port": 5003,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
                 "encryption": "none"
               }
             ]
@@ -586,18 +580,22 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload"
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "firefox"
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "safari",
+          "alpn": [
+            "h2"
+          ]
         }
       }
     },
@@ -607,11 +605,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
-            "port": 8443,
+            "address": "node6.frost-api.com",
+            "port": 5003,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
                 "encryption": "none"
               }
             ]
@@ -619,18 +617,19 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload"
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "qq"
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "edge"
         }
       }
     },
@@ -640,11 +639,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
-            "port": 8443,
+            "address": "node6.frost-api.com",
+            "port": 5003,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
                 "encryption": "none"
               }
             ]
@@ -652,18 +651,19 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload"
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "safari"
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -673,11 +673,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "flatcrest.net",
-            "port": 8443,
+            "address": "217.16.31.218",
+            "port": 5003,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
                 "encryption": "none"
               }
             ]
@@ -685,22 +685,20 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "firefox",
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "edge",
           "alpn": [
-            "http/1.1",
             "h2"
           ]
         }
@@ -712,11 +710,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "flatcrest.net",
-            "port": 8443,
+            "address": "217.16.31.218",
+            "port": 5003,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
                 "encryption": "none"
               }
             ]
@@ -724,22 +722,20 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
           "tcpKeepAliveInterval": 60
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "safari",
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "firefox",
           "alpn": [
-            "http/1.1",
             "h2"
           ]
         }
@@ -751,11 +747,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "flatcrest.net",
-            "port": 8443,
+            "address": "185.86.145.37",
+            "port": 443,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "04b7c62b-762e-4a8c-ba37-8328d25c8d74",
                 "encryption": "none"
               }
             ]
@@ -763,20 +759,22 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
+        "wsSettings": {
+          "path": "/amws",
+          "headers": {
+            "Host": "ararat.rtkdvbr.cc"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "edge"
+          "serverName": "ararat.rtkdvbr.cc",
+          "fingerprint": "firefox"
         }
       }
     },
@@ -786,11 +784,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
-            "port": 8443,
+            "address": "185.86.145.37",
+            "port": 443,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "04b7c62b-762e-4a8c-ba37-8328d25c8d74",
                 "encryption": "none"
               }
             ]
@@ -798,20 +796,22 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
+        "wsSettings": {
+          "path": "/amws",
+          "headers": {
+            "Host": "ararat.rtkdvbr.cc"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "firefox"
+          "serverName": "ararat.rtkdvbr.cc",
+          "fingerprint": "ios"
         }
       }
     },
@@ -821,11 +821,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
-            "port": 8443,
+            "address": "185.86.145.37",
+            "port": 443,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "04b7c62b-762e-4a8c-ba37-8328d25c8d74",
                 "encryption": "none"
               }
             ]
@@ -833,20 +833,22 @@
         ]
       },
       "streamSettings": {
-        "network": "xhttp",
+        "network": "ws",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
         },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
+        "wsSettings": {
+          "path": "/amws",
+          "headers": {
+            "Host": "ararat.rtkdvbr.cc"
+          }
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "ios"
+          "serverName": "ararat.rtkdvbr.cc",
+          "fingerprint": "qq"
         }
       }
     },
@@ -856,11 +858,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "flatcrest.net",
-            "port": 8443,
+            "address": "185.86.145.142",
+            "port": 2096,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "f95ad5b8-32b0-48bc-a639-c229d8c4a684",
                 "encryption": "none"
               }
             ]
@@ -874,13 +876,12 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
+          "path": "/chxh",
+          "host": "apis.repotraffic.org"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
+          "serverName": "apis.repotraffic.org",
           "fingerprint": "firefox"
         }
       }
@@ -891,11 +892,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "flatcrest.net",
-            "port": 8443,
+            "address": "185.86.145.142",
+            "port": 2096,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "f95ad5b8-32b0-48bc-a639-c229d8c4a684",
                 "encryption": "none"
               }
             ]
@@ -909,14 +910,13 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
+          "path": "/chxh",
+          "host": "apis.repotraffic.org"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "qq"
+          "serverName": "apis.repotraffic.org",
+          "fingerprint": "ios"
         }
       }
     },
@@ -926,11 +926,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "37.18.14.43",
-            "port": 8443,
+            "address": "185.86.145.142",
+            "port": 2096,
             "users": [
               {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
+                "id": "f95ad5b8-32b0-48bc-a639-c229d8c4a684",
                 "encryption": "none"
               }
             ]
@@ -944,175 +944,18 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
+          "path": "/chxh",
+          "host": "apis.repotraffic.org"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "ios",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-015",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 8443,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "qq",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-016",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "flatcrest.net",
-            "port": 8443,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "ios",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-017",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.86.145.37",
-            "port": 443,
-            "users": [
-              {
-                "id": "04b7c62b-762e-4a8c-ba37-8328d25c8d74",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/amws",
-          "headers": {
-            "Host": "ararat.rtkdvbr.cc"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ararat.rtkdvbr.cc",
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-018",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.86.145.37",
-            "port": 443,
-            "users": [
-              {
-                "id": "04b7c62b-762e-4a8c-ba37-8328d25c8d74",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/amws",
-          "headers": {
-            "Host": "ararat.rtkdvbr.cc"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ararat.rtkdvbr.cc",
+          "serverName": "apis.repotraffic.org",
           "fingerprint": "qq"
         }
       }
     },
     {
-      "tag": "igareck-node-019",
+      "tag": "igareck-node-015",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1146,7 +989,7 @@
       }
     },
     {
-      "tag": "igareck-node-020",
+      "tag": "igareck-node-016",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1183,7 +1026,7 @@
       }
     },
     {
-      "tag": "igareck-node-021",
+      "tag": "igareck-node-017",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1220,7 +1063,7 @@
       }
     },
     {
-      "tag": "igareck-node-022",
+      "tag": "igareck-node-018",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -1250,975 +1093,6 @@
         "tlsSettings": {
           "serverName": "apis.repotraffic.org",
           "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-023",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto",
-          "extra": {
-            "host": "",
-            "path": "",
-            "mode": "",
-            "headers": null,
-            "xPaddingBytes": "100-1000",
-            "xPaddingObfsMode": false,
-            "xPaddingKey": "",
-            "xPaddingHeader": "",
-            "xPaddingPlacement": "",
-            "xPaddingMethod": "",
-            "uplinkHTTPMethod": "",
-            "sessionIDPlacement": "",
-            "sessionIDKey": "",
-            "sessionIDTable": "",
-            "sessionIDLength": "0",
-            "seqPlacement": "",
-            "seqKey": "",
-            "uplinkDataPlacement": "",
-            "uplinkDataKey": "",
-            "uplinkChunkSize": "0",
-            "noGRPCHeader": false,
-            "noSSEHeader": false,
-            "scMaxEachPostBytes": "1000000",
-            "scMinPostsIntervalMs": "30",
-            "scMaxBufferedPosts": 0,
-            "scStreamUpServerSecs": "0",
-            "serverMaxHeaderBytes": 0,
-            "xmux": {
-              "maxConcurrency": "16-32",
-              "maxConnections": "0",
-              "cMaxReuseTimes": "64-128",
-              "hMaxRequestTimes": "0",
-              "hMaxReusableSecs": "0",
-              "hKeepAlivePeriod": 0
-            },
-            "downloadSettings": null,
-            "extra": null
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "edge"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-024",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto",
-          "extra": {
-            "host": "",
-            "path": "",
-            "mode": "",
-            "headers": null,
-            "xPaddingBytes": "100-1000",
-            "xPaddingObfsMode": false,
-            "xPaddingKey": "",
-            "xPaddingHeader": "",
-            "xPaddingPlacement": "",
-            "xPaddingMethod": "",
-            "uplinkHTTPMethod": "",
-            "sessionIDPlacement": "",
-            "sessionIDKey": "",
-            "sessionIDTable": "",
-            "sessionIDLength": "0",
-            "seqPlacement": "",
-            "seqKey": "",
-            "uplinkDataPlacement": "",
-            "uplinkDataKey": "",
-            "uplinkChunkSize": "0",
-            "noGRPCHeader": false,
-            "noSSEHeader": false,
-            "scMaxEachPostBytes": "1000000",
-            "scMinPostsIntervalMs": "30",
-            "scMaxBufferedPosts": 0,
-            "scStreamUpServerSecs": "0",
-            "serverMaxHeaderBytes": 0,
-            "xmux": {
-              "maxConcurrency": "16-32",
-              "maxConnections": "0",
-              "cMaxReuseTimes": "64-128",
-              "hMaxRequestTimes": "0",
-              "hMaxReusableSecs": "0",
-              "hKeepAlivePeriod": 0
-            },
-            "downloadSettings": null,
-            "extra": null
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-025",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto",
-          "extra": {
-            "host": "",
-            "path": "",
-            "mode": "",
-            "headers": null,
-            "xPaddingBytes": "100-1000",
-            "xPaddingObfsMode": false,
-            "xPaddingKey": "",
-            "xPaddingHeader": "",
-            "xPaddingPlacement": "",
-            "xPaddingMethod": "",
-            "uplinkHTTPMethod": "",
-            "sessionIDPlacement": "",
-            "sessionIDKey": "",
-            "sessionIDTable": "",
-            "sessionIDLength": "0",
-            "seqPlacement": "",
-            "seqKey": "",
-            "uplinkDataPlacement": "",
-            "uplinkDataKey": "",
-            "uplinkChunkSize": "0",
-            "noGRPCHeader": false,
-            "noSSEHeader": false,
-            "scMaxEachPostBytes": "1000000",
-            "scMinPostsIntervalMs": "30",
-            "scMaxBufferedPosts": 0,
-            "scStreamUpServerSecs": "0",
-            "serverMaxHeaderBytes": 0,
-            "xmux": {
-              "maxConcurrency": "16-32",
-              "maxConnections": "0",
-              "cMaxReuseTimes": "64-128",
-              "hMaxRequestTimes": "0",
-              "hMaxReusableSecs": "0",
-              "hKeepAlivePeriod": 0
-            },
-            "downloadSettings": null,
-            "extra": null
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-026",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-027",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "flatcrest.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto",
-          "extra": {
-            "xmux": {
-              "cMaxReuseTimes": "64-128",
-              "maxConcurrency": "16-32",
-              "maxConnections": 0
-            },
-            "xPaddingBytes": "100-1000",
-            "scMaxEachPostBytes": 1000000,
-            "scMinPostsIntervalMs": 30
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "edge",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-028",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "flatcrest.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto",
-          "extra": {
-            "xmux": {
-              "cMaxReuseTimes": "64-128",
-              "maxConcurrency": "16-32",
-              "maxConnections": 0
-            },
-            "xPaddingBytes": "100-1000",
-            "scMaxEachPostBytes": 1000000,
-            "scMinPostsIntervalMs": 30
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "firefox",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-029",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "flatcrest.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto",
-          "extra": {
-            "xmux": {
-              "cMaxReuseTimes": "64-128",
-              "maxConcurrency": "16-32",
-              "maxConnections": 0
-            },
-            "xPaddingBytes": "100-1000",
-            "scMaxEachPostBytes": 1000000,
-            "scMinPostsIntervalMs": 30
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "safari",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-030",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "flatcrest.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "edge"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-031",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "flatcrest.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-032",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "flatcrest.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-033",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto",
-          "extra": {
-            "host": "",
-            "path": "",
-            "mode": "",
-            "headers": null,
-            "xPaddingBytes": "100-1000",
-            "xPaddingObfsMode": false,
-            "xPaddingKey": "",
-            "xPaddingHeader": "",
-            "xPaddingPlacement": "",
-            "xPaddingMethod": "",
-            "uplinkHTTPMethod": "",
-            "sessionIDPlacement": "",
-            "sessionIDKey": "",
-            "sessionIDTable": "",
-            "sessionIDLength": "0",
-            "seqPlacement": "",
-            "seqKey": "",
-            "uplinkDataPlacement": "",
-            "uplinkDataKey": "",
-            "uplinkChunkSize": "0",
-            "noGRPCHeader": false,
-            "noSSEHeader": false,
-            "scMaxEachPostBytes": "1000000",
-            "scMinPostsIntervalMs": "30",
-            "scMaxBufferedPosts": 0,
-            "scStreamUpServerSecs": "0",
-            "serverMaxHeaderBytes": 0,
-            "xmux": {
-              "maxConcurrency": "16-32",
-              "maxConnections": "0",
-              "cMaxReuseTimes": "64-128",
-              "hMaxRequestTimes": "0",
-              "hMaxReusableSecs": "0",
-              "hKeepAlivePeriod": 0
-            },
-            "downloadSettings": null,
-            "extra": null
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "chrome",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-034",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto",
-          "extra": {
-            "host": "",
-            "path": "",
-            "mode": "",
-            "headers": null,
-            "xPaddingBytes": "100-1000",
-            "xPaddingObfsMode": false,
-            "xPaddingKey": "",
-            "xPaddingHeader": "",
-            "xPaddingPlacement": "",
-            "xPaddingMethod": "",
-            "uplinkHTTPMethod": "",
-            "sessionIDPlacement": "",
-            "sessionIDKey": "",
-            "sessionIDTable": "",
-            "sessionIDLength": "0",
-            "seqPlacement": "",
-            "seqKey": "",
-            "uplinkDataPlacement": "",
-            "uplinkDataKey": "",
-            "uplinkChunkSize": "0",
-            "noGRPCHeader": false,
-            "noSSEHeader": false,
-            "scMaxEachPostBytes": "1000000",
-            "scMinPostsIntervalMs": "30",
-            "scMaxBufferedPosts": 0,
-            "scStreamUpServerSecs": "0",
-            "serverMaxHeaderBytes": 0,
-            "xmux": {
-              "maxConcurrency": "16-32",
-              "maxConnections": "0",
-              "cMaxReuseTimes": "64-128",
-              "hMaxRequestTimes": "0",
-              "hMaxReusableSecs": "0",
-              "hKeepAlivePeriod": 0
-            },
-            "downloadSettings": null,
-            "extra": null
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "firefox",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-035",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto",
-          "extra": {
-            "host": "",
-            "path": "",
-            "mode": "",
-            "headers": null,
-            "xPaddingBytes": "100-1000",
-            "xPaddingObfsMode": false,
-            "xPaddingKey": "",
-            "xPaddingHeader": "",
-            "xPaddingPlacement": "",
-            "xPaddingMethod": "",
-            "uplinkHTTPMethod": "",
-            "sessionIDPlacement": "",
-            "sessionIDKey": "",
-            "sessionIDTable": "",
-            "sessionIDLength": "0",
-            "seqPlacement": "",
-            "seqKey": "",
-            "uplinkDataPlacement": "",
-            "uplinkDataKey": "",
-            "uplinkChunkSize": "0",
-            "noGRPCHeader": false,
-            "noSSEHeader": false,
-            "scMaxEachPostBytes": "1000000",
-            "scMinPostsIntervalMs": "30",
-            "scMaxBufferedPosts": 0,
-            "scStreamUpServerSecs": "0",
-            "serverMaxHeaderBytes": 0,
-            "xmux": {
-              "maxConcurrency": "16-32",
-              "maxConnections": "0",
-              "cMaxReuseTimes": "64-128",
-              "hMaxRequestTimes": "0",
-              "hMaxReusableSecs": "0",
-              "hKeepAlivePeriod": 0
-            },
-            "downloadSettings": null,
-            "extra": null
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "ios",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-036",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto",
-          "extra": {
-            "host": "",
-            "path": "",
-            "mode": "",
-            "headers": null,
-            "xPaddingBytes": "100-1000",
-            "xPaddingObfsMode": false,
-            "xPaddingKey": "",
-            "xPaddingHeader": "",
-            "xPaddingPlacement": "",
-            "xPaddingMethod": "",
-            "uplinkHTTPMethod": "",
-            "sessionIDPlacement": "",
-            "sessionIDKey": "",
-            "sessionIDTable": "",
-            "sessionIDLength": "0",
-            "seqPlacement": "",
-            "seqKey": "",
-            "uplinkDataPlacement": "",
-            "uplinkDataKey": "",
-            "uplinkChunkSize": "0",
-            "noGRPCHeader": false,
-            "noSSEHeader": false,
-            "scMaxEachPostBytes": "1000000",
-            "scMinPostsIntervalMs": "30",
-            "scMaxBufferedPosts": 0,
-            "scStreamUpServerSecs": "0",
-            "serverMaxHeaderBytes": 0,
-            "xmux": {
-              "maxConcurrency": "16-32",
-              "maxConnections": "0",
-              "cMaxReuseTimes": "64-128",
-              "hMaxRequestTimes": "0",
-              "hMaxReusableSecs": "0",
-              "hKeepAlivePeriod": 0
-            },
-            "downloadSettings": null,
-            "extra": null
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "qq",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-037",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net",
-          "mode": "auto",
-          "extra": {
-            "host": "",
-            "path": "",
-            "mode": "",
-            "headers": null,
-            "xPaddingBytes": "100-1000",
-            "xPaddingObfsMode": false,
-            "xPaddingKey": "",
-            "xPaddingHeader": "",
-            "xPaddingPlacement": "",
-            "xPaddingMethod": "",
-            "uplinkHTTPMethod": "",
-            "sessionIDPlacement": "",
-            "sessionIDKey": "",
-            "sessionIDTable": "",
-            "sessionIDLength": "0",
-            "seqPlacement": "",
-            "seqKey": "",
-            "uplinkDataPlacement": "",
-            "uplinkDataKey": "",
-            "uplinkChunkSize": "0",
-            "noGRPCHeader": false,
-            "noSSEHeader": false,
-            "scMaxEachPostBytes": "1000000",
-            "scMinPostsIntervalMs": "30",
-            "scMaxBufferedPosts": 0,
-            "scStreamUpServerSecs": "0",
-            "serverMaxHeaderBytes": 0,
-            "xmux": {
-              "maxConcurrency": "16-32",
-              "maxConnections": "0",
-              "cMaxReuseTimes": "64-128",
-              "hMaxRequestTimes": "0",
-              "hMaxReusableSecs": "0",
-              "hKeepAlivePeriod": 0
-            },
-            "downloadSettings": null,
-            "extra": null
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "safari",
-          "alpn": [
-            "http/1.1",
-            "h2"
-          ]
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-038",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "37.18.14.43",
-            "port": 2053,
-            "users": [
-              {
-                "id": "7dd69047-047e-422e-a2ba-ed773c34fd1a",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "safari"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-039",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "158.160.180.165",
-            "port": 24212,
-            "users": [
-              {
-                "id": "c58c1205-b308-416f-8503-c04557abf93d",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
         }
       }
     },
