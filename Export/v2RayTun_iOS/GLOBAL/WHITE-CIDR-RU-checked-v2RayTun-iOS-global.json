@@ -58,7 +58,8 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
-          "full:flatcrest.net"
+          "full:pulse-resume.pro",
+          "full:apis.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -115,7 +116,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net"
+          "full:pulse-resume.pro",
+          "full:apis.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -136,7 +138,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net"
+          "full:pulse-resume.pro",
+          "full:apis.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -157,7 +160,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net"
+          "full:pulse-resume.pro",
+          "full:apis.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -178,7 +182,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net"
+          "full:pulse-resume.pro",
+          "full:apis.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -199,7 +204,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net"
+          "full:pulse-resume.pro",
+          "full:apis.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -220,7 +226,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net"
+          "full:pulse-resume.pro",
+          "full:apis.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -241,7 +248,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net"
+          "full:pulse-resume.pro",
+          "full:apis.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -262,7 +270,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net"
+          "full:pulse-resume.pro",
+          "full:apis.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -283,7 +292,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net"
+          "full:pulse-resume.pro",
+          "full:apis.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -304,7 +314,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net"
+          "full:pulse-resume.pro",
+          "full:apis.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -325,7 +336,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net"
+          "full:pulse-resume.pro",
+          "full:apis.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -346,7 +358,8 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:flatcrest.net"
+          "full:pulse-resume.pro",
+          "full:apis.heoleti.pro"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -439,8 +452,7 @@
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "pulse-resume.pro",
-          "fingerprint": "android"
+          "serverName": "pulse-resume.pro"
         }
       }
     },
@@ -477,12 +489,119 @@
         "security": "tls",
         "tlsSettings": {
           "serverName": "pulse-resume.pro",
-          "fingerprint": "safari"
+          "fingerprint": "android"
         }
       }
     },
     {
       "tag": "igareck-node-003",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.86.145.37",
+            "port": 443,
+            "users": [
+              {
+                "id": "34ec30ca-c499-46c5-a0b9-20638e5197e9",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/amws",
+          "headers": {
+            "Host": "pulse-resume.pro"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "pulse-resume.pro",
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-004",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "pulse-resume.pro",
+            "port": 443,
+            "users": [
+              {
+                "id": "34ec30ca-c499-46c5-a0b9-20638e5197e9",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/amws",
+          "headers": {
+            "Host": "pulse-resume.pro"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "pulse-resume.pro"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-005",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.86.145.142",
+            "port": 2096,
+            "users": [
+              {
+                "id": "9b560e60-0e08-4ee7-af43-1cb0f02e6cef",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/chxh",
+          "host": "apis.heoleti.pro",
+          "mode": "auto"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "apis.heoleti.pro"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-006",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -517,7 +636,7 @@
       }
     },
     {
-      "tag": "igareck-node-004",
+      "tag": "igareck-node-007",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -552,209 +671,16 @@
       }
     },
     {
-      "tag": "igareck-node-005",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "84.201.169.241",
-            "port": 443,
-            "users": [
-              {
-                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "api-maps.yandex.ru",
-          "fingerprint": "chrome",
-          "publicKey": "xsKg-Qi8sZNRRaNf6svIUwSw6iMdOTc6Cl82inZFM1Y"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-006",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "84.201.169.241",
-            "port": 443,
-            "users": [
-              {
-                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "api-maps.yandex.ru",
-          "fingerprint": "firefox",
-          "publicKey": "xsKg-Qi8sZNRRaNf6svIUwSw6iMdOTc6Cl82inZFM1Y"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-007",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "83.166.251.25",
-            "port": 43000,
-            "users": [
-              {
-                "id": "a2200b5e-bed4-4d5f-8b05-1daf12f4322d",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "fingerprint": "chrome",
-          "publicKey": "ux8nnKsidZNSIvm54EQf2RdXVawMCwto2DZiUNU1UQg",
-          "shortId": "2ab73e0b",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
       "tag": "igareck-node-008",
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "83.166.251.25",
-            "port": 43000,
+            "address": "apis.heoleti.pro",
+            "port": 2096,
             "users": [
               {
-                "id": "a2200b5e-bed4-4d5f-8b05-1daf12f4322d",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "fingerprint": "firefox",
-          "publicKey": "ux8nnKsidZNSIvm54EQf2RdXVawMCwto2DZiUNU1UQg",
-          "shortId": "2ab73e0b",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-009",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "83.166.251.25",
-            "port": 43000,
-            "users": [
-              {
-                "id": "a2200b5e-bed4-4d5f-8b05-1daf12f4322d",
-                "encryption": "none",
-                "flow": "xtls-rprx-vision"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "reality",
-        "realitySettings": {
-          "fingerprint": "random",
-          "publicKey": "ux8nnKsidZNSIvm54EQf2RdXVawMCwto2DZiUNU1UQg",
-          "shortId": "2ab73e0b",
-          "spiderX": "/"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-010",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "flatcrest.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
+                "id": "9b560e60-0e08-4ee7-af43-1cb0f02e6cef",
                 "encryption": "none"
               }
             ]
@@ -768,120 +694,12 @@
           "tcpKeepAliveInterval": 60
         },
         "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net"
+          "path": "/chxh",
+          "host": "apis.heoleti.pro"
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-011",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "flatcrest.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-012",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "flatcrest.net",
-            "port": 2053,
-            "users": [
-              {
-                "id": "2c634977-584e-4e1f-b501-1b70c77a6743",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/api/v1/upload",
-          "host": "flatcrest.net"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "flatcrest.net",
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-013",
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "158.160.180.165",
-            "port": 24212,
-            "users": [
-              {
-                "id": "c58c1205-b308-416f-8503-c04557abf93d",
-                "alterId": 0,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "raw",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "rawSettings": {
-          "header": {
-            "type": "none"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
+          "serverName": "apis.heoleti.pro"
         }
       }
     },
