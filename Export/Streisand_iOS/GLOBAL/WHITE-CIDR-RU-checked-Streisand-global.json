@@ -59,8 +59,7 @@
           "domain:local",
           "domain:lan",
           "regexp:^[^.]+$",
-          "full:ararat.rtkdvbr.cc",
-          "full:apis.repotraffic.org"
+          "full:node6.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -117,8 +116,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:ararat.rtkdvbr.cc",
-          "full:apis.repotraffic.org"
+          "full:node6.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -139,8 +137,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:ararat.rtkdvbr.cc",
-          "full:apis.repotraffic.org"
+          "full:node6.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -161,8 +158,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:ararat.rtkdvbr.cc",
-          "full:apis.repotraffic.org"
+          "full:node6.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -183,8 +179,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:ararat.rtkdvbr.cc",
-          "full:apis.repotraffic.org"
+          "full:node6.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -205,8 +200,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:ararat.rtkdvbr.cc",
-          "full:apis.repotraffic.org"
+          "full:node6.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -227,8 +221,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:ararat.rtkdvbr.cc",
-          "full:apis.repotraffic.org"
+          "full:node6.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -249,8 +242,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:ararat.rtkdvbr.cc",
-          "full:apis.repotraffic.org"
+          "full:node6.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -271,8 +263,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:ararat.rtkdvbr.cc",
-          "full:apis.repotraffic.org"
+          "full:node6.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -293,8 +284,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:ararat.rtkdvbr.cc",
-          "full:apis.repotraffic.org"
+          "full:node6.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -315,8 +305,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:ararat.rtkdvbr.cc",
-          "full:apis.repotraffic.org"
+          "full:node6.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -337,8 +326,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:ararat.rtkdvbr.cc",
-          "full:apis.repotraffic.org"
+          "full:node6.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -359,8 +347,7 @@
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
           "full:blank.dnsforge.de",
-          "full:ararat.rtkdvbr.cc",
-          "full:apis.repotraffic.org"
+          "full:node6.frost-api.com"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -450,11 +437,11 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.86.145.37",
-            "port": 443,
+            "address": "217.16.31.218",
+            "port": 5003,
             "users": [
               {
-                "id": "04b7c62b-762e-4a8c-ba37-8328d25c8d74",
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
                 "encryption": "none"
               }
             ]
@@ -462,21 +449,18 @@
         ]
       },
       "streamSettings": {
-        "network": "ws",
+        "network": "grpc",
         "sockopt": {
           "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
+          "tcpKeepAliveInterval": 60
         },
-        "wsSettings": {
-          "path": "/amws",
-          "headers": {
-            "Host": "ararat.rtkdvbr.cc"
-          }
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
         },
         "security": "tls",
         "tlsSettings": {
-          "serverName": "ararat.rtkdvbr.cc",
+          "serverName": "de1.frost-api.com",
           "fingerprint": "firefox"
         }
       }
@@ -487,6 +471,256 @@
       "settings": {
         "vnext": [
           {
+            "address": "node6.frost-api.com",
+            "port": 5003,
+            "users": [
+              {
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-003",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "node6.frost-api.com",
+            "port": 5003,
+            "users": [
+              {
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "safari",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-004",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "node6.frost-api.com",
+            "port": 5003,
+            "users": [
+              {
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "android"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-005",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "217.16.31.218",
+            "port": 5003,
+            "users": [
+              {
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "edge",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-006",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "217.16.31.218",
+            "port": 5003,
+            "users": [
+              {
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "firefox",
+          "alpn": [
+            "h2"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-007",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "217.16.31.218",
+            "port": 5003,
+            "users": [
+              {
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-008",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "node6.frost-api.com",
+            "port": 5003,
+            "users": [
+              {
+                "id": "ddc27ad2-631e-4431-b380-0045547acef4",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "grpc",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "grpcSettings": {
+          "serviceName": "media.playback.v1.SessionGateway",
+          "multiMode": false
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "de1.frost-api.com",
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-009",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "185.86.145.37",
             "port": 443,
             "users": [
@@ -519,7 +753,77 @@
       }
     },
     {
-      "tag": "igareck-node-003",
+      "tag": "igareck-node-010",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.86.145.142",
+            "port": 2096,
+            "users": [
+              {
+                "id": "f95ad5b8-32b0-48bc-a639-c229d8c4a684",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/chxh"
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "apis.repotraffic.org",
+          "fingerprint": "ios"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-011",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.86.145.37",
+            "port": 443,
+            "users": [
+              {
+                "id": "04b7c62b-762e-4a8c-ba37-8328d25c8d74",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60,
+          "dialerProxy": "fragment"
+        },
+        "wsSettings": {
+          "path": "/amws",
+          "headers": {
+            "Host": "ararat.rtkdvbr.cc"
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "ararat.rtkdvbr.cc",
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-012",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -556,77 +860,7 @@
       }
     },
     {
-      "tag": "igareck-node-004",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ararat.rtkdvbr.cc",
-            "port": 443,
-            "users": [
-              {
-                "id": "04b7c62b-762e-4a8c-ba37-8328d25c8d74",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/amws",
-          "headers": {}
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ararat.rtkdvbr.cc",
-          "fingerprint": "edge"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-005",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ararat.rtkdvbr.cc",
-            "port": 443,
-            "users": [
-              {
-                "id": "04b7c62b-762e-4a8c-ba37-8328d25c8d74",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/amws",
-          "headers": {}
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ararat.rtkdvbr.cc",
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-006",
+      "tag": "igareck-node-013",
       "protocol": "vless",
       "settings": {
         "vnext": [
@@ -655,319 +889,6 @@
         "tlsSettings": {
           "serverName": "apis.repotraffic.org",
           "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-007",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "185.86.145.142",
-            "port": 2096,
-            "users": [
-              {
-                "id": "f95ad5b8-32b0-48bc-a639-c229d8c4a684",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/chxh"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "apis.repotraffic.org",
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-008",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "apis.repotraffic.org",
-            "port": 2096,
-            "users": [
-              {
-                "id": "f95ad5b8-32b0-48bc-a639-c229d8c4a684",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/chxh",
-          "host": "apis.repotraffic.org"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "apis.repotraffic.org",
-          "fingerprint": "android"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-009",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "84.201.146.8",
-            "port": 443,
-            "users": [
-              {
-                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "chrome",
-          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-010",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "84.201.146.8",
-            "port": 443,
-            "users": [
-              {
-                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/",
-          "host": "max.ru"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "qq",
-          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-011",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "84.201.146.8",
-            "port": 443,
-            "users": [
-              {
-                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "android",
-          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-012",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "84.201.146.8",
-            "port": 443,
-            "users": [
-              {
-                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/"
-        },
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "max.ru",
-          "fingerprint": "chrome",
-          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-013",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ararat.rtkdvbr.cc",
-            "port": 443,
-            "users": [
-              {
-                "id": "04b7c62b-762e-4a8c-ba37-8328d25c8d74",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/amws",
-          "headers": {
-            "Host": "ararat.rtkdvbr.cc"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ararat.rtkdvbr.cc",
-          "fingerprint": "ios"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-014",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ararat.rtkdvbr.cc",
-            "port": 443,
-            "users": [
-              {
-                "id": "04b7c62b-762e-4a8c-ba37-8328d25c8d74",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60,
-          "dialerProxy": "fragment"
-        },
-        "wsSettings": {
-          "path": "/amws",
-          "headers": {
-            "Host": "ararat.rtkdvbr.cc"
-          }
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "ararat.rtkdvbr.cc",
-          "fingerprint": "qq"
-        }
-      }
-    },
-    {
-      "tag": "igareck-node-015",
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "apis.repotraffic.org",
-            "port": 2096,
-            "users": [
-              {
-                "id": "f95ad5b8-32b0-48bc-a639-c229d8c4a684",
-                "encryption": "none"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "tcpKeepAliveIdle": 300,
-          "tcpKeepAliveInterval": 60
-        },
-        "xhttpSettings": {
-          "path": "/chxh",
-          "host": "apis.repotraffic.org"
-        },
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "apis.repotraffic.org",
-          "fingerprint": "ios"
         }
       }
     },
