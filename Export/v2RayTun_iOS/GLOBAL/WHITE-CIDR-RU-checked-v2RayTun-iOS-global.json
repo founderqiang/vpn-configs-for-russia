@@ -57,7 +57,8 @@
           "full:localhost",
           "domain:local",
           "domain:lan",
-          "regexp:^[^.]+$"
+          "regexp:^[^.]+$",
+          "full:sub-edge-12-1g.xrent.cloud"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -113,7 +114,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:sub-edge-12-1g.xrent.cloud"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -133,7 +135,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:sub-edge-12-1g.xrent.cloud"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -153,7 +156,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:sub-edge-12-1g.xrent.cloud"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -173,7 +177,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:sub-edge-12-1g.xrent.cloud"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -193,7 +198,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:sub-edge-12-1g.xrent.cloud"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -213,7 +219,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:sub-edge-12-1g.xrent.cloud"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -233,7 +240,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:sub-edge-12-1g.xrent.cloud"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -253,7 +261,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:sub-edge-12-1g.xrent.cloud"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -273,7 +282,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:sub-edge-12-1g.xrent.cloud"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -293,7 +303,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:sub-edge-12-1g.xrent.cloud"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -313,7 +324,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:sub-edge-12-1g.xrent.cloud"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -333,7 +345,8 @@
           "full:doh.dns4all.eu",
           "full:wikimedia-dns.org",
           "full:dns.hostux.net",
-          "full:blank.dnsforge.de"
+          "full:blank.dnsforge.de",
+          "full:sub-edge-12-1g.xrent.cloud"
         ],
         "skipFallback": true,
         "queryStrategy": "UseIPv4",
@@ -396,6 +409,75 @@
   "outbounds": [
     {
       "tag": "igareck-node-001",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sub-edge-12-1g.xrent.cloud",
+            "port": 11451,
+            "users": [
+              {
+                "id": "f7e9aed5-74eb-4436-ad3d-10b64f3bb187",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "ligastavok.ru",
+          "fingerprint": "chrome",
+          "publicKey": "kDEc42JBZxig3BrLD3V1ofs3oJZk15-ANWN-rM0JW10",
+          "shortId": "f28145401b4f633a"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-002",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "84.201.146.8",
+            "port": 443,
+            "users": [
+              {
+                "id": "1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200",
+                "encryption": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "sockopt": {
+          "tcpKeepAliveIdle": 300,
+          "tcpKeepAliveInterval": 60
+        },
+        "xhttpSettings": {
+          "path": "/"
+        },
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "max.ru",
+          "fingerprint": "chrome",
+          "publicKey": "biyXF3Egpu0ul4Jyf04Vh1Zl6u3JGXJ2k5y5y7pDjgo"
+        }
+      }
+    },
+    {
+      "tag": "igareck-node-003",
       "protocol": "vmess",
       "settings": {
         "vnext": [
